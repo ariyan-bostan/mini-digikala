@@ -1,0 +1,9 @@
+/* part search : */
+.container{
+    height: 10%;
+}
+.boxSearch{
+    width: 90%;
+    border: 1px solid rgb(158, 158, 158) !important;
+    padding-right: 10px !important;
+}
