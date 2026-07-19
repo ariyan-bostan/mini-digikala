@@ -1,0 +1,42 @@
+/* nav list */
+.navListContainer {
+  height: 5rem;
+  overflow-x: scroll;
+  /* background: white; */
+  scrollbar-width: none;
+}
+.boxIconNav1 {
+  width: 100%;
+  height: 55%;
+}
+
+.box {
+  width: 4.5rem;
+  height: 4rem;
+  border: 1px solid gainsboro;
+  flex-shrink: 0;
+  font-size: 0.7rem !important;
+  overflow: hidden;
+}
+
+/* boxsearch & boxuser */
+.boxSearch {
+  width: 90%;
+  height: 3rem;
+  /* background: teal; */
+  border: 1px solid gainsboro;
+}
+.boxUser {
+  width: 10%;
+  height: 3rem;
+  border: 1px solid gainsboro;
+}
+
+/* select form */
+.selectForm {
+  width: 35%;
+  font-size: 0.7rem;
+  background: none !important;
+  border: 1px solid gainsboro !important;
+  color: gray;
+}

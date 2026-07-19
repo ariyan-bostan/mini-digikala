@@ -1,0 +1,25 @@
+.container{
+    display: grid;
+    grid-template: auto auto auto/100fr;
+    grid-template-areas: "header" "main" "footer";
+}
+.header{
+    grid-area: header;
+    /* background: aqua; */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.main{
+    grid-area: main;
+    background: firebrick;
+}
+.footer{
+    grid-area: footer;
+    background: teal;
+}
+
+@media screen and (min-width:800px){
+  
+    
+}

@@ -2,49 +2,50 @@
   "Header": {
     "listNav": [
       {
-        "title": "سرویس ها",
+        "title": "سرویس‌ها",
         "icon": "https://dkstatics-public.digikala.com/superapp-file/4f1a58293164d31b1a3cf1ef41f6ba4ba4fa4087_1739791745.png?x-oss-process=image/resize,w_300/quality,q_90/format,webp",
-        "linkTo":"/home"
+        "linkTo": "/home"
       },
       {
-        "title": "جام جهانی",
+        "title": "جام‌جهانی",
         "icon": "https://dkstatics-public.digikala.com/superapp-file/435607449f8d812981e316c39fdc37c974aefa6f_1781527723.gif?x-oss-process=image/resize,w_300/format,webp",
-        "linkTo":"/home"
+        "linkTo": "/home"
       },
       {
-        "title": "دیجی کالا",
-        "icon": "https://dkstatics-public.digikala.com/superapp-file/13015d6a1e8a9e4464a6ceb32750299a79249ee6_1782829070.gif?x-oss-process=image/resize,w_300/format,webp",
-        "linkTo":"/home"
+        "title": "دیجی‌کالا",
+        "icon": "https://dkstatics-public.digikala.com/superapp-file/a0d63d0f97e2d776150f65a5ca5aa32b36c8c69c_1779804168.png?x-oss-process=image/resize,w_300/quality,q_90/format,webp",
+        "linkTo": "/home"
       },
       {
-        "title": "۴۵ دقیقه ایی",
+        "title": "۴۵ دقیقه‌ای",
         "icon": "https://dkstatics-public.digikala.com/superapp-file/3c83e0f76591aa2efa42e33448c7cab59a1208cb_1779805075.png?x-oss-process=image/resize,w_300/quality,q_90/format,webp",
-        "linkTo":"/home"
+        "linkTo": "/home"
       },
       {
         "title": "طلا و نقره",
-        "icon": "https://dkstatics-public.digikala.com/superapp-file/d556c0c053d0b1ddd8e3bedc0994da0994a06da8_1782388353.png?x-oss-process=image/resize,w_300/quality,q_90/format,webp",
-        "linkTo":"/home"
-      },
-      {
-        "title": "استایل",
-        "icon": "https://dkstatics-public.digikala.com/superapp-file/e2812cfdd41b5dc2ff449006154ba3f938d82644_1779805098.png?x-oss-process=image/resize,w_300/quality,q_90/format,webp",
-        "linkTo":"/home"
+        "icon": "https://dkstatics-public.digikala.com/superapp-file/3c83e0f76591aa2efa42e33448c7cab59a1208cb_1779805075.png?x-oss-process=image/resize,w_300/quality,q_90/format,webp",
+        "linkTo": "/home"
       },
       {
         "title": "سوپر مارکت",
-        "icon": "https://dkstatics-public.digikala.com/superapp-file/7ae7902fbc209de7d80e79e1e465bf9f8840aec0_1763738479.png?x-oss-process=image/resize,w_300/quality,q_90/format,webp",
-        "linkTo":"/home"
+        "icon": "https://dkstatics-public.digikala.com/superapp-file/e2812cfdd41b5dc2ff449006154ba3f938d82644_1779805098.png?x-oss-process=image/resize,w_300/quality,q_90/format,webp",
+        "linkTo": "/home"
+      },
+      {
+        "title": "استایل",
+        "icon": "https://dkstatics-public.digikala.com/superapp-file/d556c0c053d0b1ddd8e3bedc0994da0994a06da8_1782388353.png?x-oss-process=image/resize,w_300/quality,q_90/format,webp",
+
+        "linkTo": "/home"
       },
       {
         "title": "اعتبار خرید",
         "icon": "https://dkstatics-public.digikala.com/superapp-file/7ae7902fbc209de7d80e79e1e465bf9f8840aec0_1763738479.png?x-oss-process=image/resize,w_300/quality,q_90/format,webp",
-        "linkTo":"/home"
+        "linkTo": "/home"
       },
       {
         "title": "دارو",
         "icon": "https://dkstatics-public.digikala.com/superapp-file/05db6acfba2c6d78f941346de37c5c3293affbb4_1779805118.png?x-oss-process=image/resize,w_300/quality,q_90/format,webp",
-        "linkTo":"/home"
+        "linkTo": "/home"
       }
     ]
   }
