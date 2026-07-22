@@ -1,4 +1,30 @@
 /* nav list */
+
+@media screen and (min-width: 600px) {
+  .navListContainer {
+    height: 5.5rem !important;
+  }
+  .box {
+    width: 4.5rem !important;
+    height: 4.5rem !important;
+  }
+}
+@media screen and (min-width: 700px) {
+  .navListContainer {
+    height: 6rem !important;
+  }
+  .box {
+    width: 5rem !important;
+    height: 4.5rem !important;
+  }
+}
+@media screen and (min-width: 790px) {
+  .box {
+    width: 6rem !important;
+    height: 4.5rem !important;
+  }
+}
+
 .navListContainer {
   height: 5rem;
   overflow-x: scroll;
@@ -11,24 +37,52 @@
 }
 
 .box {
-  width: 4.5rem;
-  height: 4rem;
+  width: 4rem;
+  height: 4.5rem;
   border: 1px solid gainsboro;
   flex-shrink: 0;
   font-size: 0.7rem !important;
   overflow: hidden;
 }
 
-/* boxsearch & boxuser */
+/* boxsearch & boxuser & logo */
+
+@media screen and (min-width: 850px) {
+  .cotainerSearchUser {
+    height: 4rem !important;
+  }
+  .boxLogo {
+    width: 15rem;
+    height: 100%;
+    /* background: tan; */
+  }
+  .boxSearch {
+    /* background: aqua; */
+    height: 70% !important;
+  }
+  .boxUser {
+    width: 10rem !important;
+    height: 5rem;
+    /* border-radius: 100%; */
+    border-radius: 0 !important;
+  }
+}
+
+.cotainerSearchUser {
+  height: 3rem;
+}
+
 .boxSearch {
   width: 90%;
-  height: 3rem;
-  /* background: teal; */
+  height: 100%;
   border: 1px solid gainsboro;
 }
 .boxUser {
-  width: 10%;
+  width: 3rem;
   height: 3rem;
+  border-radius: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
   border: 1px solid gainsboro;
 }
 
