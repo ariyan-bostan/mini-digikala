@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styleLayout from "../Styles/Layout.module.css";
 import style from "../Styles/Header/header.module.css";
+import { BsList } from "react-icons/bs";
 import NavList1 from "./NavList1";
 import Search from "./Search";
 import User from "./User";
@@ -9,6 +10,9 @@ import useWidthWindow from "../Hooks/useWidthWindow";
 import Logo from "./Logo";
 import BoxShop from "./BoxShop";
 import Boxes from "./Boxes";
+import List2 from "./List2";
+import BoxCategory from "./BoxCategory";
+import BoxList2 from "./BoxList2";
 
 interface TypeContextHeader {
   innerWidth: number;
@@ -37,13 +41,18 @@ const Header = () => {
 
         <div className="w-100 d-flex flex-row ">
           {innerWidth > 850 && (
-            <div className="d-flex flex-row h-100 align-items-center">
-              <div>1</div>
-              <div>2</div>
-              <div>3</div>
-              <div>5</div>
-              <div>6</div>
-              <div>7</div>
+            <div className="pe-2 d-flex flex-row h-100 align-items-center ">
+              <BoxCategory />
+
+              <BoxList2 />
+              <div>
+                <p
+                  style={{ fontSize: ".8rem", color: "gray" }}
+                  className="m-0 me-2"
+                >
+                  سوالی دارید؟
+                </p>
+              </div>
             </div>
           )}
           <Location />

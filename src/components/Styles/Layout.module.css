@@ -13,6 +13,7 @@
 .main{
     grid-area: main;
     background: firebrick;
+    overflow: hidden;
 }
 .footer{
     grid-area: footer;

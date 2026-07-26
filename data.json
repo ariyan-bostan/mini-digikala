@@ -4,48 +4,114 @@
       {
         "title": "سرویس‌ها",
         "icon": "https://dkstatics-public.digikala.com/superapp-file/4f1a58293164d31b1a3cf1ef41f6ba4ba4fa4087_1739791745.png?x-oss-process=image/resize,w_300/quality,q_90/format,webp",
-        "linkTo": "/home"
+        "linkTo": "/services"
       },
       {
         "title": "جام‌جهانی",
         "icon": "https://dkstatics-public.digikala.com/superapp-file/435607449f8d812981e316c39fdc37c974aefa6f_1781527723.gif?x-oss-process=image/resize,w_300/format,webp",
-        "linkTo": "/home"
+        "linkTo": "/jamjehani"
       },
       {
         "title": "دیجی‌کالا",
         "icon": "https://dkstatics-public.digikala.com/superapp-file/a0d63d0f97e2d776150f65a5ca5aa32b36c8c69c_1779804168.png?x-oss-process=image/resize,w_300/quality,q_90/format,webp",
-        "linkTo": "/home"
+        "linkTo": "/"
       },
       {
         "title": "۴۵ دقیقه‌ای",
         "icon": "https://dkstatics-public.digikala.com/superapp-file/13015d6a1e8a9e4464a6ceb32750299a79249ee6_1782829070.gif?x-oss-process=image/resize,w_300/format,webp",
-        "linkTo": "/home"
+        "linkTo": "/a"
       },
       {
         "title": "طلا و نقره",
         "icon": "https://dkstatics-public.digikala.com/superapp-file/3c83e0f76591aa2efa42e33448c7cab59a1208cb_1779805075.png?x-oss-process=image/resize,w_300/quality,q_90/format,webp",
-        "linkTo": "/home"
+        "linkTo": "/b"
       },
       {
         "title": "سوپر مارکت",
         "icon": "https://dkstatics-public.digikala.com/superapp-file/e2812cfdd41b5dc2ff449006154ba3f938d82644_1779805098.png?x-oss-process=image/resize,w_300/quality,q_90/format,webp",
-        "linkTo": "/home"
+        "linkTo": "/c"
       },
       {
         "title": "استایل",
         "icon": "https://dkstatics-public.digikala.com/superapp-file/d556c0c053d0b1ddd8e3bedc0994da0994a06da8_1782388353.png?x-oss-process=image/resize,w_300/quality,q_90/format,webp",
 
-        "linkTo": "/home"
+        "linkTo": "/s"
       },
       {
         "title": "اعتبار خرید",
         "icon": "https://dkstatics-public.digikala.com/superapp-file/7ae7902fbc209de7d80e79e1e465bf9f8840aec0_1763738479.png?x-oss-process=image/resize,w_300/quality,q_90/format,webp",
-        "linkTo": "/home"
+        "linkTo": "/n"
       },
       {
         "title": "دارو",
         "icon": "https://dkstatics-public.digikala.com/superapp-file/05db6acfba2c6d78f941346de37c5c3293affbb4_1779805118.png?x-oss-process=image/resize,w_300/quality,q_90/format,webp",
-        "linkTo": "/home"
+        "linkTo": "/z"
+      }
+    ],
+    "list2": [
+      {
+        "title": "شگفت‌انگیزها"
+      },
+      {
+        "title": "سوپرمارکت"
+      },
+      {
+        "title": "طلاونقره"
+      },
+      {
+        "title": "پرفروش‌ترین‌ها"
+      }
+    ]
+  },
+  "Main": {
+    "banner": [
+      {
+        "imgURL": "https://dkstatics-public.digikala.com/digikala-adservice-banners/eb6ae655c6d81a557ee972b610d0afcf7fc066e9_1782915031.jpg?x-oss-process=image/quality,q_95/format,webp",
+        "title": "پارتنرشیپ-ویتالیر"
+      },
+      {
+        "imgURL": "https://dkstatics-public.digikala.com/digikala-adservice-banners/e14430c2d2a8fc44e02a8142f158c562822b065f_1784726608.jpg?x-oss-process=image/quality,q_95/format,webp",
+        "title": "حراج سرماه مرداد"
+      },
+      {
+        "imgURL": "https://dkstatics-public.digikala.com/digikala-adservice-banners/ab07fe885981946f4e4e57a79333d7e153330214_1784727974.jpg?x-oss-process=image/quality,q_95/format,webp",
+        "title": "پی دی خانه آشپزخانه - وب"
+      },
+      {
+        "imgURL": "https://dkstatics-public.digikala.com/digikala-adservice-banners/893f7b7b20a2252008a191037d5ae3bbb77a34a8_1784749752.jpg?x-oss-process=image/quality,q_95/format,webp",
+        "title": "مگاتخفیف سوپرمارکت"
+      },
+      {
+        "imgURL": "https://dkstatics-public.digikala.com/digikala-adservice-banners/b60e863ed8c5d026698c152b67f5f3c9662fdcbc_1784460352.gif?x-oss-process=image?x-oss-process=image/format,webp",
+        "title": "پارتنرشیپ-پرسیل"
+      },
+      {
+        "imgURL": "https://dkstatics-public.digikala.com/digikala-adservice-banners/1765e399656bbdb7d7631743b9efbe127ebcbbf8_1784727669.jpg?x-oss-process=image/quality,q_95/format,webp",
+        "title": "حراج سرماه زیبایی سلامت"
+      },
+      {
+        "imgURL": "https://dkstatics-public.digikala.com/digikala-adservice-banners/410af208e3522d3fa196ca7123b85175cf0050e3_1784753698.jpg?x-oss-process=image/quality,q_95/format,webp",
+        "title": "حراج سرماه لوازم خانگی برقی"
+      },
+      {
+        "imgURL": "https://dkstatics-public.digikala.com/digikala-adservice-banners/8e4d9d04c589974d2adbee9f35ac4266df1cf84d_1774113522.jpg?x-oss-process=image/quality,q_95/format,webp",
+        "title": "خرید طلای دیجیتال"
+      },
+      {
+        "imgURL": "https://dkstatics-public.digikala.com/digikala-adservice-banners/e8e9f83288652b094b91f1b67f41d041d52ed5f9_1783937062.jpg?x-oss-process=image/quality,q_95/format,webp",
+        "title": "پارتنرشیپ-دوو"
+      },
+      {
+        "imgURL": "https://dkstatics-public.digikala.com/digikala-adservice-banners/99792d723c107fed50c62d2ffb9e00213dddf367_1783937195.jpg?x-oss-process=image/quality,q_95/format,webp",
+        "title": "پارتنرشیپ-تروبیکا"
+      },
+      {
+        "imgURL": "https://dkstatics-public.digikala.com/digikala-adservice-banners/2265b6e3273de14f696c960839efc2cbba17bd06_1783937361.jpg?x-oss-process=image/quality,q_95/format,webp",
+        "title": "پارتنرشیپ-ویتاپلکس"
+      },
+      {
+        "imgURL": "https://dkstatics-public.digikala.com/digikala-adservice-banners/a011c21df14f3b401923ca63fad6fe49a2b841d8_1784725825.jpg?x-oss-process=image/quality,q_95/format,webp",
+        "title": "سرمایه گذاری سر ماه"
       }
     ]
   }

@@ -3,6 +3,7 @@ import { FiBell } from "react-icons/fi";
 import { FaRegUser } from "react-icons/fa";
 import style from "../Styles/Header/header.module.css";
 import { contextHeader } from "./Header";
+import { NavLink } from "react-router";
 
 const User = () => {
     const property=useContext(contextHeader)!;
@@ -14,8 +15,12 @@ const User = () => {
         "d-flex flex-row justify-content-center align-items-center gap-4",
       ].join(" ")}
     >
-      <FiBell fontSize={25} color="gray"  />
-      {property.innerWidth>850 &&<FaRegUser fontSize={20} />}
+      <NavLink to={"/profile/notification"}>
+          <FiBell fontSize={25} color="gray"  />
+      </NavLink>
+      {property.innerWidth>850 &&<NavLink to={"/profile"}>
+          <FaRegUser color="black" fontSize={20} />
+      </NavLink>}
     </div>
   );
 };
