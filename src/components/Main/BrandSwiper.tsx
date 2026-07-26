@@ -16,12 +16,9 @@ import useBannerSwiper from "../Hooks/useBannerSwiper";
 import type { bannerSwiper } from "../Services/APIClient";
 import { ContextBannerSwiper } from "./Home";
 
-
 const BrandSwiper = () => {
+  const contextSwiper = useContext(ContextBannerSwiper)!;
 
-    const contextSwiper=useContext(ContextBannerSwiper)!;
-    console.log(contextSwiper.list);
-    
   return (
     <div className={[styleSwiper.container].join(" ")}>
       <Swiper
@@ -45,11 +42,10 @@ const BrandSwiper = () => {
         modules={[EffectCoverflow, Pagination, Autoplay]}
         className="mySwiper"
       >
-        {contextSwiper.list?.map((item,index)=>(
-
-        <SwiperSlide>
-          <img src={item.imgURL} />
-        </SwiperSlide>
+        {contextSwiper.list?.map((item, index) => (
+          <SwiperSlide>
+            <img src={item.imgURL} />
+          </SwiperSlide>
         ))}
       </Swiper>
     </div>

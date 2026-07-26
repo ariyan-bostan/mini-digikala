@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import styleLayout from "../Styles/Layout.module.css";
 import style from "../Styles/Header/header.module.css";
 import { BsList } from "react-icons/bs";
@@ -13,6 +13,7 @@ import Boxes from "./Boxes";
 import List2 from "./List2";
 import BoxCategory from "./BoxCategory";
 import BoxList2 from "./BoxList2";
+import {  contextWidth } from "../App";
 
 interface TypeContextHeader {
   innerWidth: number;
@@ -23,12 +24,10 @@ export const contextHeader = React.createContext<TypeContextHeader | undefined>(
 );
 
 const Header = () => {
-  const [innerWidth, setInnerWidth] = useState(window.innerWidth);
-
-  useWidthWindow(setInnerWidth);
+  const contextWidth1=useContext(contextWidth)!;
 
   return (
-    <contextHeader.Provider value={{ innerWidth }}>
+    <contextHeader.Provider value={{ innerWidth:contextWidth1.innerWidth }}>
       <div className={[styleLayout.header].join(" ")}>
         <NavList1 />
 
@@ -40,7 +39,7 @@ const Header = () => {
         </Boxes>
 
         <div className="w-100 d-flex flex-row ">
-          {innerWidth > 850 && (
+          {contextWidth1.innerWidth > 850 && (
             <div className="pe-2 d-flex flex-row h-100 align-items-center ">
               <BoxCategory />
 

@@ -1,0 +1,18 @@
+/* container */
+.container{
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scrollbar-width: none;}
+
+/* boxes */
+.boxTitles{
+    width: 7rem;
+    height: 5rem;
+    flex-shrink: 0;
+}
+/* icon */
+.icon{
+    width: 3.5rem !important;
+    height: 3rem !important;
+    object-fit: contain !important;
+}
