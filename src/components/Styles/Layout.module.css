@@ -1,20 +1,30 @@
 .container{
+    height: 100vh;
+    width: 100vw;
     display: grid;
-    grid-template: auto auto auto/100fr;
+    grid-template: 11rem auto auto/100fr;
     grid-template-areas: "header" "main" "footer";
 }
 .header{
     grid-area: header;
-    /* background: aqua; */
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    width: 100%;
+    /* background: cadetblue; */
+
     
 }
+
+
+.containerMainFooter{
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
 .main{
     grid-area: main;
-    /* background: firebrick; */
-    overflow: scroll;
 }
 .footer{
     grid-area: footer;

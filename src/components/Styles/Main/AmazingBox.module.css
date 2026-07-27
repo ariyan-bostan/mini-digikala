@@ -3,3 +3,13 @@
     height: 20rem;
     background:linear-gradient(225deg, rgb(210, 44, 78) 0%, rgb(238, 56, 78) 100%);;
 }
+
+
+/* clock */
+.boxClock{
+    width: 2rem !important;
+    height: 2rem;
+    border: 1px solid white;
+    border-radius: 10px !important;
+    background: white;
+}

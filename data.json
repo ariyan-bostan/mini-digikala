@@ -171,6 +171,170 @@
         "title": "همکاری در فروش دیجی‌کالا",
         "icon": "https://dkstatics-public.digikala.com/digikala-bellatrix/1c4d561bc4265d58276a82e4469da6426dcbea32_1760874026.png?x-oss-process=image/format,webp"
       }
-    ]
+    ],
+    "horizontalProducts": [
+      {
+        "title": "",
+        "imgURL": "",
+        "price": {
+          "sellingPrice": 0,
+          "rrpPrice": 0
+        },
+        "rating": {
+          "rate": 0,
+          "count": 0
+        },
+        "brand": {
+          "title": "",
+          "logo": ""
+        }
+      }
+    ],
+    "incredible": {
+      "running_out_incredible_products": {
+        "title": "شگفت‌انگیز رو به اتمام",
+        "products": [
+          {
+            "title": "",
+            "data_layer": {
+              "brand": "طلای نیک",
+              "category": "[CO,طلای آب شده]"
+            },
+            "price": {
+              "selling_price": 182500000,
+              "rrp_price": 0
+            },
+            "imgWEBP": "",
+            "rating": {
+              "rate": 0,
+              "count": 0
+            }
+          },
+          {
+            "title": "",
+            "data_layer": {
+              "brand": "طلای نیک",
+              "category": "[CO,طلای آب شده]"
+            },
+            "price": {
+              "selling_price": 182500000,
+              "rrp_price": 0
+            },
+            "imgWEBP": "",
+            "rating": {
+              "rate": 0,
+              "count": 0
+            }
+          },
+          {
+            "title": "",
+            "data_layer": {
+              "brand": "طلای نیک",
+              "category": "[CO,طلای آب شده]"
+            },
+            "price": {
+              "selling_price": 182500000,
+              "rrp_price": 0
+            },
+            "imgWEBP": "",
+            "rating": {
+              "rate": 0,
+              "count": 0
+            }
+          },
+          {
+            "title": "",
+            "data_layer": {
+              "brand": "طلای نیک",
+              "category": "[CO,طلای آب شده]"
+            },
+            "price": {
+              "selling_price": 182500000,
+              "rrp_price": 0
+            },
+            "imgWEBP": "",
+            "rating": {
+              "rate": 0,
+              "count": 0
+            }
+          },
+          {
+            "title": "",
+            "data_layer": {
+              "brand": "طلای نیک",
+              "category": "[CO,طلای آب شده]"
+            },
+            "price": {
+              "selling_price": 182500000,
+              "rrp_price": 0
+            },
+            "imgWEBP": "",
+            "rating": {
+              "rate": 0,
+              "count": 0
+            }
+          },
+          {
+            "title": "",
+            "data_layer": {
+              "brand": "طلای نیک",
+              "category": "[CO,طلای آب شده]"
+            },
+            "price": {
+              "selling_price": 182500000,
+              "rrp_price": 0
+            },
+            "imgWEBP": "",
+            "rating": {
+              "rate": 0,
+              "count": 0
+            }
+          },
+          {
+            "title": "",
+            "data_layer": {
+              "brand": "طلای نیک",
+              "category": "[CO,طلای آب شده]"
+            },
+            "price": {
+              "selling_price": 182500000,
+              "rrp_price": 0
+            },
+            "imgWEBP": "",
+            "rating": {
+              "rate": 0,
+              "count": 0
+            }
+          }
+        ]
+      },
+      "lightening_deal_products": {
+        "title": "شگفت‌انگیز سفارشی",
+        "products": [
+          {
+            "title": "",
+            "data_layer": {
+              "brand": "طلای نیک",
+              "category": "[CO,طلای آب شده]"
+            },
+            "imgWEBP": "",
+            "rating": {
+              "rate": 0,
+              "count": 0
+            },
+            "price": {
+              "selling_price": 182500000,
+              "rrp_price": 0
+            }
+          }
+        ]
+      },
+      "category": [],
+      "incredible_products_list": {
+        "filter": "",
+        "products": [],
+        "sort": []
+      }
+    }
   }
 }
