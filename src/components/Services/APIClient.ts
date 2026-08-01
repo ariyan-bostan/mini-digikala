@@ -33,6 +33,28 @@ interface ResponseTitlesHome {
   titles: TitleHome[];
 }
 
+
+//
+export interface ProductRunningOut {
+  title: string;
+  data_layer: { brand: string; category: string[] };
+  price: { selling_price: number; rrp_price: number };
+  imgWEBP: string;
+  rating: {rate:number,count:number,discount_percent:number};
+}
+export interface itemRunningOutIncredibleProducts {
+  title: string;
+  products: ProductRunningOut[];
+}
+interface runningOutIncredibleProducts {
+  running_out_incredible_products:itemRunningOutIncredibleProducts
+}
+
+interface ResponseRunningOutIncredibleProducts {
+  incredible: runningOutIncredibleProducts;
+}
+//
+
 const api = axios.create({
   baseURL: "http://localhost:3000",
 });
@@ -62,5 +84,10 @@ class APIClient {
       .get<ResponseTitlesHome>(this.endpoint)
       .then((res) => res.data.titles.slice(0,6));
   };
+
+  getItemRunningOutIncredibleProducts=()=>{
+    return api.get<ResponseRunningOutIncredibleProducts>(this.endpoint)
+                .then(res=>res.data.incredible.running_out_incredible_products);
+  }
 }
 export default APIClient;

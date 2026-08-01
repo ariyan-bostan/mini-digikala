@@ -13,3 +13,45 @@
     border-radius: 10px !important;
     background: white;
 }
+
+/* contain product */
+
+.Products{
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+/* product */
+
+.boxProduct{
+    width: 10rem !important;
+    height: 100% !important;
+    background: white;
+    border-radius: 10px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+/* img product*/
+.posterPro{
+    width: 100%;
+    height: 55%;
+    background: violet;
+
+
+}
+.titlePro{
+    height: 20%;
+    width: 100%;
+    background:olive;
+}
+.boxBP{
+    height: 15%;
+    width: 100%;
+    background:rgb(19, 0, 128);
+}
+
+.boxFinalPrice{
+    width: 100%;
+    height: 10%;
+}

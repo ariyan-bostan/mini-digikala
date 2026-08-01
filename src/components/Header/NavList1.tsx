@@ -19,8 +19,7 @@ const NavList1 = () => {
         >
           {list?.map((item, index) => (
             <NavLink to={item.linkTo} style={{color:"black",textDecoration:"none"}} key={index} className={(e)=>{
-                console.log(item.linkTo);
-                console.log(e.isActive);
+            
                 
              return   e.isActive?[style.box, "rounded-3 m-1 d-flex flex-column justify-content-center align-items-center bg-danger"].join(" "):[style.box, "rounded-3 m-1 d-flex flex-column justify-content-center align-items-center"].join(" ")
             }
