@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import styleAmz from "../Styles/Main/AmazingBox.module.css";
 import useRunningOutIncredibleProducts from "../Hooks/useRunningOutIncredibleProducts";
 import { FiArrowLeftCircle } from "react-icons/fi";
-import Poster from "./IncredibleComponent/poster";
+import Poster from "./IncredibleComponent/Poster";
 import Timer from "./IncredibleComponent/Timer";
 import Product from "./IncredibleComponent/Product";
 import { contextWidth } from "../App";
@@ -12,9 +12,9 @@ const IncredibleList = () => {
   const { data: list, error, isLoading } = useRunningOutIncredibleProducts();
   return (
     <div
-      className={[styleAmz.containerAmz,(property?.innerWidth<850)? "d-flex flex-column pb-2":"d-flex flex-row justify-context-center align-item-center"].join(" ")}
+      className={[styleAmz.containerAmz,(property?.innerWidth<850)? "d-flex flex-column pb-2":"d-flex flex-row justify-context-center align-items-center"].join(" ")}
     >
-      <div className={(property?.innerWidth<850)? "h-25 d-flex flex-row justify-content-between" :"d-flex flex-column justify-content-between align-items-center"}>
+      <div className={(property?.innerWidth<850)? "h-25 d-flex flex-row justify-content-between" :"d-flex flex-column  align-items-center"}>
         <div style={(property?.innerWidth<850)?{ width: "30rem" }:{}} className={(property?.innerWidth<850)?" d-flex flew-row":"d-flex flex-column"}>
           <div className={(property?.innerWidth<850)?"w-100 d-flex flew-row":"w-auto h-auto d-flex flex-column"}>
             <Poster />

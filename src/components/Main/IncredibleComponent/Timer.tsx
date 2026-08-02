@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import styleAmz from "../../Styles/Main/AmazingBox.module.css"
+import { contextWidth } from "../../App";
 
 const Timer = () => {
+  const property =useContext(contextWidth)!;
   return (
-    <div className="clock d-flex align-items-center gap-2">
+    <div className={[" d-flex align-items-center gap-2",(property.innerWidth>850)?"m-2":""].join(" ")}>
       <div
         className={[
           styleAmz.boxClock,
