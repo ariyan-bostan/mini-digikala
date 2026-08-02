@@ -38,28 +38,32 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      <contextWidth.Provider value={{innerWidth}}>
+      <contextWidth.Provider value={{ innerWidth }}>
         <div dir="rtl" className={[style.container].join(" ")}>
           <ContextHeader value={{ list, error, isLoading }}>
             <Header />
           </ContextHeader>
 
           <div className={[style.containerMainFooter].join(" ")}>
-              
-              <div className={[style.main].join(" ")}>
-                <Routes>
-                  <Route path="/" element={<Home />} />
-                  <Route path="/incredible-Offers" element={<IncredibleOffers />} />
-                  <Route path="/supermarket" element={<Supermarket />} />
-                  <Route path="/profile" element={<Profile />} />
-                  <Route path="/profile/notification" element={<Notification />} />
-                  <Route path="/searching" element={<Searching />} />
-                  <Route path="/*" element={<NotPage />} />
-                </Routes>
-              </div>
-              
-              <div className={[style.footer].join(" ")}>footer</div>
+            <div className={[style.main].join(" ")}>
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route
+                  path="/incredible-Offers"
+                  element={<IncredibleOffers />}
+                />
+                <Route path="/supermarket" element={<Supermarket />} />
+                <Route path="/profile" element={<Profile />} />
+                <Route
+                  path="/profile/notification"
+                  element={<Notification />}
+                />
+                <Route path="/searching" element={<Searching />} />
+                <Route path="/*" element={<NotPage />} />
+              </Routes>
+            </div>
 
+            <div className={[style.footer].join(" ")}>footer</div>
           </div>
         </div>
       </contextWidth.Provider>

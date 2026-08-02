@@ -21,7 +21,8 @@ const IncredibleList = ({numberList}:Props) => {
         background:(numberList===1)?
           "linear-gradient(225deg, rgb(210, 44, 78) 0%, rgb(238, 56, 78) 100%)"
           :
-          "linear-gradient(225deg, rgb(107, 185, 39) 0%, rgb(157, 196, 77) 100%)"
+          "linear-gradient(225deg, rgb(107, 185, 39) 0%, rgb(157, 196, 77) 100%)",
+          borderRadius:property.innerWidth>850?"20px":""
       }}
       className={[
         styleAmz.containerAmz,

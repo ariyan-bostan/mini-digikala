@@ -22,19 +22,25 @@ export const ContextBannerSwiper = React.createContext<
 
 const Home = () => {
   const { data: list, error, isLoading } = useBannerSwiper();
-
+  const property = useContext(contextWidth)!;
   return (
-    <div className="w-100 border border-danger">
+    <div className={["w-100 border border-danger"].join(" ")}>
       <ContextBannerSwiper.Provider value={{ list, error, isLoading }}>
         <BrandSwiper />
       </ContextBannerSwiper.Provider>
-
-      <Titles />
-      <IncredibleList numberList={1} />
-      <Banner number={1} />
-      <div style={{ width: "100%", height: "25rem" }} className="bg-info"></div>
-      <Banner number={2} />
-      <IncredibleList numberList={2} />
+      <div className={[property.innerWidth>850?"d-flex flex-column align-items-center":""].join(" ")}>
+        <div  style={property.innerWidth>850?{ width: "85%" }:{}}>
+          <Titles />
+          <IncredibleList numberList={1} />
+          <Banner number={1} />
+          <div
+            style={{ width: "100%", height: "25rem",borderRadius:property.innerWidth>850?"20px":"" }}
+            className="bg-info"
+          ></div>
+          <Banner number={2} />
+          <IncredibleList numberList={2} />
+        </div>
+      </div>
     </div>
   );
 };
