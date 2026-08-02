@@ -54,6 +54,22 @@ interface ResponseRunningOutIncredibleProducts {
   incredible: runningOutIncredibleProducts;
 }
 //
+export interface SimpleBanner1{
+    title:string;
+    imgWebp:string;
+}
+interface ResponseSimpleBanner1{
+    simpleBanner1:SimpleBanner1[];
+}
+export interface SimpleBanner2{
+    title:string;
+    imgWebp:string;
+}
+interface ResponseSimpleBanner2{
+    simpleBanner2:SimpleBanner2[];
+}
+
+// 
 
 const api = axios.create({
   baseURL: "http://localhost:3000",
@@ -88,6 +104,15 @@ class APIClient {
   getItemRunningOutIncredibleProducts=()=>{
     return api.get<ResponseRunningOutIncredibleProducts>(this.endpoint)
                 .then(res=>res.data.incredible.running_out_incredible_products);
+  }
+
+  getSimpleBanner1=()=>{
+    return api.get<ResponseSimpleBanner1>(this.endpoint)
+                .then(res=>res.data.simpleBanner1)
+  }
+  getSimpleBanner2=()=>{
+    return api.get<ResponseSimpleBanner2>(this.endpoint)
+                .then(res=>res.data.simpleBanner2)
   }
 }
 export default APIClient;

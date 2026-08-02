@@ -359,6 +359,42 @@
         "products": [],
         "sort": []
       }
-    }
+    },
+    "simpleBanner1": [
+      {
+        "title": "پی دی خودرو و ابزارآلات - وب",
+        "imgWebp": "https://dkstatics-public.digikala.com/digikala-adservice-banners/3747fda123ed682e59bcef46ffe3599030863ae3_1784728596.jpg?x-oss-process=image/quality,q_95/format,webp"
+      },
+      {
+        "title": "پارتنرشیپ-امگا",
+        "imgWebp": "https://dkstatics-public.digikala.com/digikala-adservice-banners/de959c86264d4bb0d8546da86c831da861133234_1784116265.jpg?x-oss-process=image/quality,q_95/format,webp"
+      },
+      {
+        "title": "پارتنرشیپ-پت",
+        "imgWebp": "https://dkstatics-public.digikala.com/digikala-adservice-banners/2ea84e58b05a3b4f2d452b00ea147e05e94d1ade_1784465245.jpg?x-oss-process=image/quality,q_95/format,webp"
+      },
+      {
+        "title": "حراج سرماه ",
+        "imgWebp": "https://dkstatics-public.digikala.com/digikala-adservice-banners/f251c1f9dad251f0b2799fe5e7ebd39407696de1_1784727106.jpg?x-oss-process=image/quality,q_95/format,webp"
+      }
+    ],
+    "simpleBanner2": [
+      {
+        "title": "پارتنرشیپ-اکت",
+        "imgWebp": "https://dkstatics-public.digikala.com/digikala-adservice-banners/089d3481b39dc2d44a3a77662fc041a1303622fd_1784818011.gif?x-oss-process=image?x-oss-process=image/format,webp"
+      },
+      {
+        "title": "بهترین لپ‌تاپ‌ها",
+        "imgWebp": "https://dkstatics-public.digikala.com/digikala-adservice-banners/f532ab426ec5e9b85b49bbeb421fc8a5c13fca38_1780815418.jpg?x-oss-process=image/quality,q_95/format,webp"
+      },
+      {
+        "title": "حراج سرماه ورزس و سفر",
+        "imgWebp": "https://dkstatics-public.digikala.com/digikala-adservice-banners/fa59a5582e1cbdaf19456f010e90cb69baf32191_1784785035.jpg?x-oss-process=image/quality,q_95/format,webp"
+      },
+      {
+        "title": "مگاتخفیف",
+        "imgWebp": "https://dkstatics-public.digikala.com/digikala-adservice-banners/ad132a55600fdf1542b2734a6e7645ebfe1f95de_1784750070.gif?x-oss-process=image?x-oss-process=image/format,webp"
+      }
+    ]
   }
 }

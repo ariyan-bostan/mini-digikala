@@ -45,7 +45,7 @@ const Product = ({ item, index }: Props) => {
             ⁒10
           </p>
         </div>
-        <div style={{ color: "white", textDecoration: "line-through" }}>
+        <div style={{ color: "gray", textDecoration: "line-through" }}>
           {item.price.rrp_price}
         </div>
       </div>
@@ -55,8 +55,8 @@ const Product = ({ item, index }: Props) => {
           "d-flex flex-row justify-content-center align-items-center",
         ].join(" ")}
       >
-        <p className="m-0 p-0 text-bold">
-          {item.price.rrp_price - (10 / 100) * item.price.rrp_price}
+        <p className="finalPriceIcredibleList m-0 p-0">
+          تومان{item.price.rrp_price - (10 / 100) * item.price.rrp_price}
         </p>
       </div>
     </div>
