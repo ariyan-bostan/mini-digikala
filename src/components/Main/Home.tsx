@@ -3,12 +3,13 @@ import type { bannerSwiper } from "../Services/APIClient";
 import useBannerSwiper from "../Hooks/useBannerSwiper";
 import BrandSwiper from "./BrandSwiper";
 import Titles from "./Titles";
-
+import styleCategri from "../Styles/Main/CategoriHome.module.css"
 import styleAmz from "../Styles/Main/AmazingBox.module.css";
 import IncredibleOffers from "./Pages/IncredibleOffers";
 import IncredibleList from "./IncredibleList";
 import { contextWidth } from "../App";
 import Banner from "./Banner";
+import CategoryHome from "./CategoryHome";
 
 interface TypeContextBannerSwiper {
   list: bannerSwiper[] | undefined;
@@ -39,6 +40,7 @@ const Home = () => {
           ></div>
           <Banner number={2} />
           <IncredibleList numberList={2} />
+          <CategoryHome />
         </div>
       </div>
     </div>
