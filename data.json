@@ -469,6 +469,28 @@
         "title": "پت شاپ",
         "imgWebp": "https://dkstatics-public.digikala.com/digikala-mega-menu/09a98a13c782e12a245930b4515d243b17734a33_1740299441.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80"
       }
+    ],
+    "simpleBanner3":[
+      {
+        "title": "پارتنرشیپ-برتونیکس",
+        "imgWebp": "https://dkstatics-public.digikala.com/digikala-adservice-banners/2ddc43427cf7a9205ad0d3791117c8b5e355156f_1781702116.jpg?x-oss-process=image/quality,q_95/format,webp"
+      },
+      {
+        "title": 	"پارتنرشیپ-نوتریکا",
+        "imgWebp": "https://dkstatics-public.digikala.com/digikala-adservice-banners/1d446ecbb72dac1d3ac1100decc9c18524402f41_1784115480.jpg?x-oss-process=image/quality,q_95/format,webp"
+      }
     ]
+    ,
+    "simpleBanner4":[
+      {
+        "title": 	"پارتنرشیپ-پاکشو-جنرال",
+        "imgWebp": "https://dkstatics-public.digikala.com/digikala-adservice-banners/2ddc43427cf7a9205ad0d3791117c8b5e355156f_1781702116.jpg?x-oss-process=image/quality,q_95/format,webp"
+      },
+      {
+        "title": "پارتنرشیپ-نوآکسا",
+        "imgWebp": "https://dkstatics-public.digikala.com/digikala-adservice-banners/0f13e94b35ed94ba636d8785746a07b32184625e_1784112580.jpg?x-oss-process=image/quality,q_95/format,webp"
+      }
+    ]
+    
   }
 }

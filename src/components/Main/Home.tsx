@@ -10,6 +10,7 @@ import IncredibleList from "./IncredibleList";
 import { contextWidth } from "../App";
 import Banner from "./Banner";
 import CategoryHome from "./CategoryHome";
+import Banner2 from "./Banner2";
 
 interface TypeContextBannerSwiper {
   list: bannerSwiper[] | undefined;
@@ -41,6 +42,7 @@ const Home = () => {
           <Banner number={2} />
           <IncredibleList numberList={2} />
           <CategoryHome />
+          <Banner2 />       
         </div>
       </div>
     </div>

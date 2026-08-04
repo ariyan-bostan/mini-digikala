@@ -70,6 +70,15 @@ interface ResponseSimpleBanner2{
 }
 
 // 
+export interface categoriHome{
+  title:string;
+  imgWebp:string
+}
+interface ResponseCategori{
+  categori_home:categoriHome[];
+}
+
+////////////
 
 const api = axios.create({
   baseURL: "http://localhost:3000",
@@ -113,6 +122,10 @@ class APIClient {
   getSimpleBanner2=()=>{
     return api.get<ResponseSimpleBanner2>(this.endpoint)
                 .then(res=>res.data.simpleBanner2)
+  }
+  getCategoriHome=()=>{
+    return api.get<ResponseCategori>(this.endpoint)
+              .then(res=>res.data.categori_home);
   }
 }
 export default APIClient;

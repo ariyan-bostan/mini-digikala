@@ -8,7 +8,7 @@ const Location = () => {
   return (
     <select  className={[style.selectForm,property?.innerWidth>850?"w-auto":" " ,"form-select m-2"].join(" ")}>
        
-      <option className={[style.itemSelect].join(" ")} selected>
+      <option  className={[style.itemSelect].join(" ")} >
         انتخاب لوکیشن
       </option>
     </select>

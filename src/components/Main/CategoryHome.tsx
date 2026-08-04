@@ -1,39 +1,36 @@
-import React from "react";
+import React, { useContext } from "react";
 import style from "../Styles/Main/CategoriHome.module.css"
+import useCategoriHome from "../Hooks/useCategoriHome";
+import { contextWidth } from "../App";
 
 const CategoryHome = () => {
+  const{data:list,error,isLoading}=useCategoriHome();
+  const property=useContext(contextWidth)!;
+  
   return (
     <div
-      className={[style.container, "categori bg-info mt-2"].join(" ")}
+      className={[style.container, "mt-2"].join(" ")}
     >
       <div
         style={{ width: "100%", height: "auto" }}
-        className="bg-danger d-flex align-items-center pe-2"
+        className="d-flex align-items-center pe-2"
       >
         <h4>دسته‌بندی ها</h4>
       </div>
       <div
-        style={{ width: "100%", height: "15rem" }}
-        className={[style.containerBox, "pe-2"].join(" ")}
+        style={{ width: "100%", height: "20rem" }}
+        className={[style.containerBox,(property?.innerWidth>850)?"justify-content-center":"",,"pt-3"].join(" ")}
       >
-        <div className={[style.categoriBox].join(" ")}>1</div>
-        <div className={[style.categoriBox].join(" ")}>2</div>
-        <div className={[style.categoriBox].join(" ")}>3</div>
-        <div className={[style.categoriBox].join(" ")}>4</div>
-        <div className={[style.categoriBox].join(" ")}>5</div>
-        <div className={[style.categoriBox].join(" ")}>6</div>
-        <div className={[style.categoriBox].join(" ")}>1</div>
-        <div className={[style.categoriBox].join(" ")}>2</div>
-        <div className={[style.categoriBox].join(" ")}>3</div>
-        <div className={[style.categoriBox].join(" ")}>4</div>
-        <div className={[style.categoriBox].join(" ")}>5</div>
-        <div className={[style.categoriBox].join(" ")}>6</div>
-        <div className={[style.categoriBox].join(" ")}>1</div>
-        <div className={[style.categoriBox].join(" ")}>2</div>
-        <div className={[style.categoriBox].join(" ")}>3</div>
-        <div className={[style.categoriBox].join(" ")}>4</div>
-        <div className={[style.categoriBox].join(" ")}>5</div>
-        <div className={[style.categoriBox].join(" ")}>6</div>
+        {list?.map((item,index)=>(
+          
+            <div className={[style.categoriBox,"d-flex flex-column align-items-center justify-content-center gap-2"].join(" ")}>
+              
+              <img style={{width:"5rem",borderRadius:"100%"}}  src={item.imgWebp} alt="" />
+
+              <p style={{fontSize:".75rem",color:"gray",fontWeight:"bold"}}>{item.title}</p>
+            </div>
+        ))}
+        
       </div>
     </div>
   );

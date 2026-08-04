@@ -74,7 +74,7 @@ const IncredibleList = ({numberList}:Props) => {
         ].join(" ")}
       >
         {list?.products.map((item, index) => (
-          <Product item={item} index={index} />
+          <Product key={index} item={item} index={index} />
         ))}
 
         <div

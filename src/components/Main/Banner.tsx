@@ -8,7 +8,6 @@ interface Props{
 
 const Banner = ({number}:Props) => {
   const { data: list, error, isLoading } = useSimpleBanner(number);
-  console.log(list);
   
   return (
     <div className={[styleBanner.container].join(" ")}>

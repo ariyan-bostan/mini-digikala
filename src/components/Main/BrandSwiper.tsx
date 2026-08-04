@@ -43,7 +43,7 @@ const BrandSwiper = () => {
         className="mySwiper"
       >
         {contextSwiper.list?.map((item, index) => (
-          <SwiperSlide>
+          <SwiperSlide key={index}>
             <img src={item.imgURL} />
           </SwiperSlide>
         ))}
