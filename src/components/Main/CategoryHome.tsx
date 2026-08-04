@@ -18,12 +18,12 @@ const CategoryHome = () => {
         <h4>دسته‌بندی ها</h4>
       </div>
       <div
-        style={{ width: "100%", height: "20rem" }}
+        style={{ width: "100%", height: "20rem",paddingRight:(property?.innerWidth>850)?"10rem":"0" }}
         className={[style.containerBox,(property?.innerWidth>850)?"justify-content-center":"",,"pt-3"].join(" ")}
       >
         {list?.map((item,index)=>(
           
-            <div className={[style.categoriBox,"d-flex flex-column align-items-center justify-content-center gap-2"].join(" ")}>
+            <div key={index} className={[style.categoriBox,"d-flex flex-column align-items-center justify-content-center gap-2"].join(" ")}>
               
               <img style={{width:"5rem",borderRadius:"100%"}}  src={item.imgWebp} alt="" />
 

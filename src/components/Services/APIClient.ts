@@ -123,6 +123,14 @@ class APIClient {
     return api.get<ResponseSimpleBanner2>(this.endpoint)
                 .then(res=>res.data.simpleBanner2)
   }
+  getSimpleBanner3=()=>{
+    return api.get<ResponseSimpleBanner2>(this.endpoint)
+                .then(res=>res.data.simpleBanner2)
+  }
+  getSimpleBanner4=()=>{
+    return api.get<ResponseSimpleBanner2>(this.endpoint)
+                .then(res=>res.data.simpleBanner2)
+  }
   getCategoriHome=()=>{
     return api.get<ResponseCategori>(this.endpoint)
               .then(res=>res.data.categori_home);
