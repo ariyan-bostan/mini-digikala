@@ -61,12 +61,28 @@ export interface SimpleBanner1{
 interface ResponseSimpleBanner1{
     simpleBanner1:SimpleBanner1[];
 }
+
 export interface SimpleBanner2{
     title:string;
     imgWebp:string;
 }
 interface ResponseSimpleBanner2{
     simpleBanner2:SimpleBanner2[];
+}
+
+export interface SimpleBanner3{
+    title:string;
+    imgWebp:string;
+}
+interface ResponseSimpleBanner3{
+    simpleBanner3:SimpleBanner3[];
+}
+export interface SimpleBanner4{
+    title:string;
+    imgWebp:string;
+}
+interface ResponseSimpleBanner4{
+    simpleBanner4:SimpleBanner4[];
 }
 
 // 
@@ -124,12 +140,12 @@ class APIClient {
                 .then(res=>res.data.simpleBanner2)
   }
   getSimpleBanner3=()=>{
-    return api.get<ResponseSimpleBanner2>(this.endpoint)
-                .then(res=>res.data.simpleBanner2)
+    return api.get<ResponseSimpleBanner3>(this.endpoint)
+                .then(res=>res.data.simpleBanner3)
   }
   getSimpleBanner4=()=>{
-    return api.get<ResponseSimpleBanner2>(this.endpoint)
-                .then(res=>res.data.simpleBanner2)
+    return api.get<ResponseSimpleBanner4>(this.endpoint)
+                .then(res=>res.data.simpleBanner4)
   }
   getCategoriHome=()=>{
     return api.get<ResponseCategori>(this.endpoint)

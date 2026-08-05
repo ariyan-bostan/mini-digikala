@@ -470,27 +470,123 @@
         "imgWebp": "https://dkstatics-public.digikala.com/digikala-mega-menu/09a98a13c782e12a245930b4515d243b17734a33_1740299441.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80"
       }
     ],
-    "simpleBanner3":[
+    "simpleBanner3": [
       {
         "title": "پارتنرشیپ-برتونیکس",
         "imgWebp": "https://dkstatics-public.digikala.com/digikala-adservice-banners/2ddc43427cf7a9205ad0d3791117c8b5e355156f_1781702116.jpg?x-oss-process=image/quality,q_95/format,webp"
       },
       {
-        "title": 	"پارتنرشیپ-نوتریکا",
+        "title": "پارتنرشیپ-نوتریکا",
         "imgWebp": "https://dkstatics-public.digikala.com/digikala-adservice-banners/1d446ecbb72dac1d3ac1100decc9c18524402f41_1784115480.jpg?x-oss-process=image/quality,q_95/format,webp"
       }
-    ]
-    ,
-    "simpleBanner4":[
+    ],
+    "simpleBanner4": [
       {
-        "title": 	"پارتنرشیپ-پاکشو-جنرال",
+        "title": "پارتنرشیپ-پاکشو-جنرال",
         "imgWebp": "https://dkstatics-public.digikala.com/digikala-adservice-banners/2ddc43427cf7a9205ad0d3791117c8b5e355156f_1781702116.jpg?x-oss-process=image/quality,q_95/format,webp"
       },
       {
         "title": "پارتنرشیپ-نوآکسا",
         "imgWebp": "https://dkstatics-public.digikala.com/digikala-adservice-banners/0f13e94b35ed94ba636d8785746a07b32184625e_1784112580.jpg?x-oss-process=image/quality,q_95/format,webp"
       }
+    ],
+    "popularBrand": [
+      {
+        "title": "پریل",
+        "logo": "https://dkstatics-public.digikala.com/digikala-brands/2c36ceb629598fa31b9b321fcd4e47773bd93ef7_1649498016.png?x-oss-process=image/resize,m_lfit,h_160,w_160/quality,q_80"
+      },
+      {
+        "title": "پرسیل",
+        "logo": "https://dkstatics-public.digikala.com/digikala-brands/7d615272ba7fc5dd708195ae858e2971de86a06f_1649498033.png?x-oss-process=image/resize,m_lfit,h_160,w_160/quality,q_80"
+      },
+      {
+        "title": "چرم مشهد",
+        "logo": "https://dkstatics-public.digikala.com/digikala-brands/9f5727fd7c13dc4b10c879a1865d77bc1fb333ce_1705308969.jpg?x-oss-process=image/resize,m_lfit,h_160,w_160/quality,q_80"
+      },
+      {
+        "title": "ایکس ویژن",
+        "logo": "https://dkstatics-public.digikala.com/digikala-brands/d23e8875d5f7a9735e433f1fd86a1513902efc8b_1604470597.jpg?x-oss-process=image/resize,m_lfit,h_160,w_160/quality,q_80"
+      },
+      {
+        "title": "مدوپد",
+        "logo": "https://dkstatics-public.digikala.com/digikala-brands/3e0100126c0bccc9cbb02aa6f869eac6c1240027_1607154301.jpg?x-oss-process=image/resize,m_lfit,h_160,w_160/quality,q_80"
+      },
+      {
+        "title": "اوه",
+        "logo": "https://dkstatics-public.digikala.com/digikala-brands/3aa3b23b69f8b1f562701129bc9b12a280ab7320_1697869714.png?x-oss-process=image/resize,m_lfit,h_160,w_160/quality,q_80"
+      },
+      {
+        "title": "سافتلن",
+        "logo": "https://dkstatics-public.digikala.com/digikala-brands/65162e05909586440af8f4a54aa6f42ee9c5e371_1621322522.png?x-oss-process=image/resize,m_lfit,h_160,w_160/quality,q_80"
+      },
+      {
+        "title": "مای بیبی",
+        "logo": "https://dkstatics-public.digikala.com/digikala-brands/4845cc945928ed61c91e20e9db16edf86aee5306_1771843142.png?x-oss-process=image/resize,m_lfit,h_160,w_160/quality,q_80"
+      },
+      {
+        "title": "داو",
+        "logo": "https://dkstatics-public.digikala.com/digikala-brands/dc6899b09e8efdea8d66772115f98d9a58a61a69_1666692914.jpg?x-oss-process=image/resize,m_lfit,h_160,w_160/quality,q_80"
+      },
+      {
+        "title": "مایا ماهک",
+        "logo": "https://dkstatics-public.digikala.com/digikala-brands/100009587.png?x-oss-process=image/resize,m_lfit,h_160,w_160/quality,q_80"
+      },
+      {
+        "title": "تی سی اچ",
+        "logo": "https://dkstatics-public.digikala.com/digikala-brands/f9e0b349ab0cb79e8a009d39022b8e1ec2573f48_1692540818.jpg?x-oss-process=image/resize,m_lfit,h_160,w_160/quality,q_80"
+      },
+      {
+        "title": "یوروویتال",
+        "logo": "https://dkstatics-public.digikala.com/digikala-brands/e44886020b773202d6d431e2fef2f3bd8bd3bc7f_1737817444.jpg?x-oss-process=image/resize,m_lfit,h_160,w_160/quality,q_80"
+      },
+      {
+        "title": "ویتالیر",
+        "logo": "https://dkstatics-public.digikala.com/digikala-brands/efb14accdad9be1b2176aa0317c8bbac43733831_1609325767.png?x-oss-process=image/resize,m_lfit,h_160,w_160/quality,q_80"
+      },
+      {
+        "title": "مای",
+        "logo": "https://dkstatics-public.digikala.com/digikala-brands/3972.png?x-oss-process=image/resize,m_lfit,h_160,w_160/quality,q_80"
+      },
+      {
+        "title": "شیائومی",
+        "logo": "https://dkstatics-public.digikala.com/digikala-brands/2994.png?x-oss-process=image/resize,m_lfit,h_160,w_160/quality,q_80"
+      },
+      {
+        "title": "سامسونگ",
+        "logo": "https://dkstatics-public.digikala.com/digikala-brands/3960.jpg?x-oss-process=image/resize,m_lfit,h_160,w_160/quality,q_80"
+      },
+      {
+        "title": "لافارر",
+        "logo": "https://dkstatics-public.digikala.com/digikala-brands/1313.png?x-oss-process=image/resize,m_lfit,h_160,w_160/quality,q_80"
+      },
+      {
+        "title": "درمالیفت",
+        "logo": "https://dkstatics-public.digikala.com/digikala-brands/100008301.jpg?x-oss-process=image/resize,m_lfit,h_160,w_160/quality,q_80"
+      },
+      {
+        "title": "انکر",
+        "logo": "https://dkstatics-public.digikala.com/digikala-brands/6286.png?x-oss-process=image/resize,m_lfit,h_160,w_160/quality,q_80"
+      },
+      {
+        "title": "شون",
+        "logo": "https://dkstatics-public.digikala.com/digikala-brands/bff03daf9cf71a71b7e41b31255ba9e747d1a01f_1644133724.jpg?x-oss-process=image/resize,m_lfit,h_160,w_160/quality,q_80"
+      },
+      {
+        "title": "پرایم",
+        "logo": "https://dkstatics-public.digikala.com/digikala-brands/0af5bb140d34d042a7809e2a9f6488b1c6929559_1720363228.jpg?x-oss-process=image/resize,m_lfit,h_160,w_160/quality,q_80"
+      },
+      {
+        "title": "فولیکا",
+        "logo": "https://dkstatics-public.digikala.com/digikala-brands/100012444.jpg?x-oss-process=image/resize,m_lfit,h_160,w_160/quality,q_80"
+      },
+      {
+        "title": "اکتیو",
+        "logo": "https://dkstatics-public.digikala.com/digikala-brands/87dcb454f4d8df28bd2f8fd902f0f27b5fb1fac4_1666761801.jpg?x-oss-process=image/resize,m_lfit,h_160,w_160/quality,q_80"
+      },
+      {
+        "title": "آمبرلا",
+        "logo": "https://dkstatics-public.digikala.com/digikala-brands/100011697.jpg?x-oss-process=image/resize,m_lfit,h_160,w_160/quality,q_80"
+      }
     ]
-    
   }
 }
