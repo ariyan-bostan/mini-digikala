@@ -94,6 +94,13 @@ interface ResponseCategori{
   categori_home:categoriHome[];
 }
 
+export interface PopularBrand{
+    title:string;
+    logo:string;
+}
+interface ResponsePopularBrand{
+    popularBrand:PopularBrand[];
+}
 ////////////
 
 const api = axios.create({
@@ -150,6 +157,11 @@ class APIClient {
   getCategoriHome=()=>{
     return api.get<ResponseCategori>(this.endpoint)
               .then(res=>res.data.categori_home);
+  }
+  
+  getPopularBrand=()=>{
+    return api.get<ResponsePopularBrand>(this.endpoint)
+                .then(res=>res.data.popularBrand);
   }
 }
 export default APIClient;
