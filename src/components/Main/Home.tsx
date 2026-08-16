@@ -3,7 +3,7 @@ import type { bannerSwiper } from "../Services/APIClient";
 import useBannerSwiper from "../Hooks/useBannerSwiper";
 import BrandSwiper from "./BrandSwiper";
 import Titles from "./Titles";
-import styleCategri from "../Styles/Main/CategoriHome.module.css"
+import styleCategri from "../Styles/Main/CategoriHome.module.css";
 import styleAmz from "../Styles/Main/AmazingBox.module.css";
 import IncredibleOffers from "./Pages/IncredibleOffers";
 import IncredibleList from "./IncredibleList";
@@ -13,6 +13,9 @@ import CategoryHome from "./CategoryHome";
 import Banner2 from "./Banner2";
 import { GiPolarStar } from "react-icons/gi";
 import PopularBrand from "./PopularBrand";
+import Product from "./IncredibleComponent/Product";
+import ProductList from "./ProductList";
+import ContainerProductList from "./ContainerProductList";
 
 interface TypeContextBannerSwiper {
   list: bannerSwiper[] | undefined;
@@ -32,21 +35,42 @@ const Home = () => {
       <ContextBannerSwiper.Provider value={{ list, error, isLoading }}>
         <BrandSwiper />
       </ContextBannerSwiper.Provider>
-      <div className={[property.innerWidth>850?"d-flex flex-column align-items-center":""].join(" ")}>
-        <div  style={property.innerWidth>850?{ width: "85%" }:{}}>
+      <div
+        className={[
+          property.innerWidth > 850
+            ? "d-flex flex-column align-items-center"
+            : "",
+        ].join(" ")}
+      >
+        <div style={property.innerWidth > 850 ? { width: "85%" } : {}}>
           <Titles />
           <IncredibleList numberList={1} />
           <Banner number={1} />
           <div
-            style={{ width: "100%", height: "25rem",borderRadius:property.innerWidth>850?"20px":"" }}
+            style={{
+              width: "100%",
+              height: "25rem",
+              borderRadius: property.innerWidth > 850 ? "20px" : "",
+            }}
             className="bg-info"
           ></div>
           <Banner number={2} />
           <IncredibleList numberList={2} />
           <CategoryHome />
-          <Banner2 number={3} />   
+          <Banner2 number={3} />
           <PopularBrand />
-          <Banner2 number={4}/>   
+          <Banner2 number={4} />
+
+          <ContainerProductList>
+            <ProductList title="مانیتور" />
+            <ProductList title="گوشی موبایل" />
+            <ProductList title="کیس" />
+            <ProductList title="کیبرد" />
+          </ContainerProductList>
+          <div style={{height:"25rem"}} className="w-100 bg-danger">
+            <div className="h-20 bg-info">title</div>
+            <div>پرفروش ترین</div>
+          </div>
         </div>
       </div>
     </div>

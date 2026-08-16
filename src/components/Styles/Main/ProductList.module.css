@@ -1,0 +1,44 @@
+/* container product list */
+.container {
+  height: "25rem";
+  border-radius: "10px";
+  overflow: "hidden";
+  background: white;
+}
+
+/* box title */
+.boxTitle {
+  height: 15%;
+}
+
+/* container box products */
+.containerProduct {
+  overflow-x: scroll;
+  height: 85%;
+  scrollbar-width: none;
+}
+
+/* box product */
+.product {
+  width: 10rem;
+  height: 20rem;
+  border-radius: 10px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.imgProduct {
+  height: 60%;
+  overflow: hidden;
+}
+.containerTitle {
+  height: 20%;
+  overflow: hidden;
+}
+.title {
+  font-size: 0.8rem;
+}
+
+.containerPercentPrice {
+  height: 10%;
+  overflow: hidden;
+}

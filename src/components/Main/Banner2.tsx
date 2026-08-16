@@ -7,7 +7,7 @@ interface Props{
 const Banner2 = ({number}:Props) => {
     const property=useContext(contextWidth)!;
     const {data:list,error,isLoading}=useSimpleBanner(number);
-    console.log(list);
+    // console.log(list);
     
   return (
     <div style={{width:"100%",height:(property?.innerWidth>850)?"15rem":"30rem",overflow:"hidden"}} className={[(property?.innerWidth>850)?" d-flex flex-row gap-2":" d-flex flex-column align-items-center justify-content-center py-2 gap-1","my-2"].join(" ")}>

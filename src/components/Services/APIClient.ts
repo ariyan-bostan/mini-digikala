@@ -103,6 +103,53 @@ interface ResponsePopularBrand{
 }
 ////////////
 
+// product-list
+
+interface Layet{
+    brand:string,
+    category:string,
+    dimension9:number
+}
+interface Images{
+    mainImg:string,
+    listImg:string[]
+}
+interface Theme{
+    title:string,
+    code:string
+}
+interface Price{
+    selling_price:number,
+    rrp_price:number,
+    percent:number
+}
+
+interface Attributes{
+    title:string,
+    value:string
+}
+
+export interface Product{
+    title:string,
+    layet:Layet,
+    images:Images,
+    theme:Theme,
+    price:Price,
+    attributes:Attributes[]
+}
+
+export interface productItem{
+    title:string,
+    product:Product[];
+
+}
+
+interface ResProductList{
+    products:productItem[]
+}
+
+///
+
 const api = axios.create({
   baseURL: "http://localhost:3000",
 });
@@ -162,6 +209,10 @@ class APIClient {
   getPopularBrand=()=>{
     return api.get<ResponsePopularBrand>(this.endpoint)
                 .then(res=>res.data.popularBrand);
+  }
+  getProductList=()=>{
+    return api.get<ResProductList>(this.endpoint)
+                .then(res=>res.data.products);
   }
 }
 export default APIClient;
