@@ -13,6 +13,7 @@ import Searching from "./Main/Pages/Searching";
 import NotPage from "./Main/Pages/NotPage";
 import Notification from "./Main/Pages/Notification";
 import useWidthWindow from "./Hooks/useWidthWindow";
+import Footer from "./Footer/Footer";
 
 export interface ValueHeader {
   list: ItemNav1[] | undefined;
@@ -63,7 +64,7 @@ const App = () => {
               </Routes>
             </div>
 
-            <div className={[style.footer].join(" ")}>footer</div>
+            <Footer />
           </div>
         </div>
       </contextWidth.Provider>

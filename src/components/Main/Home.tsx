@@ -1,22 +1,19 @@
 import React, { useContext } from "react";
-import type { bannerSwiper } from "../Services/APIClient";
 import useBannerSwiper from "../Hooks/useBannerSwiper";
 import BrandSwiper from "./BrandSwiper";
 import Titles from "./Titles";
-import styleCategri from "../Styles/Main/CategoriHome.module.css";
-import styleAmz from "../Styles/Main/AmazingBox.module.css";
-import IncredibleOffers from "./Pages/IncredibleOffers";
 import IncredibleList from "./IncredibleList";
 import { contextWidth } from "../App";
 import Banner from "./Banner";
 import CategoryHome from "./CategoryHome";
 import Banner2 from "./Banner2";
-import { GiPolarStar } from "react-icons/gi";
 import PopularBrand from "./PopularBrand";
-import Product from "./IncredibleComponent/Product";
 import ProductList from "./ProductList";
+import "swiper/css";
 import ContainerProductList from "./ContainerProductList";
-
+import type { bannerSwiper } from "../Services/APIClient";
+import Bestseller from "./OrderProduct";
+import BoxOrderProduct from "./BoxOrderedProducts";
 interface TypeContextBannerSwiper {
   list: bannerSwiper[] | undefined;
   error: Error | null;
@@ -66,11 +63,9 @@ const Home = () => {
             <ProductList title="گوشی موبایل" />
             <ProductList title="کیس" />
             <ProductList title="کیبرد" />
+            <BoxOrderProduct title="پرفروش ترینپرفروش‌ترین کالاها" />
+            <BoxOrderProduct title="داغ‌ترین چند ساعت گذشته" />
           </ContainerProductList>
-          <div style={{height:"25rem"}} className="w-100 bg-danger">
-            <div className="h-20 bg-info">title</div>
-            <div>پرفروش ترین</div>
-          </div>
         </div>
       </div>
     </div>

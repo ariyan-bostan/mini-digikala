@@ -33,122 +33,146 @@ interface ResponseTitlesHome {
   titles: TitleHome[];
 }
 
-
 //
 export interface ProductRunningOut {
   title: string;
   data_layer: { brand: string; category: string[] };
   price: { selling_price: number; rrp_price: number };
   imgWEBP: string;
-  rating: {rate:number,count:number,discount_percent:number};
+  rating: { rate: number; count: number; discount_percent: number };
 }
 export interface itemRunningOutIncredibleProducts {
   title: string;
   products: ProductRunningOut[];
 }
 interface runningOutIncredibleProducts {
-  running_out_incredible_products:itemRunningOutIncredibleProducts
+  running_out_incredible_products: itemRunningOutIncredibleProducts;
 }
 
 interface ResponseRunningOutIncredibleProducts {
   incredible: runningOutIncredibleProducts;
 }
 //
-export interface SimpleBanner1{
-    title:string;
-    imgWebp:string;
+export interface SimpleBanner1 {
+  title: string;
+  imgWebp: string;
 }
-interface ResponseSimpleBanner1{
-    simpleBanner1:SimpleBanner1[];
-}
-
-export interface SimpleBanner2{
-    title:string;
-    imgWebp:string;
-}
-interface ResponseSimpleBanner2{
-    simpleBanner2:SimpleBanner2[];
+interface ResponseSimpleBanner1 {
+  simpleBanner1: SimpleBanner1[];
 }
 
-export interface SimpleBanner3{
-    title:string;
-    imgWebp:string;
+export interface SimpleBanner2 {
+  title: string;
+  imgWebp: string;
 }
-interface ResponseSimpleBanner3{
-    simpleBanner3:SimpleBanner3[];
-}
-export interface SimpleBanner4{
-    title:string;
-    imgWebp:string;
-}
-interface ResponseSimpleBanner4{
-    simpleBanner4:SimpleBanner4[];
+interface ResponseSimpleBanner2 {
+  simpleBanner2: SimpleBanner2[];
 }
 
-// 
-export interface categoriHome{
-  title:string;
-  imgWebp:string
+export interface SimpleBanner3 {
+  title: string;
+  imgWebp: string;
 }
-interface ResponseCategori{
-  categori_home:categoriHome[];
+interface ResponseSimpleBanner3 {
+  simpleBanner3: SimpleBanner3[];
+}
+export interface SimpleBanner4 {
+  title: string;
+  imgWebp: string;
+}
+interface ResponseSimpleBanner4 {
+  simpleBanner4: SimpleBanner4[];
 }
 
-export interface PopularBrand{
-    title:string;
-    logo:string;
+//
+export interface categoriHome {
+  title: string;
+  imgWebp: string;
 }
-interface ResponsePopularBrand{
-    popularBrand:PopularBrand[];
+interface ResponseCategori {
+  categori_home: categoriHome[];
+}
+
+export interface PopularBrand {
+  title: string;
+  logo: string;
+}
+interface ResponsePopularBrand {
+  popularBrand: PopularBrand[];
 }
 ////////////
 
 // product-list
 
-interface Layet{
-    brand:string,
-    category:string,
-    dimension9:number
+interface Layet {
+  brand: string;
+  category: string;
+  dimension9: number;
 }
-interface Images{
-    mainImg:string,
-    listImg:string[]
+interface Images {
+  mainImg: string;
+  listImg: string[];
 }
-interface Theme{
-    title:string,
-    code:string
+interface Theme {
+  title: string;
+  code: string;
 }
-interface Price{
-    selling_price:number,
-    rrp_price:number,
-    percent:number
-}
-
-interface Attributes{
-    title:string,
-    value:string
+interface Price {
+  selling_price: number;
+  rrp_price: number;
+  percent: number;
 }
 
-export interface Product{
-    title:string,
-    layet:Layet,
-    images:Images,
-    theme:Theme,
-    price:Price,
-    attributes:Attributes[]
+interface Attributes {
+  title: string;
+  value: string;
 }
 
-export interface productItem{
-    title:string,
-    product:Product[];
-
+export interface Product {
+  title: string;
+  layet: Layet;
+  images: Images;
+  theme: Theme;
+  price: Price;
+  attributes: Attributes[];
 }
 
-interface ResProductList{
-    products:productItem[]
+export interface productItem {
+  title: string;
+  product: Product[];
 }
 
-///
+interface ResProductList {
+  products: productItem[];
+}
+
+///best-seller
+export interface ProductSeller {
+  title: string;
+  imgURL: string;
+}
+
+export interface BestSeller {
+  title: string;
+  product: ProductSeller[];
+}
+interface ResponseBestSeller {
+  bestSeller: BestSeller;
+}
+// trending_products
+export interface PTrendingProducts {
+  title: string;
+  imgURL: string;
+}
+
+export interface TrendingProducts {
+  title: string;
+  product: PTrendingProducts[];
+}
+interface ResponseTrendingProducts {
+  trendingProducts: TrendingProducts;
+}
+//
 
 const api = axios.create({
   baseURL: "http://localhost:3000",
@@ -177,42 +201,61 @@ class APIClient {
   getTitlesHome = () => {
     return api
       .get<ResponseTitlesHome>(this.endpoint)
-      .then((res) => res.data.titles.slice(0,6));
+      .then((res) => res.data.titles.slice(0, 6));
   };
 
-  getItemRunningOutIncredibleProducts=()=>{
-    return api.get<ResponseRunningOutIncredibleProducts>(this.endpoint)
-                .then(res=>res.data.incredible.running_out_incredible_products);
-  }
+  getItemRunningOutIncredibleProducts = () => {
+    return api
+      .get<ResponseRunningOutIncredibleProducts>(this.endpoint)
+      .then((res) => res.data.incredible.running_out_incredible_products);
+  };
 
-  getSimpleBanner1=()=>{
-    return api.get<ResponseSimpleBanner1>(this.endpoint)
-                .then(res=>res.data.simpleBanner1)
-  }
-  getSimpleBanner2=()=>{
-    return api.get<ResponseSimpleBanner2>(this.endpoint)
-                .then(res=>res.data.simpleBanner2)
-  }
-  getSimpleBanner3=()=>{
-    return api.get<ResponseSimpleBanner3>(this.endpoint)
-                .then(res=>res.data.simpleBanner3)
-  }
-  getSimpleBanner4=()=>{
-    return api.get<ResponseSimpleBanner4>(this.endpoint)
-                .then(res=>res.data.simpleBanner4)
-  }
-  getCategoriHome=()=>{
-    return api.get<ResponseCategori>(this.endpoint)
-              .then(res=>res.data.categori_home);
-  }
-  
-  getPopularBrand=()=>{
-    return api.get<ResponsePopularBrand>(this.endpoint)
-                .then(res=>res.data.popularBrand);
-  }
-  getProductList=()=>{
-    return api.get<ResProductList>(this.endpoint)
-                .then(res=>res.data.products);
-  }
+  getSimpleBanner1 = () => {
+    return api
+      .get<ResponseSimpleBanner1>(this.endpoint)
+      .then((res) => res.data.simpleBanner1);
+  };
+  getSimpleBanner2 = () => {
+    return api
+      .get<ResponseSimpleBanner2>(this.endpoint)
+      .then((res) => res.data.simpleBanner2);
+  };
+  getSimpleBanner3 = () => {
+    return api
+      .get<ResponseSimpleBanner3>(this.endpoint)
+      .then((res) => res.data.simpleBanner3);
+  };
+  getSimpleBanner4 = () => {
+    return api
+      .get<ResponseSimpleBanner4>(this.endpoint)
+      .then((res) => res.data.simpleBanner4);
+  };
+  getCategoriHome = () => {
+    return api
+      .get<ResponseCategori>(this.endpoint)
+      .then((res) => res.data.categori_home);
+  };
+
+  getPopularBrand = () => {
+    return api
+      .get<ResponsePopularBrand>(this.endpoint)
+      .then((res) => res.data.popularBrand);
+  };
+  getProductList = () => {
+    return api
+      .get<ResProductList>(this.endpoint)
+      .then((res) => res.data.products);
+  };
+
+  getBestSeller = () => {
+    return api
+      .get<ResponseBestSeller>(this.endpoint)
+      .then((res) => res.data.bestSeller);
+  };
+  getTrendingProducts = () => {
+    return api
+      .get<ResponseTrendingProducts>(this.endpoint)
+      .then((res) => res.data.trendingProducts);
+  };
 }
 export default APIClient;

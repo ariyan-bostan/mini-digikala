@@ -751,8 +751,7 @@
             ]
           }
         ]
-      }
-      ,
+      },
       {
         "title": "گوشی موبایل",
         "product": [
@@ -915,8 +914,7 @@
             ]
           }
         ]
-      }
-      ,
+      },
       {
         "title": "کیبورد",
         "product": [
@@ -1079,8 +1077,7 @@
             ]
           }
         ]
-      }
-      ,
+      },
       {
         "title": "کیس کامپیوتر",
         "product": [
@@ -1244,6 +1241,89 @@
           }
         ]
       }
-    ]
-  }
+    ],
+    "ordered_products": {
+      "title": "پرفروش‌ترین کالاها",
+      "product": [
+        {
+          "title": "کاور آکام مدل AMC-WSGA70-BUNNY-22 مناسب برای گوشی موبایل سامسونگ Galaxy A70",
+          "imgURL": "https://dkstatics-public.digikala.com/digikala-products/d14c6260dd3e6e2361505d65aa7ef4cd49f5363d_1755354541.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600/quality,q_90"
+        },
+        {
+          "title": "کاور آکام مدل AMC-WAAIR-WATER COLOR-6 مناسب برای گوشی موبایل اپل iPhone Air",
+          "imgURL": "https://dkstatics-public.digikala.com/digikala-products/93ed1a2be8f9890f00640049d831ec4207a4bf16_1762147622.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600/quality,q_90"
+        },
+        {
+          "title": "کاور آکام مدل AMC-WA15PRO-TINTIN-20مناسب برای گوشی موبایل اپل iPhone 15 Pro",
+          "imgURL": "https://dkstatics-public.digikala.com/digikala-products/0921b8d4f06893542c309caf2b3584d949c1a94b_1752044760.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600/quality,q_90"
+        },
+        {
+          "title": "کاور آکام مدل AMC-WSGS23-ALPHAZEBRABET-64 مناسب برای گوشی موبایل سامسونگ Galaxy S23",
+          "imgURL": "https://dkstatics-public.digikala.com/digikala-products/fc1fa5cec0204ae8ac09e81e084c26247a220500_1751464347.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600/quality,q_90"
+        },
+        {
+          "title": "کاور آکام مدل AMC-WAXR-WATER COLOR-24 مناسب برای گوشی موبایل اپل iPhone XR",
+          "imgURL": "https://dkstatics-public.digikala.com/digikala-products/3161da17411fb2c2678fdd1838fc3828caa5a1f0_1762934022.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600/quality,q_90"
+        },
+        {
+          "title": "کاور آکام مدل AMC-WA13PRO-CANDY-21 مناسب برای گوشی موبایل اپل iPhone 13 Pro",
+          "imgURL": "https://dkstatics-public.digikala.com/digikala-products/cd8f3749793b9f3ac9ae1cf92ca942fdd57e2899_1747122298.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600/quality,q_90"
+        },
+        {
+          "title": "کاور آکام مدل AMC-WSGN10-TINTIN-24 مناسب برای گوشی موبایل سامسونگ Galaxy Note 10",
+          "imgURL": "https://dkstatics-public.digikala.com/digikala-products/5ba5fd7d6acf5ae9209d436f208bd52b39c74b1b_1752318012.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600/quality,q_90"
+        },
+        {
+          "title": "کاور آکام مدل AMC-WSGZFOLD5-NEON-20 مناسب برای گوشی موبایل سامسونگ Galaxy Z Fold 5",
+          "imgURL": "https://dkstatics-public.digikala.com/digikala-products/85784d8a96e590e3b01ebd274f53ea3fea27b74e_1770046864.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600/quality,q_90"
+        },
+        {
+          "title": "کاور آکام مدل AMC-WA14PROMAX-BATMAN14 مناسب برای گوشی موبایل اپل iPhone 14 Pro Max",
+          "imgURL": "https://dkstatics-public.digikala.com/digikala-products/5539df9c1b87845b825e591105c8246013db2a91_1727854745.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600/quality,q_90"
+        }
+      ]
+    },
+    "trendingProducts": {
+      "title": "داغ‌ترین چند ساعت گذشت",
+      "product": [
+        {
+          "title": "اسپری خوشبوکننده دهان میسویک مدل اکالیپتوس حجم 30 میلی لیتر",
+          "imgURL": "https://dkstatics-public.digikala.com/digikala-products/a332ff58252323847de8f3e072fbd9c3e262a550_1786368806.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600/quality,q_90"
+        },
+        {
+          "title": "ماسک لب پیل‌آف اولیبولا حجم 3.5 میلی‌لیتر پاک‌کننده سلول‌های مرده، نرم‌کننده و مغذی با ویتامین E، رایحه عسل و انار، مناسب انواع پوست و بهبود خشکی و تیرگی لب‌ها",
+          "imgURL": "https://dkstatics-public.digikala.com/digikala-products/bf79dba7b876e9c8ef09b5716c8f504743236d61_1766823911.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600/quality,q_90"
+        },
+        {
+          "title": "گوشی موبایل سامسونگ مدل Galaxy A57 دو سیم‌کارت ظرفیت 512 گیگابایت و رم 12 گیگابایت - ویتنام",
+          "imgURL": "https://dkstatics-public.digikala.com/digikala-products/9f7c19aa98b4a63196a55213bc395149e63c094f_1776267138.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600/quality,q_90"
+        },
+        {
+          "title": "گوشی موبایل سامسونگ مدل Galaxy S26 Ultra دو سیم‌کارت ظرفیت 256 گیگابایت و رم 12 گیگابایت - ویتنام",
+          "imgURL": "https://dkstatics-public.digikala.com/digikala-products/f763c68074bc2007562135176a588d2324593b63_1779812739.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600/quality,q_90"
+        },
+        {
+          "title": "شمش نقره زیوتو مدل 999.9  ZTE",
+          "imgURL": "https://dkstatics-public.digikala.com/digikala-products/e552f30587308f7e119080eeefc49e6ca91561d5_1770130185.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600/quality,q_90"
+        },
+        {
+          "title": "کیف لوازم آرایش زنانه امیتیس مدل A551",
+          "imgURL": "https://dkstatics-public.digikala.com/digikala-products/4b844d61f2b9252709526a4b358e9b6f22d589fe_1643176676.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600/quality,q_90"
+        },
+        {
+          "title": "ریمل میرادور مدل Fabulous Volume",
+          "imgURL": "https://dkstatics-public.digikala.com/digikala-products/6680eb032b87cec3195d053c99331c15b162870a_1740128618.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600/quality,q_90"
+        },
+        {
+          "title": "برچسب مدل نظم دهنده ادویه و حبوبات و سبزیجات کد 3454 بسته 124 عددی",
+          "imgURL": "https://dkstatics-public.digikala.com/digikala-products/099480a89022b69c8ec02fca7a5d9036f8a4d07d_1732170006.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600/quality,q_90"
+        },
+        {
+          "title": "کپسول اینوزیتول پلاس یوروویتال بسته 60 عددی",
+          "imgURL": "https://dkstatics-public.digikala.com/digikala-products/ee6af3b92c3dd5b5162a77454fbe072f55965471_1707556847.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600/quality,q_90"
+        }
+      ]
+    }
+  },
+  "Footer": {}
 }
