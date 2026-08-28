@@ -19,8 +19,8 @@ const Footer = () => {
     <div className={[style.footer].join(" ")}>
       <SupportAndAPK />
       <LabelFooter />
-      {/* <ListFooter />
-      <Information /> */}
+      <ListFooter />
+      {/* <Information /> */}
     </div>
   );
 };

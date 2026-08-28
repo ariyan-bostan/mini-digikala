@@ -1,7 +1,13 @@
 import React, { useContext, useState } from "react";
 import { contextWidth } from "../App";
-import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import { IoIosArrowDown, IoIosArrowUp, IoLogoInstagram } from "react-icons/io";
+import style from "../Styles/Footer/ListFooter.module.css";
 import styleListBrand from "../Styles/Footer/ListBrand.module.css";
+import { SiAparat } from "react-icons/si";
+import { FaLinkedin, FaTwitter } from "react-icons/fa";
+import FormEmail from "./FormEmail";
+import ItemListFooter from "./ItemListFooter";
+import CommunicationRoutes from "./CommunicationRoutes";
 
 const ListFooter = () => {
   const [selectItem, setSelectItem] = useState(-1);
@@ -37,52 +43,66 @@ const ListFooter = () => {
       list: ["1", "2", "3", "4", "5", "6", "8", "9", "10", "11", "12", "13"],
     },
   ];
+
   return (
-    <div className="list mt-4 p-3">
-      {list.map((item, index) => (
-        <div
-          key={index}
-          onClick={() => {
-            if (selectItem === index) setSelectItem(-1);
-            else setSelectItem(index);
-          }}
-          className="listFooter d-flex flex-column border-bottom pt-2 "
-        >
-          <div className="d-flex flex-row justify-content-between ">
-            <p style={{ fontSize: ".8rem" }}>{item.title}</p>
-            {selectItem === index ? (
-              <IoIosArrowUp className="pe-1" fontSize={"1.5rem"} />
-            ) : (
-              <IoIosArrowDown className="pe-1" fontSize={"1.5rem"} />
-            )}
-          </div>
-          {selectItem === index && (
-            <ul
-              className={[
-                "list-group w-100 m-0 p-0",
-                index === list.length - 1 &&
-                  property.innerWidth < 850 &&
-                  styleListBrand.listBrand,
-              ].join(" ")}
-            >
-              {item.list.map((item1, index1) => (
-                <li
-                  style={{ fontSize: ".8rem", color: "gray" }}
-                  key={index1}
+    <div
+      className={[
+        property.innerWidth > 850 && style.containerList,
+        property.innerWidth < 850
+          ? "list  w-100 mt-1"
+          : " d-flex flex-row align-items-center",
+      ].join(" ")}
+    >
+      <div
+        className={[
+          property.innerWidth < 850
+            ? "mt-1 w-100  d-flex flex-column"
+            : "w-75 h-75 d-flex flex-row",
+        ].join(" ")}
+      >
+        {list.map((item, index) => (
+          <>
+            {((property.innerWidth > 850 && index !== list.length - 1) ||
+              property.innerWidth < 850) && (
+              <div className="listFooter box border-bottom  w-100 d-flex flex-column">
+                <div
+                  onClick={() => {
+                    if (selectItem === index) setSelectItem(-1);
+                    else setSelectItem(index);
+                  }}
                   className={[
-                    "list-group-item px-0 border-0",
-                    index === list.length - 1 &&
-                      property.innerWidth < 850 &&
-                      styleListBrand.itemList,
+                    style.boxList,
+                    property.innerWidth < 850
+                      ? "title h-100 px-2 d-flex flex-row justify-content-between align-items-center"
+                      : "title h-100 px-2 d-flex flex-row justify-content-center align-items-center",
                   ].join(" ")}
                 >
-                  {item1}
-                </li>
-              ))}
-            </ul>
-          )}
-        </div>
-      ))}
+                  <p style={{ fontSize: ".9rem" }} className="p-0 m-0">
+                    {item.title}
+                  </p>
+                  {property.innerWidth < 850 && (
+                    <>
+                      {selectItem !== index ? (
+                        <IoIosArrowDown />
+                      ) : (
+                        <IoIosArrowUp />
+                      )}
+                    </>
+                  )}
+                </div>
+                {selectItem === index && property.innerWidth < 850 && (
+                  <ItemListFooter items={item.list} />
+                )}
+
+                {property.innerWidth > 850 && (
+                  <ItemListFooter items={item.list} />
+                )}
+              </div>
+            )}
+          </>
+        ))}
+      </div>
+      {property.innerWidth > 850 && <CommunicationRoutes />}
     </div>
   );
 };
