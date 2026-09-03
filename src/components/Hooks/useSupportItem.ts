@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query"
 import axios from "axios"
-import type { Support } from "../Services/APIClient"
 import APIClient from "../Services/APIClient"
+import type { Support } from "../Services/Intefaces";
 
 
 const apiClient=new APIClient("Footer");
