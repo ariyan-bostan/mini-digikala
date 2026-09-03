@@ -8,6 +8,10 @@ import { contextWidth } from "../App";
 import ListFooter from "./ListFooter";
 import Information from "./Information";
 import LabelFooter from "./LabelFooter";
+import TextAdmin from "./TextAdmin";
+import ListBrand from "./ListBrand";
+
+
 
 // https://www.digikala.com/statics/img/png/Logo.webp
 const Footer = () => {
@@ -20,7 +24,10 @@ const Footer = () => {
       <SupportAndAPK />
       <LabelFooter />
       <ListFooter />
-      {/* <Information /> */}
+      <Information />
+      <TextAdmin />
+      {property.innerWidth>850&& <ListBrand />}
+
     </div>
   );
 };

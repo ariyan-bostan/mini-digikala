@@ -2,15 +2,14 @@ import React, { useContext } from "react";
 import { BiSupport } from "react-icons/bi";
 import { contextWidth } from "../App";
 import IconSupport from "./IconSupport";
+import useSupportItem from "../Hooks/useSupportItem";
 
 const Support = () => {
   const property = useContext(contextWidth)!;
-  const support = {
-    icon: "https://www.digikala.com/brand/full-horizontal.svg",
-    number1: "تلفن پشتیبانی ۶۱۹۳۰۰۰۰ - ۰۲۱",
-    number2: "۰۲۱-۹۱۰۰۰۱۰۰",
-    text: "۷ روز هفته، ۲۴ ساعت پاسخگوی شما هستیم",
-  };
+
+  const {support,error,isLoading}=useSupportItem()
+
+  
   return (
     <div
       style={{ height: property.innerWidth < 850 ? "3rem" : "7rem" }}
@@ -30,7 +29,7 @@ const Support = () => {
         {property.innerWidth < 850 ? (
           <IconSupport />
         ) : (
-          <img className="w-50 object-fit-cover" src={support.icon} alt="" />
+          <img className="w-50 object-fit-cover" src={support?.icon} alt="" />
         )}
         {property.innerWidth < 850 ? (
           <p style={{ color: "gray", fontSize: ".8rem" }} className="m-0 pe-1">
@@ -38,9 +37,9 @@ const Support = () => {
           </p>
         ) : (
           <div className="d-flex flex-row gap-3">
-            <p className="p-0 m-0" style={{ fontSize: ".7rem" }}>{support.number1}</p>
-            <p className="p-0 m-0" style={{ fontSize: ".7rem" }}>{support.number2}</p>
-            <p className="p-0 m-0" style={{ fontSize: ".7rem" }}>{support.text}</p>
+            <p className="p-0 m-0" style={{ fontSize: ".7rem" }}>{support?.number1}</p>
+            <p className="p-0 m-0" style={{ fontSize: ".7rem" }}>{support?.number2}</p>
+            <p className="p-0 m-0" style={{ fontSize: ".7rem" }}>{support?.text}</p>
           </div>
         )}
       </div>

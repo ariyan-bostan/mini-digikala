@@ -2,6 +2,16 @@
 .containerList{
     height: 20rem !important;
 }
+/* container list footer-brand */
+.containerListFooterBrand{
+    display: grid;
+    grid-template: 5rem/repeat(3,34%);
+    gap: 1px;
+}
+.boxBrand{
+    width:100%;
+    height: 5rem;
+}
 /* box list footer */
 .boxList{
     height: 3rem !important;

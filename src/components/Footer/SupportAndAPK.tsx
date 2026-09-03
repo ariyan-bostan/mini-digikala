@@ -1,11 +1,8 @@
-import React, { useContext } from "react";
-import { IoIosArrowUp } from "react-icons/io";
-import { BiSupport } from "react-icons/bi";
-import style from "../Styles/Layout.module.css";
+import { useContext } from "react";
+import { contextWidth } from "../App";
+import APK from "./APK";
 import ButtonTop from "./ButtonTop";
 import Support from "./Support";
-import APK from "./APK";
-import { contextWidth } from "../App";
 
 const SupportAndAPK = () => {
   const property = useContext(contextWidth)!;

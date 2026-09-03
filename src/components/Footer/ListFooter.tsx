@@ -1,48 +1,16 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { contextWidth } from "../App";
-import { IoIosArrowDown, IoIosArrowUp, IoLogoInstagram } from "react-icons/io";
 import style from "../Styles/Footer/ListFooter.module.css";
-import styleListBrand from "../Styles/Footer/ListBrand.module.css";
-import { SiAparat } from "react-icons/si";
-import { FaLinkedin, FaTwitter } from "react-icons/fa";
-import FormEmail from "./FormEmail";
-import ItemListFooter from "./ItemListFooter";
 import CommunicationRoutes from "./CommunicationRoutes";
+import ItemListFooter from "./ItemListFooter";
+import useListFooter from "../Hooks/useListFooter";
 
 const ListFooter = () => {
+  const { list, error, isLoading } = useListFooter();
+
   const [selectItem, setSelectItem] = useState(-1);
   const property = useContext(contextWidth)!;
-  const list = [
-    {
-      title: "با دیجی کالا",
-      list: [
-        "اتاق خبر دیجی‌کالا",
-        "فروش در دیجی‌کالا",
-        "فرصت‌های شغلی",
-        "گزارش تخلف در دیجی‌کالا",
-        "تماس با دیجی‌کالا",
-        "درباره دیجی‌کالا",
-      ],
-    },
-    {
-      title: "خدمات مشتریان",
-      list: [
-        "پاسخ به پرسش‌های متداول",
-        "روی‌های بازگرداندن کالا",
-        "شرایط استفاده",
-        "حریم خصوصی",
-        "گزارش باگ",
-      ],
-    },
-    {
-      title: "راهنمای خرید از دیجی‌کالا",
-      list: ["نحوه ثبت سفارش", "رویه ارسال سفارش", "شیوه پرداخت"],
-    },
-    {
-      title: "شرکای تجاری",
-      list: ["1", "2", "3", "4", "5", "6", "8", "9", "10", "11", "12", "13"],
-    },
-  ];
 
   return (
     <div
@@ -60,7 +28,7 @@ const ListFooter = () => {
             : "w-75 h-75 d-flex flex-row",
         ].join(" ")}
       >
-        {list.map((item, index) => (
+        {list&&list.map((item, index) => (
           <>
             {((property.innerWidth > 850 && index !== list.length - 1) ||
               property.innerWidth < 850) && (
@@ -91,11 +59,11 @@ const ListFooter = () => {
                   )}
                 </div>
                 {selectItem === index && property.innerWidth < 850 && (
-                  <ItemListFooter items={item.list} />
+                  <ItemListFooter index={index} items={item.list} />
                 )}
 
                 {property.innerWidth > 850 && (
-                  <ItemListFooter items={item.list} />
+                  <ItemListFooter index={index} items={item.list} />
                 )}
               </div>
             )}

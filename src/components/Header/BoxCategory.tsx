@@ -1,4 +1,3 @@
-import React from "react";
 import { BsList } from "react-icons/bs";
 
 const BoxCategory = () => {

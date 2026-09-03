@@ -9,7 +9,6 @@ interface Props {
 const BoxOrderedProducts = ({ title }: Props) => {
   const property = useContext(contextWidth)!;
   const { data: list, error, isLoading } = useBestSeller(title);
-  console.log(list);
 
   return (
     <div

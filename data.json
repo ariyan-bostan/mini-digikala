@@ -1325,5 +1325,93 @@
       ]
     }
   },
-  "Footer": {}
+  "Footer": {
+    "Information": {
+      "labelIcon": [
+        "https://www.digikala.com/statics/img/png/sapra.png",
+        "https://www.digikala.com/statics/img/png/rezi.png",
+        "https://www.digikala.com/statics/img/png/kasbokar.png"
+      ],
+      "paragraph": "دیجی کالا سال‌ها است که به انتخاب اول بسیاری از خریداران اینترنتی\nتبدیل شده است. دیجی کالا به عنوان بزرگ‌ترین و معتبرترین فروشگاه آنلاین\nایران، شناخته‌شده‌ترین فروشگاه نیز محسوب می‌شود\n..."
+    },
+    "list": [
+      {
+        "title": "با دیجی کالا",
+        "list": [
+          "اتاق خبر دیجی‌کالا",
+          "فروش در دیجی‌کالا",
+          "فرصت‌های شغلی",
+          "گزارش تخلف در دیجی‌کالا",
+          "تماس با دیجی‌کالا",
+          "درباره دیجی‌کالا"
+        ]
+      },
+      {
+        "title": "خدمات مشتریان",
+        "list": [
+          "پاسخ به پرسش‌های متداول",
+          "روی‌های بازگرداندن کالا",
+          "شرایط استفاده",
+          "حریم خصوصی",
+          "گزارش باگ"
+        ]
+      },
+      {
+        "title": "راهنمای خرید از دیجی‌کالا",
+        "list": ["نحوه ثبت سفارش", "رویه ارسال سفارش", "شیوه پرداخت"]
+      },
+      {
+        "title": "شرکای تجاری",
+        "list": [
+          "https://www.digikala.com/statics/img/svg/footer/digipay.svg",
+          "https://dkstatics-public.digikala.com/digikala-static/4801e91f7b612493262538e3fad2d1d268f7e9f0_1758969413.svg",
+          "https://www.digikala.com/statics/img/svg/footer/digistyle.svg",
+          "https://www.digikala.com/statics/img/svg/footer/digiplus.svg",
+          "https://www.digikala.com/statics/img/svg/footer/digiclub.svg",
+          "https://www.digikala.com/statics/img/svg/footer/jet.svg",
+          "https://dkstatics-public.digikala.com/digikala-static/6d8b4e67f90b80c581949f1e680aeaa60fa49d0e_1770621595.svg",
+          "https://www.digikala.com/statics/img/svg/footer/digiMehr.svg",
+          "https://www.digikala.com/statics/img/svg/footer/diginext.svg",
+          "https://www.digikala.com/statics/img/svg/footer/digiexpress.svg",
+          "https://www.digikala.com/statics/img/svg/footer/digikala-service.svg",
+          "https://dkstatics-public.digikala.com/digikala-static/e7661075abe11edde27e6d550c3507756122e1cf_1758969434.svg",
+          "https://www.digikala.com/statics/img/svg/footer/digital-gold.svg",
+          "https://www.digikala.com/statics/img/svg/footer/digikala-business.svg",
+          "https://dkstatics-public.digikala.com/digikala-static/9814bb50f330280b887fe545a6074cc72f33388e_1758978427.svg"
+        ]
+      }
+    ],
+    "communicationRoutes": {
+      "title": "همراه ما باشید!",
+      "linkIcon": ["linkedin", "instagram", "twitter", "aparat"]
+    },
+    "LabelFooter": [
+      {
+        "title": "امکان تحویل اکسپرس",
+        "imgLable": "https://www.digikala.com/statics/img/svg/footer/express-delivery.svg"
+      },
+      {
+        "title": "امکان پرداخت در محل",
+        "imgLable": "https://www.digikala.com/statics/img/svg/footer/cash-on-delivery.svg"
+      },
+      {
+        "title": "۷روز هفته,۲۴ ساعت",
+        "imgLable": "https://www.digikala.com/statics/img/svg/footer/support.svg"
+      },
+      {
+        "title": "هفت روز ضمانت بازگشت",
+        "imgLable": "https://www.digikala.com/statics/img/svg/footer/days-return.svg"
+      },
+      {
+        "title": "ضمانت اصل بودن کالا",
+        "imgLable": "https://www.digikala.com/statics/img/svg/footer/original-products.svg"
+      }
+    ],
+    "Support": {
+      "icon": "https://www.digikala.com/brand/full-horizontal.svg",
+      "number1": "تلفن پشتیبانی ۶۱۹۳۰۰۰۰ - ۰۲۱",
+      "number2": "۰۲۱-۹۱۰۰۰۱۰۰",
+      "text": "۷ روز هفته، ۲۴ ساعت پاسخگوی شما هستیم"
+    }
+  }
 }

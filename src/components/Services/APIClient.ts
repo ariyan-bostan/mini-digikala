@@ -174,6 +174,58 @@ interface ResponseTrendingProducts {
 }
 //
 
+export interface ListFooter{
+    title:string,
+    list:string[]
+}
+interface ResposeListFooter{
+    list:ListFooter[];
+}
+
+// 
+export interface CommunicationRoutes{
+    title:string,
+    linkIcon:string[]
+}
+
+interface ResponseCommunicationRoutes{
+    communicationRoutes:CommunicationRoutes
+}
+
+// 
+export interface LabelFooter{
+    title:string,
+    imgLable:string
+}
+
+interface ResponseLabelFooter{
+    LabelFooter:LabelFooter[]
+}
+// 
+export interface Support{
+    icon:string,
+    number1:string,
+    number2:string,
+    text:string
+}
+
+interface ResponseSupport{
+    Support:Support
+}
+
+// 
+
+export interface ItemsInformation{
+    labelIcon:string[],
+    paragraph:string
+}
+interface ResponseInformation{
+    Information:ItemsInformation
+}
+
+
+// 
+
 const api = axios.create({
   baseURL: "http://localhost:3000",
 });
@@ -257,5 +309,27 @@ class APIClient {
       .get<ResponseTrendingProducts>(this.endpoint)
       .then((res) => res.data.trendingProducts);
   };
+
+  getListBrandFooter=()=>{
+    return api.get<ResposeListFooter>(this.endpoint)
+                .then(res=>res.data.list)
+  }
+
+  getCommunicationRoutes=()=>{
+    return api.get<ResponseCommunicationRoutes>(this.endpoint)
+                .then(res=>res.data.communicationRoutes)
+  }
+  getLabelFooter=()=>{
+    return api.get<ResponseLabelFooter>(this.endpoint)
+                .then(res=>res.data.LabelFooter);
+  }
+  getSupportItem=()=>{
+    return api.get<ResponseSupport>(this.endpoint)
+                .then(res=>res.data.Support)
+  }
+  getInformation=()=>{
+    return api.get<ResponseInformation>(this.endpoint)
+                .then(res=>res.data.Information)
+  }
 }
 export default APIClient;

@@ -1,7 +1,7 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { IoIosArrowUp } from "react-icons/io";
-import style from "../Styles/Layout.module.css";
 import { contextWidth } from "../App";
+import style from "../Styles/Layout.module.css";
 
 
 const ButtonTop = () => {
