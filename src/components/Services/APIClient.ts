@@ -5,6 +5,7 @@ import type {
   ResponseBanner,
   ResponseBestSeller,
   ResponseCategori,
+  ResponseCategoryIncredible,
   ResponseCommunicationRoutes,
   ResponseInformation,
   ResponseLabelFooter,
@@ -20,6 +21,8 @@ import type {
   ResposeListFooter,
   ResProductList,
 } from "./Intefaces";
+
+
 
 const api = axios.create({
   baseURL: "http://localhost:3000",
@@ -131,5 +134,9 @@ class APIClient {
       .get<ResponseInformation>(this.endpoint)
       .then((res) => res.data.Information);
   };
+  getListCategories=()=>{
+    return api.get<ResponseCategoryIncredible>(this.endpoint)
+                .then(res=>res.data.incredible.listCategori)
+  }
 }
 export default APIClient;

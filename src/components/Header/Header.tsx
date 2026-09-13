@@ -1,7 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import styleLayout from "../Styles/Layout.module.css";
 import style from "../Styles/Header/header.module.css";
-import { BsList } from "react-icons/bs";
 import NavList1 from "./NavList1";
 import Search from "./Search";
 import User from "./User";

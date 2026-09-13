@@ -221,3 +221,17 @@ export interface ResponseInformation{
     Information:ItemsInformation
 }
 
+
+// list-categries-incredible
+export interface TypeItemListCategori {
+  title: string;
+  image: string;
+}
+
+export interface listCategori {
+  listCategori: TypeItemListCategori[];
+}
+export interface ResponseCategoryIncredible {
+  incredible: listCategori;
+}
+

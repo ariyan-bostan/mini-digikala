@@ -1,9 +1,11 @@
 import React, { useContext } from "react";
 import { contextWidth } from "../../../App";
+import useBrand from "../../../Hooks/useBrand";
 
 const FormFilterIncredible = () => {
 
     const property=useContext(contextWidth)!;
+    useBrand();
   return (
     <div
       style={
