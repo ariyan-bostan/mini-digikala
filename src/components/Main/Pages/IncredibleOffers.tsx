@@ -1,27 +1,36 @@
-import React, { useContext } from "react";
+import { useContext, useReducer } from "react";
 // import style from "../../Styles/Main/IncredibleOffer.module.css"
-import BackgroundIncredible from "./Incredible/BackgroundIncredible";
-import CategoryIncredible from "./Incredible/CategoryIncredible";
-import { FaArrowLeft } from "react-icons/fa";
 import { contextWidth } from "../../App";
+import useRunningOutIncredibleProducts from "../../Hooks/useRunningOutIncredibleProducts";
+import BackgroundIncredible from "./Incredible/BackgroundIncredible";
 import BannerIncredible1 from "./Incredible/BannerIncredible";
 import BannerIncredible2 from "./Incredible/BannerIncredible2";
-import styleHeader from "../../Styles/Header/header.module.css";
-import useRunningOutIncredibleProducts from "../../Hooks/useRunningOutIncredibleProducts";
-import styleAmz from "../../Styles/Main/AmazingBox.module.css";
-import Product from "../IncredibleComponent/Product";
-import FormFilterIncredible from "./Incredible/FormFilterIncredible";
 import BoxProductIncredible from "./Incredible/BoxProductIncredible";
+import CategoryIncredible from "./Incredible/CategoryIncredible";
+import FormFilterIncredible from "./Incredible/FormFilterIncredible";
 
+const initialFilter = {
+  category: "همه دسته‌بندی‌ها",
+  brand: "برند",
+};
+const reducerSelectFilter = (
+  state = initialFilter,
+  action: { type: string; value: string },
+) => {
+  if (action.type === "category") return { ...state, category: action.value };
+  else if (action.type === "brand") return { ...state, brand: action.value };
+  return state;
+};
 const IncredibleOffers = () => {
   const property = useContext(contextWidth)!;
-  const { data: list, error, isLoading } = useRunningOutIncredibleProducts();
-  console.log(list);
 
+  const [filter, dispatch] = useReducer(reducerSelectFilter, initialFilter);
+    console.log(filter);
+    
   return (
     <div className="w-100">
       <BackgroundIncredible />
-      <CategoryIncredible />
+      <CategoryIncredible selectCategory={dispatch} />
       <div
         style={{
           width: "100%",
@@ -42,9 +51,9 @@ const IncredibleOffers = () => {
             : "mt-4 d-flex flex-row gap-1",
         ].join(" ")}
       >
-        <FormFilterIncredible />
+        <FormFilterIncredible selectCategory={dispatch} />
 
-        <BoxProductIncredible />
+        <BoxProductIncredible filter={filter}/>
       </div>
     </div>
   );

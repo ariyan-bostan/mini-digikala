@@ -3,10 +3,17 @@ import Product from "../../IncredibleComponent/Product";
 import { contextWidth } from "../../../App";
 import useRunningOutIncredibleProducts from "../../../Hooks/useRunningOutIncredibleProducts";
 
-const BoxProductIncredible = () => {
+interface Props {
+  filter: {
+    category: string;
+    brand: string;
+  };
+}
+
+const BoxProductIncredible = ({filter}:Props) => {
   const property = useContext(contextWidth)!;
   const { data: list, error, isLoading } = useRunningOutIncredibleProducts();
-  console.log(list);
+    if(filter.brand==="برند"&&filter.category!=="")
 
   return (
     <div

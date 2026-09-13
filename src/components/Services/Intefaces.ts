@@ -235,3 +235,12 @@ export interface ResponseCategoryIncredible {
   incredible: listCategori;
 }
 
+interface Brands{
+    brands:string[]
+}
+interface RunningOutIncredibleProducts {
+    running_out_incredible_products:Brands
+}
+export interface ResponseBrands {
+    incredible:RunningOutIncredibleProducts
+}

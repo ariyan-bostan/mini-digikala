@@ -2,10 +2,18 @@ import React, { useContext } from "react";
 import { contextWidth } from "../../../App";
 import useBrand from "../../../Hooks/useBrand";
 
-const FormFilterIncredible = () => {
+interface TypeItemCategorySelect {
+  type: string;
+  value: string;
+}
+interface Props {
+  selectCategory: (item: TypeItemCategorySelect) => void;
+}
+
+const FormFilterIncredible = ({selectCategory}:Props) => {
 
     const property=useContext(contextWidth)!;
-    useBrand();
+    const {listBrands,error,isLoading}=useBrand();
   return (
     <div
       style={
@@ -27,10 +35,10 @@ const FormFilterIncredible = () => {
             style={{ width: "auto", background: "none", fontWeight: "900" }}
             className="form-select p-0 pe-2 px-2 py-1"
           >
-            <option selected>برند</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option onClick={()=>selectCategory({type:"brand",value:"برند"})} selected>برند</option>
+            {listBrands&&listBrands.map((item,index)=>(
+                <option onClick={()=>selectCategory({type:"brand",value:item})} key={index} value={item}>{item}</option>
+            ))}
           </select>
         </div>
       </form>

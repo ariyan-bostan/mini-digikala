@@ -1,21 +1,20 @@
-import { useQuery } from "@tanstack/react-query"
-import axios from "axios"
-interface RunningOutIncredibleProducts {
-  brands: string[];
-}
-interface ResponseBrands {
-  running_out_incredible_products: RunningOutIncredibleProducts;
-}
+import { useQuery } from "@tanstack/react-query";
+import axios from "axios";
+import APIClient from "../Services/APIClient";
 
-const useBrand=()=>{
-    const {data:listBrands,error,isLoading}=useQuery<string[],Error>({
-        queryKey:["brand"],
-        queryFn:()=>{
-            return axios.get<ResponseBrands>("http://localhost:3000/Main")
-                            .then(res=>res.data.running_out_incredible_products.brands)
-        }
-    })
-    console.log(listBrands);
-    
-}   
-export default useBrand
+const apiClient = new APIClient("Main");
+
+const useBrand = () => {
+  const {
+    data: listBrands,
+    error,
+    isLoading,
+  } = useQuery<string[], Error>({
+    queryKey: ["brand"],
+    queryFn: () => {
+      return apiClient.getListBrands();
+    },
+  });
+  return {listBrands,error,isLoading}
+};
+export default useBrand;
