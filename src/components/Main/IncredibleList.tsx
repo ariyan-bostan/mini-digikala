@@ -6,6 +6,7 @@ import Poster from "./IncredibleComponent/Poster";
 import Timer from "./IncredibleComponent/Timer";
 import Product from "./IncredibleComponent/Product";
 import { contextWidth } from "../App";
+import { Link, Links } from "react-router";
 
 interface Props{
     numberList:number
@@ -15,6 +16,7 @@ const IncredibleList = ({numberList}:Props) => {
   const property = useContext(contextWidth)!;
 
   const { data: list, error, isLoading } = useRunningOutIncredibleProducts();
+  
   return (
     <div
       style={{
@@ -64,7 +66,7 @@ const IncredibleList = ({numberList}:Props) => {
               : "w-auto"
           }
         >
-          <p>همه</p>
+        <Link className="linkTo" to={"/incredible-Offers"}>همه</Link>
         </div>
       </div>
       <div

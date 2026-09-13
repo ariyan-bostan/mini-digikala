@@ -88,3 +88,8 @@ body {
     "Helvetica Neue",
     sans-serif;
 }
+
+.linkTo,.linkTo:visited{
+    text-decoration: none;
+    color: black;
+}

@@ -1,13 +1,13 @@
 import React from "react";
 import styleAmz from "../../Styles/Main/AmazingBox.module.css";
-import type { ProductRunningOut } from "../../Services/APIClient";
+import type { ProductRunningOut } from "../../Services/Intefaces";
 interface Props {
   index: number;
   item: ProductRunningOut;
 }
 const Product = ({ item, index }: Props) => {
   return (
-    <div key={index} className={[styleAmz.boxProduct].join(" ")}>
+    <div key={index} className={[styleAmz.boxProduct,"border pb-2"].join(" ")}>
       <div className={[styleAmz.posterPro].join(" ")}>
         <img
           className="w-100 h-100 object-fit-cover"
@@ -41,7 +41,7 @@ const Product = ({ item, index }: Props) => {
           style={{ borderRadius: "5px" }}
           className="w-25 h-50 bg-danger ms-3 d-flex flex-row justify-content-center"
         >
-          <p style={{ fontSize: ".9rem", color: "white" }} className="">
+          <p style={{ fontSize: ".9rem", color: "white" }} className="m-0">
             ⁒10
           </p>
         </div>
@@ -56,7 +56,7 @@ const Product = ({ item, index }: Props) => {
         ].join(" ")}
       >
         <p className="finalPriceIcredibleList m-0 p-0">
-          تومان{item.price.rrp_price - (10 / 100) * item.price.rrp_price}
+          {item.price.rrp_price - (10 / 100) * item.price.rrp_price+" "}تومان
         </p>
       </div>
     </div>

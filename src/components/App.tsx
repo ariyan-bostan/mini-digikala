@@ -3,8 +3,6 @@ import style from "./Styles/Layout.module.css";
 import Header from "./Header/Header";
 import useNavList1 from "./Hooks/useNavList1";
 import { BrowserRouter, Route, Routes } from "react-router";
-import type { ItemNav1 } from "./Services/APIClient";
-import Location from "./Header/Location";
 import Home from "./Main/Home";
 import IncredibleOffers from "./Main/Pages/IncredibleOffers";
 import Supermarket from "./Main/Pages/Supermarket";
@@ -14,6 +12,7 @@ import NotPage from "./Main/Pages/NotPage";
 import Notification from "./Main/Pages/Notification";
 import useWidthWindow from "./Hooks/useWidthWindow";
 import Footer from "./Footer/Footer";
+import type { ItemNav1 } from "./Services/Intefaces";
 
 export interface ValueHeader {
   list: ItemNav1[] | undefined;

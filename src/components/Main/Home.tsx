@@ -11,9 +11,8 @@ import PopularBrand from "./PopularBrand";
 import ProductList from "./ProductList";
 import "swiper/css";
 import ContainerProductList from "./ContainerProductList";
-import type { bannerSwiper } from "../Services/APIClient";
-import Bestseller from "./OrderProduct";
 import BoxOrderProduct from "./BoxOrderedProducts";
+import type { bannerSwiper } from "../Services/Intefaces";
 interface TypeContextBannerSwiper {
   list: bannerSwiper[] | undefined;
   error: Error | null;
@@ -28,7 +27,7 @@ const Home = () => {
   const { data: list, error, isLoading } = useBannerSwiper();
   const property = useContext(contextWidth)!;
   return (
-    <div className={["w-100 border border-danger"].join(" ")}>
+    <div className={["w-100"].join(" ")}>
       <ContextBannerSwiper.Provider value={{ list, error, isLoading }}>
         <BrandSwiper />
       </ContextBannerSwiper.Provider>
