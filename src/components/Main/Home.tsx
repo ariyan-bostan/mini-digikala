@@ -13,6 +13,8 @@ import "swiper/css";
 import ContainerProductList from "./ContainerProductList";
 import BoxOrderProduct from "./BoxOrderedProducts";
 import type { bannerSwiper } from "../Services/Intefaces";
+import { Link } from "react-router";
+import IncredibleUrgent from "./IncredibleUrgent";
 interface TypeContextBannerSwiper {
   list: bannerSwiper[] | undefined;
   error: Error | null;
@@ -36,20 +38,12 @@ const Home = () => {
           property.innerWidth > 850
             ? "d-flex flex-column align-items-center"
             : "",
-        ].join(" ")}
-      >
+        ].join(" ")}>
         <div style={property.innerWidth > 850 ? { width: "85%" } : {}}>
           <Titles />
           <IncredibleList numberList={1} />
           <Banner number={1} />
-          <div
-            style={{
-              width: "100%",
-              height: "25rem",
-              borderRadius: property.innerWidth > 850 ? "20px" : "",
-            }}
-            className="bg-info"
-          ></div>
+          <IncredibleUrgent />
           <Banner number={2} />
           <IncredibleList numberList={2} />
           <CategoryHome />
