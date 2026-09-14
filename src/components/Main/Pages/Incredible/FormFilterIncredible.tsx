@@ -29,7 +29,9 @@ const FormFilterIncredible = ({selectCategory}:Props) => {
       ].join(" ")}
     >
       <p className="listFooter p-0 m-0">فیلتر:</p>
-      <form className="form border-e border-primary" action="">
+      <form className="form border-e border-primary" onSubmit={(e)=>{
+        e.defaultPrevented
+      }}>
         <div>
           <select
             style={{ width: "auto", background: "none", fontWeight: "900" }}

@@ -15,6 +15,6 @@ const useBrand = () => {
       return apiClient.getListBrands();
     },
   });
-  return {listBrands,error,isLoading}
+  return { listBrands, error, isLoading };
 };
 export default useBrand;

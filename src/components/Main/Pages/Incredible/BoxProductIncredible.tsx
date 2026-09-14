@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import Product from "../../IncredibleComponent/Product";
 import { contextWidth } from "../../../App";
 import useRunningOutIncredibleProducts from "../../../Hooks/useRunningOutIncredibleProducts";
+import type { ProductRunningOut } from "../../../Services/Intefaces";
 
 interface Props {
   filter: {
@@ -10,10 +11,39 @@ interface Props {
   };
 }
 
-const BoxProductIncredible = ({filter}:Props) => {
+const BoxProductIncredible = ({ filter }: Props) => {
   const property = useContext(contextWidth)!;
   const { data: list, error, isLoading } = useRunningOutIncredibleProducts();
-    if(filter.brand==="برند"&&filter.category!=="")
+  let mainListProduct: ProductRunningOut[]|undefined = list?.products || [];
+
+  if (filter.category === "همه دسته‌بندی‌ها" && filter.brand !== "برند") {
+    mainListProduct= list?.products.filter((item) => {
+      if (item.data_layer.brand.includes(filter.brand)) {
+        return item;
+      }
+    });
+  }
+  else if (filter.category !== "همه دسته‌بندی‌ها" && filter.brand === "برند") {
+    mainListProduct= list?.products.filter((item) => {
+      console.log(item.data_layer.category[0],filter.category);
+      
+      if ( item.data_layer.category[0].includes(filter.category)) {
+        return item;
+      }
+    });
+  }
+  else if (filter.category !== "همه دسته‌بندی‌ها" && filter.brand !== "برند") {
+    mainListProduct= list?.products.filter((item) => {
+      console.log(item.data_layer.category[0],filter.category);
+      
+      if (
+        item.data_layer.category[0].includes(filter.category) &&
+        item.data_layer.brand.includes(filter.brand)
+      ) {
+        return item;
+      }
+    });
+  }
 
   return (
     <div
@@ -24,13 +54,11 @@ const BoxProductIncredible = ({filter}:Props) => {
       className={[
         "border p-3",
         property.innerWidth < 850 ? " mx-2 d-flex flex-column gap-2" : "ms-2",
-      ].join(" ")}
-    >
+      ].join(" ")}>
       <div
         style={{ borderRadius: "2rem", overflow: "hidden", height: "2rem" }}
-        className=" d-flex flex-row align-items-center pe-4"
-      >
-        {list && list.products.length + " "}کالا
+        className=" d-flex flex-row align-items-center pe-4">
+        {mainListProduct && mainListProduct.length + " "}کالا
       </div>
       <div
         style={{ flexWrap: "wrap" }}
@@ -38,9 +66,8 @@ const BoxProductIncredible = ({filter}:Props) => {
           property.innerWidth < 850
             ? "d-flex flex-column gap-1"
             : "d-flex flex-row gap-2 justify-content-center",
-        ].join(" ")}
-      >
-        {list?.products.map((item, index) => (
+        ].join(" ")}>
+        {mainListProduct?.map((item, index) => (
           <>
             {property.innerWidth < 850 ? (
               <div
@@ -53,18 +80,15 @@ const BoxProductIncredible = ({filter}:Props) => {
                   property.innerWidth < 850
                     ? "d-flex border flex-row gap-1  w-100"
                     : "bg-info",
-                ].join(" ")}
-              >
+                ].join(" ")}>
                 <div
                   style={{ width: "30%", borderRadius: "5px" }}
-                  className="h-100"
-                >
+                  className="h-100">
                   <img className="w-100 h-100" src={item.imgWEBP} alt="" />
                 </div>
                 <div
                   style={{ width: "70%", borderRadius: "5px" }}
-                  className="h-100 d-flex flex-column"
-                >
+                  className="h-100 d-flex flex-column">
                   <div className="h-50  p-2">
                     <p style={{ fontSize: ".8rem" }} className="p-0 m-0">
                       {item.title}
@@ -74,8 +98,7 @@ const BoxProductIncredible = ({filter}:Props) => {
                     <div className="w-50  pe-2">
                       <div
                         style={{ width: "2rem", borderRadius: "10px" }}
-                        className="bg-danger"
-                      >
+                        className="bg-danger">
                         10%
                       </div>
                     </div>
