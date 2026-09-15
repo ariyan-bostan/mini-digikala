@@ -14,28 +14,33 @@ interface Props {
 const BoxProductIncredible = ({ filter }: Props) => {
   const property = useContext(contextWidth)!;
   const { data: list, error, isLoading } = useRunningOutIncredibleProducts();
-  let mainListProduct: ProductRunningOut[]|undefined = list?.products || [];
+  let mainListProduct: ProductRunningOut[] | undefined = list?.products || [];
+  console.log("dd", list);
 
   if (filter.category === "همه دسته‌بندی‌ها" && filter.brand !== "برند") {
-    mainListProduct= list?.products.filter((item) => {
+    mainListProduct = list?.products.filter((item) => {
       if (item.data_layer.brand.includes(filter.brand)) {
         return item;
       }
     });
-  }
-  else if (filter.category !== "همه دسته‌بندی‌ها" && filter.brand === "برند") {
-    mainListProduct= list?.products.filter((item) => {
-      console.log(item.data_layer.category[0],filter.category);
-      
-      if ( item.data_layer.category[0].includes(filter.category)) {
+  } else if (
+    filter.category !== "همه دسته‌بندی‌ها" &&
+    filter.brand === "برند"
+  ) {
+    mainListProduct = list?.products.filter((item) => {
+      console.log(item.data_layer.category[0], filter.category);
+
+      if (item.data_layer.category[0].includes(filter.category)) {
         return item;
       }
     });
-  }
-  else if (filter.category !== "همه دسته‌بندی‌ها" && filter.brand !== "برند") {
-    mainListProduct= list?.products.filter((item) => {
-      console.log(item.data_layer.category[0],filter.category);
-      
+  } else if (
+    filter.category !== "همه دسته‌بندی‌ها" &&
+    filter.brand !== "برند"
+  ) {
+    mainListProduct = list?.products.filter((item) => {
+      console.log(item.data_layer.category[0], filter.category);
+
       if (
         item.data_layer.category[0].includes(filter.category) &&
         item.data_layer.brand.includes(filter.brand)
