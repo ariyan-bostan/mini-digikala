@@ -52,10 +52,10 @@ const Home = () => {
           <Banner2 number={4} />
 
           <ContainerProductList>
-            <ProductList title="مانیتور" />
-            <ProductList title="گوشی موبایل" />
-            <ProductList title="کیس" />
-            <ProductList title="کیبرد" />
+            <ProductList title="ویتامین‌ها و مواد معدنی" />
+            {/* <ProductList title="گوشی موبایل" /> */}
+            {/* <ProductList title="کیس" /> */}
+            {/* <ProductList title="کیبرد" /> */}
             <BoxOrderProduct title="پرفروش ترینپرفروش‌ترین کالاها" />
             <BoxOrderProduct title="داغ‌ترین چند ساعت گذشته" />
           </ContainerProductList>

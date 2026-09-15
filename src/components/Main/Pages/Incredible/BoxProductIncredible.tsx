@@ -10,7 +10,7 @@ interface Props {
     brand: string;
   };
 }
-
+// "#0fabc6"
 const BoxProductIncredible = ({ filter }: Props) => {
   const property = useContext(contextWidth)!;
   const { data: list, error, isLoading } = useRunningOutIncredibleProducts();

@@ -676,654 +676,151 @@
     ],
     "products": [
       {
-        "title": "مانیتور",
+        "title": "ویتامین‌ها و مواد معدنی",
         "product": [
           {
-            "title": "مانیتور خمیده گیمینگ 34 اینچ ایسوس مدل TUF Gaming VG34VQ3B",
-            "layet": {
-              "brand": "ایسوس",
-              "category": "نمایشگر",
+            "title": "قرص ویتامین D3-1000 واحدی  بسته 60 عددی",
+            "layer": {
+              "brand": "یوروویتال",
+              "category": "مکمل غذایی",
               "dimension9": 4.6
             },
             "images": {
-              "mainImg": "https://dkstatics-public.digikala.com/digikala-products/4442e82ed81c20870701a851482713be5af9e682_1755771632.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+              "mainImg": "https://dkstatics-public.digikala.com/digikala-products/c64720f4446aa94b873dab4ae35091bc3f0fcc22_1637680139.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
               "listImg": [
-                "https://dkstatics-public.digikala.com/digikala-products/3d50328563eb2ce9d6b6e224be7a9d94ce07449b_1730874880.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
-                "https://dkstatics-public.digikala.com/digikala-products/080b9e4eca079512258b2f316fc1d88b690165b9_1755713456.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
-                "https://dkstatics-public.digikala.com/digikala-products/474880938f376dc60740a35bd788b142a551f21f_1730874880.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
-                "https://dkstatics-public.digikala.com/digikala-products/08670e0d7a98e280756ea90c9cf7cd433a16a03c_1730874880.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90"
+                "https://dkstatics-public.digikala.com/digikala-products/3cdbed1e582fdd8bddf8f5ef599d344b40beeb47_1637680134.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+                "https://dkstatics-public.digikala.com/digikala-products/fb7d36b209790656b1a61a8dea43676351369629_1719643419.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+                "https://dkstatics-public.digikala.com/digikala-products/3fe6eb802a4ad2497339ee9897f94796b682653f_1719643420.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+                "https://dkstatics-public.digikala.com/digikala-products/36826f39f000a7820a7d4fa06c465f2bb37de955_1719643421.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90"
               ]
             },
             "theme": {
-              "title": "مشکی",
-              "code": "#000000"
+              "title": "قرمز",
+              "code": "#E6123D"
             },
             "price": {
-              "selling_price": 718560000,
-              "rrp_price": 744959000,
+              "selling_price": "1,490,000",
+              "rrp_price": "2,420,000",
               "percent": 4
             },
-            "attributes": [
-              {
-                "title": "نوع پنل",
-                "value": "VA"
-              },
-              {
-                "title": "نور پس‌زمینه",
-                "value": "LED"
-              },
-              {
-                "title": "نوع روکش صفحه‌نمایش",
-                "value": "مات"
-              },
-              {
-                "title": "نرخ بروزرسانی تصویر",
-                "value": "180"
-              },
-              {
-                "title": "رزولوشن صفحه نمایش",
-                "values": "1440 × 3440 پیکسل"
-              },
-
-              {
-                "title": "تعداد پورت USB",
-                "values": "چهار عدد"
-              }
-            ]
+            "attributes": []
           },
           {
-            "title": "مانیتور خمیده گیمینگ 34 اینچ شیائومی مدل G34WQi",
-            "layet": {
-              "brand": "شیائومی",
-              "category": "نمایشگر ",
+            "title": "کپسول روغن ماهی 1000 امگا 3 کارن بسته 50 عددی",
+            "layer": {
+              "brand": "کارن",
+              "category": "مکمل غذایی",
               "dimension9": 4.6
             },
             "images": {
-              "mainImg": "https://dkstatics-public.digikala.com/digikala-products/a0b4f9d08935ee3b564968fd68c8c3239290265c_1755788923.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+              "mainImg": "https://dkstatics-public.digikala.com/digikala-products/77c6fef632053dfb55688d83f45c5c30fcff5ec0_1716454946.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
               "listImg": [
-                "https://dkstatics-public.digikala.com/digikala-products/460fde33e5188782d034e93b96d564463152f688_1717582467.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
-                "https://dkstatics-public.digikala.com/digikala-products/826cfed2976e454072cbfb0aba86cc5fe3fa70fb_1755712917.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
-                "https://dkstatics-public.digikala.com/digikala-products/8beb409d3bd7db72a03bd66469f01e0cc0d399b5_1748011884.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
-                "https://dkstatics-public.digikala.com/digikala-products/6962447af8ef05f3422cf64a80f5b8b022c4b366_1717582468.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90"
+                "https://dkstatics-public.digikala.com/digikala-products/12fb0e1fa8d4bbd681d1ae8dda41cfab8e1218bb_1716454945.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+                "https://dkstatics-public.digikala.com/digikala-products/eb82ca79a2fc9fd6a715c3aed2404ba926368634_1716454945.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+                "https://dkstatics-public.digikala.com/digikala-products/8a79815bcab22a0a38422cf03be6cc8afe07b1e0_1716454945.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+                "https://dkstatics-public.digikala.com/digikala-products/5916c3f1518499648544aa2f66ade28e801cfcca_1716454945.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90"
               ]
             },
             "theme": {
-              "title": "مشکی",
-              "code": "#000000"
+              "title": "قرمز",
+              "code": "#E6123D"
             },
             "price": {
-              "selling_price": 569000000,
-              "rrp_price": 569000000,
-              "percent": 0
-            },
-
-            "attributes": [
-              { "title": "نوع پنل", "values": "VA" },
-              { "title": "نور پس‌زمینه", "values": "LED" },
-              { "title": "نوع روکش صفحه‌نمایش", "values": "مات" },
-              { "title": "نرخ بروزرسانی تصویر", "values": "180" },
-              { "title": "رزولوشن صفحه نمایش", "values": "1440 × 3440 پیکسل" },
-              { "title": "کاربری مانیتور", "values": "گیمینگ" }
-            ]
-          },
-          {
-            "title": "مانیتور گیمینگ 21.45 اینچ کولر مستر مدل CMI-GA22FC",
-            "layet": {
-              "brand": "کولر مستر",
-              "category": "نمایشگر ",
-              "dimension9": 4.6
-            },
-            "images": {
-              "mainImg": "https://dkstatics-public.digikala.com/digikala-products/dc92286750e4ba8428d33bafe54149a2e3c08886_1755771635.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
-              "listImg": [
-                "https://dkstatics-public.digikala.com/digikala-products/cf46c476397eae81c9af309434f3fd2d129744e5_1731240803.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
-                "https://dkstatics-public.digikala.com/digikala-products/bb8957e85384e7f3ae6e1807adb510721b1ee2e5_1755713459.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
-                "https://dkstatics-public.digikala.com/digikala-products/9fc9d62ca86a79da83b7e7ab2531834cb1860fab_1747831965.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
-                "https://dkstatics-public.digikala.com/digikala-products/625b126a3fb54ed3dd6d19435cc750cff976a9d3_1731240804.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90"
-              ]
-            },
-            "theme": {
-              "title": "مشکی",
-              "code": "#000000"
-            },
-            "price": {
-              "selling_price": 57500000,
-              "rrp_price": 69500000,
-              "percent": 17
-            },
-
-            "attributes": [
-              { "title": "نوع پنل", "values": "VA" },
-              { "title": "نور پس‌زمینه", "values": "LED" },
-              { "title": "نوع روکش صفحه‌نمایش", "values": "مات" },
-              { "title": "نرخ بروزرسانی تصویر", "values": "100" },
-              { "title": "رزولوشن صفحه نمایش", "values": "1080 × 1920 پیکسل" },
-              { "title": "کاربری مانیتور", "values": "گیمینگ" }
-            ]
-          },
-          {
-            "title": "مانیتور گیمینگ 27 اینچ ال جی مدل 27GS75Q-B با وضوح QHD - 2K پنل IPS و نرخ به روزرسانی 180 هرتز",
-            "layet": {
-              "brand": "ال جی",
-              "category": "نمایشگر ",
-              "dimension9": 4.3
-            },
-            "images": {
-              "mainImg": "https://dkstatics-public.digikala.com/digikala-products/0c6b3b18a5f65e5b07aec726d9d683a58a7aa7a7_1753283101.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
-              "listImg": [
-                "https://dkstatics-public.digikala.com/digikala-products/bb7260a620039f3fe523167b401bce223092ae58_1777959287.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
-                "https://dkstatics-public.digikala.com/digikala-products/bb7260a620039f3fe523167b401bce223092ae58_1777959287.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
-                "https://dkstatics-public.digikala.com/digikala-products/22544beb9ef9a59f6f36b82cce5439f60071d528_1753283105.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
-                "https://dkstatics-public.digikala.com/digikala-products/ace9da60b916ad193edc1445d53e77aa2332f226_1753283110.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90"
-              ]
-            },
-            "theme": {
-              "title": "مشکی",
-              "code": "#000000"
-            },
-            "price": {
-              "selling_price": 650000000,
-              "rrp_price": 650000000,
-              "percent": 0
-            },
-
-            "attributes": [
-              { "title": "نوع پنل", "values": "IPS" },
-              { "title": "نور پس‌زمینه", "values": "LED" },
-              { "title": "نوع روکش صفحه‌نمایش", "values": "مات" },
-              { "title": "نرخ بروزرسانی تصویر", "values": "180" },
-              { "title": "رزولوشن صفحه نمایش", "values": "1440 × 2560 " },
-              { "title": "کاربری مانیتور", "values": "گیمینگ" }
-            ]
-          }
-        ]
-      },
-      {
-        "title": "گوشی موبایل",
-        "product": [
-          {
-            "title": "مانیتور خمیده گیمینگ 34 اینچ ایسوس مدل TUF Gaming VG34VQ3B",
-            "layet": {
-              "brand": "ایسوس",
-              "category": "نمایشگر",
-              "dimension9": 4.6
-            },
-            "images": {
-              "mainImg": "https://dkstatics-public.digikala.com/digikala-products/4442e82ed81c20870701a851482713be5af9e682_1755771632.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
-              "listImg": [
-                "https://dkstatics-public.digikala.com/digikala-products/3d50328563eb2ce9d6b6e224be7a9d94ce07449b_1730874880.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
-                "https://dkstatics-public.digikala.com/digikala-products/080b9e4eca079512258b2f316fc1d88b690165b9_1755713456.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
-                "https://dkstatics-public.digikala.com/digikala-products/474880938f376dc60740a35bd788b142a551f21f_1730874880.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
-                "https://dkstatics-public.digikala.com/digikala-products/08670e0d7a98e280756ea90c9cf7cd433a16a03c_1730874880.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90"
-              ]
-            },
-            "theme": {
-              "title": "مشکی",
-              "code": "#000000"
-            },
-            "price": {
-              "selling_price": 718560000,
-              "rrp_price": 744959000,
+              "selling_price": "5,010,000",
+              "rrp_price": "7,975,000",
               "percent": 4
             },
-            "attributes": [
-              {
-                "title": "نوع پنل",
-                "value": "VA"
-              },
-              {
-                "title": "نور پس‌زمینه",
-                "value": "LED"
-              },
-              {
-                "title": "نوع روکش صفحه‌نمایش",
-                "value": "مات"
-              },
-              {
-                "title": "نرخ بروزرسانی تصویر",
-                "value": "180"
-              },
-              {
-                "title": "رزولوشن صفحه نمایش",
-                "values": "1440 × 3440 پیکسل"
-              },
-
-              {
-                "title": "تعداد پورت USB",
-                "values": "چهار عدد"
-              }
-            ]
+            "attributes": []
           },
           {
-            "title": "مانیتور خمیده گیمینگ 34 اینچ شیائومی مدل G34WQi",
-            "layet": {
-              "brand": "شیائومی",
-              "category": "نمایشگر ",
+            "title": "قرص اکوفاین یوروویتال بسته 60 عددی",
+            "layer": {
+              "brand": "یوروویتال",
+              "category": "مکمل غذایی",
               "dimension9": 4.6
             },
             "images": {
-              "mainImg": "https://dkstatics-public.digikala.com/digikala-products/a0b4f9d08935ee3b564968fd68c8c3239290265c_1755788923.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+              "mainImg": "https://dkstatics-public.digikala.com/digikala-products/5233d3f6cfeca2904e6f006bbcc18aeff43ca289_1669625068.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
               "listImg": [
-                "https://dkstatics-public.digikala.com/digikala-products/460fde33e5188782d034e93b96d564463152f688_1717582467.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
-                "https://dkstatics-public.digikala.com/digikala-products/826cfed2976e454072cbfb0aba86cc5fe3fa70fb_1755712917.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
-                "https://dkstatics-public.digikala.com/digikala-products/8beb409d3bd7db72a03bd66469f01e0cc0d399b5_1748011884.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
-                "https://dkstatics-public.digikala.com/digikala-products/6962447af8ef05f3422cf64a80f5b8b022c4b366_1717582468.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90"
+                "https://dkstatics-public.digikala.com/digikala-products/ab3e45dff0079c2e0fae9238dbc7f7173d54ecb7_1669645511.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90"
               ]
             },
-            "theme": {
-              "title": "مشکی",
-              "code": "#000000"
-            },
+            "theme": {},
             "price": {
-              "selling_price": 569000000,
-              "rrp_price": 569000000,
-              "percent": 0
-            },
-
-            "attributes": [
-              { "title": "نوع پنل", "values": "VA" },
-              { "title": "نور پس‌زمینه", "values": "LED" },
-              { "title": "نوع روکش صفحه‌نمایش", "values": "مات" },
-              { "title": "نرخ بروزرسانی تصویر", "values": "180" },
-              { "title": "رزولوشن صفحه نمایش", "values": "1440 × 3440 پیکسل" },
-              { "title": "کاربری مانیتور", "values": "گیمینگ" }
-            ]
-          },
-          {
-            "title": "مانیتور گیمینگ 21.45 اینچ کولر مستر مدل CMI-GA22FC",
-            "layet": {
-              "brand": "کولر مستر",
-              "category": "نمایشگر ",
-              "dimension9": 4.6
-            },
-            "images": {
-              "mainImg": "https://dkstatics-public.digikala.com/digikala-products/dc92286750e4ba8428d33bafe54149a2e3c08886_1755771635.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
-              "listImg": [
-                "https://dkstatics-public.digikala.com/digikala-products/cf46c476397eae81c9af309434f3fd2d129744e5_1731240803.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
-                "https://dkstatics-public.digikala.com/digikala-products/bb8957e85384e7f3ae6e1807adb510721b1ee2e5_1755713459.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
-                "https://dkstatics-public.digikala.com/digikala-products/9fc9d62ca86a79da83b7e7ab2531834cb1860fab_1747831965.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
-                "https://dkstatics-public.digikala.com/digikala-products/625b126a3fb54ed3dd6d19435cc750cff976a9d3_1731240804.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90"
-              ]
-            },
-            "theme": {
-              "title": "مشکی",
-              "code": "#000000"
-            },
-            "price": {
-              "selling_price": 57500000,
-              "rrp_price": 69500000,
-              "percent": 17
-            },
-
-            "attributes": [
-              { "title": "نوع پنل", "values": "VA" },
-              { "title": "نور پس‌زمینه", "values": "LED" },
-              { "title": "نوع روکش صفحه‌نمایش", "values": "مات" },
-              { "title": "نرخ بروزرسانی تصویر", "values": "100" },
-              { "title": "رزولوشن صفحه نمایش", "values": "1080 × 1920 پیکسل" },
-              { "title": "کاربری مانیتور", "values": "گیمینگ" }
-            ]
-          },
-          {
-            "title": "مانیتور گیمینگ 27 اینچ ال جی مدل 27GS75Q-B با وضوح QHD - 2K پنل IPS و نرخ به روزرسانی 180 هرتز",
-            "layet": {
-              "brand": "ال جی",
-              "category": "نمایشگر ",
-              "dimension9": 4.3
-            },
-            "images": {
-              "mainImg": "https://dkstatics-public.digikala.com/digikala-products/0c6b3b18a5f65e5b07aec726d9d683a58a7aa7a7_1753283101.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
-              "listImg": [
-                "https://dkstatics-public.digikala.com/digikala-products/bb7260a620039f3fe523167b401bce223092ae58_1777959287.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
-                "https://dkstatics-public.digikala.com/digikala-products/bb7260a620039f3fe523167b401bce223092ae58_1777959287.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
-                "https://dkstatics-public.digikala.com/digikala-products/22544beb9ef9a59f6f36b82cce5439f60071d528_1753283105.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
-                "https://dkstatics-public.digikala.com/digikala-products/ace9da60b916ad193edc1445d53e77aa2332f226_1753283110.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90"
-              ]
-            },
-            "theme": {
-              "title": "مشکی",
-              "code": "#000000"
-            },
-            "price": {
-              "selling_price": 650000000,
-              "rrp_price": 650000000,
-              "percent": 0
-            },
-
-            "attributes": [
-              { "title": "نوع پنل", "values": "IPS" },
-              { "title": "نور پس‌زمینه", "values": "LED" },
-              { "title": "نوع روکش صفحه‌نمایش", "values": "مات" },
-              { "title": "نرخ بروزرسانی تصویر", "values": "180" },
-              { "title": "رزولوشن صفحه نمایش", "values": "1440 × 2560 " },
-              { "title": "کاربری مانیتور", "values": "گیمینگ" }
-            ]
-          }
-        ]
-      },
-      {
-        "title": "کیبورد",
-        "product": [
-          {
-            "title": "مانیتور خمیده گیمینگ 34 اینچ ایسوس مدل TUF Gaming VG34VQ3B",
-            "layet": {
-              "brand": "ایسوس",
-              "category": "نمایشگر",
-              "dimension9": 4.6
-            },
-            "images": {
-              "mainImg": "https://dkstatics-public.digikala.com/digikala-products/4442e82ed81c20870701a851482713be5af9e682_1755771632.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
-              "listImg": [
-                "https://dkstatics-public.digikala.com/digikala-products/3d50328563eb2ce9d6b6e224be7a9d94ce07449b_1730874880.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
-                "https://dkstatics-public.digikala.com/digikala-products/080b9e4eca079512258b2f316fc1d88b690165b9_1755713456.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
-                "https://dkstatics-public.digikala.com/digikala-products/474880938f376dc60740a35bd788b142a551f21f_1730874880.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
-                "https://dkstatics-public.digikala.com/digikala-products/08670e0d7a98e280756ea90c9cf7cd433a16a03c_1730874880.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90"
-              ]
-            },
-            "theme": {
-              "title": "مشکی",
-              "code": "#000000"
-            },
-            "price": {
-              "selling_price": 718560000,
-              "rrp_price": 744959000,
+              "selling_price": "1,890,000",
+              "rrp_price": "13,860,000",
               "percent": 4
             },
-            "attributes": [
-              {
-                "title": "نوع پنل",
-                "value": "VA"
-              },
-              {
-                "title": "نور پس‌زمینه",
-                "value": "LED"
-              },
-              {
-                "title": "نوع روکش صفحه‌نمایش",
-                "value": "مات"
-              },
-              {
-                "title": "نرخ بروزرسانی تصویر",
-                "value": "180"
-              },
-              {
-                "title": "رزولوشن صفحه نمایش",
-                "values": "1440 × 3440 پیکسل"
-              },
-
-              {
-                "title": "تعداد پورت USB",
-                "values": "چهار عدد"
-              }
-            ]
+            "attributes": []
           },
           {
-            "title": "مانیتور خمیده گیمینگ 34 اینچ شیائومی مدل G34WQi",
-            "layet": {
-              "brand": "شیائومی",
-              "category": "نمایشگر ",
+            "title": "کپسول فرودین هولیستیکا بسته 32 عددی ",
+            "layer": {
+              "brand": "هولیستیکا",
+              "category": "مکمل غذایی",
               "dimension9": 4.6
             },
             "images": {
-              "mainImg": "https://dkstatics-public.digikala.com/digikala-products/a0b4f9d08935ee3b564968fd68c8c3239290265c_1755788923.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+              "mainImg": "https://dkstatics-public.digikala.com/digikala-products/9a50de988e334badbc09fdfdc365e4cb35aa290d_1603007772.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
               "listImg": [
-                "https://dkstatics-public.digikala.com/digikala-products/460fde33e5188782d034e93b96d564463152f688_1717582467.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
-                "https://dkstatics-public.digikala.com/digikala-products/826cfed2976e454072cbfb0aba86cc5fe3fa70fb_1755712917.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
-                "https://dkstatics-public.digikala.com/digikala-products/8beb409d3bd7db72a03bd66469f01e0cc0d399b5_1748011884.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
-                "https://dkstatics-public.digikala.com/digikala-products/6962447af8ef05f3422cf64a80f5b8b022c4b366_1717582468.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90"
+                "https://dkstatics-public.digikala.com/digikala-products/c31869caec25de55faa8fa78c260908a5ff64a85_1603007771.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+                "https://dkstatics-public.digikala.com/digikala-products/cf302ef54d03dcc00154f92be7290b252f4e1750_1603007774.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+                "https://dkstatics-public.digikala.com/digikala-products/e19e024c66798aac443a08578747981297186131_1603007775.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+                "https://dkstatics-public.digikala.com/digikala-products/089fa78541ed89032362116577a642b82b201637_1603007777.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90"
               ]
             },
-            "theme": {
-              "title": "مشکی",
-              "code": "#000000"
-            },
+            "theme": {},
             "price": {
-              "selling_price": 569000000,
-              "rrp_price": 569000000,
-              "percent": 0
-            },
-
-            "attributes": [
-              { "title": "نوع پنل", "values": "VA" },
-              { "title": "نور پس‌زمینه", "values": "LED" },
-              { "title": "نوع روکش صفحه‌نمایش", "values": "مات" },
-              { "title": "نرخ بروزرسانی تصویر", "values": "180" },
-              { "title": "رزولوشن صفحه نمایش", "values": "1440 × 3440 پیکسل" },
-              { "title": "کاربری مانیتور", "values": "گیمینگ" }
-            ]
-          },
-          {
-            "title": "مانیتور گیمینگ 21.45 اینچ کولر مستر مدل CMI-GA22FC",
-            "layet": {
-              "brand": "کولر مستر",
-              "category": "نمایشگر ",
-              "dimension9": 4.6
-            },
-            "images": {
-              "mainImg": "https://dkstatics-public.digikala.com/digikala-products/dc92286750e4ba8428d33bafe54149a2e3c08886_1755771635.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
-              "listImg": [
-                "https://dkstatics-public.digikala.com/digikala-products/cf46c476397eae81c9af309434f3fd2d129744e5_1731240803.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
-                "https://dkstatics-public.digikala.com/digikala-products/bb8957e85384e7f3ae6e1807adb510721b1ee2e5_1755713459.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
-                "https://dkstatics-public.digikala.com/digikala-products/9fc9d62ca86a79da83b7e7ab2531834cb1860fab_1747831965.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
-                "https://dkstatics-public.digikala.com/digikala-products/625b126a3fb54ed3dd6d19435cc750cff976a9d3_1731240804.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90"
-              ]
-            },
-            "theme": {
-              "title": "مشکی",
-              "code": "#000000"
-            },
-            "price": {
-              "selling_price": 57500000,
-              "rrp_price": 69500000,
-              "percent": 17
-            },
-
-            "attributes": [
-              { "title": "نوع پنل", "values": "VA" },
-              { "title": "نور پس‌زمینه", "values": "LED" },
-              { "title": "نوع روکش صفحه‌نمایش", "values": "مات" },
-              { "title": "نرخ بروزرسانی تصویر", "values": "100" },
-              { "title": "رزولوشن صفحه نمایش", "values": "1080 × 1920 پیکسل" },
-              { "title": "کاربری مانیتور", "values": "گیمینگ" }
-            ]
-          },
-          {
-            "title": "مانیتور گیمینگ 27 اینچ ال جی مدل 27GS75Q-B با وضوح QHD - 2K پنل IPS و نرخ به روزرسانی 180 هرتز",
-            "layet": {
-              "brand": "ال جی",
-              "category": "نمایشگر ",
-              "dimension9": 4.3
-            },
-            "images": {
-              "mainImg": "https://dkstatics-public.digikala.com/digikala-products/0c6b3b18a5f65e5b07aec726d9d683a58a7aa7a7_1753283101.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
-              "listImg": [
-                "https://dkstatics-public.digikala.com/digikala-products/bb7260a620039f3fe523167b401bce223092ae58_1777959287.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
-                "https://dkstatics-public.digikala.com/digikala-products/bb7260a620039f3fe523167b401bce223092ae58_1777959287.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
-                "https://dkstatics-public.digikala.com/digikala-products/22544beb9ef9a59f6f36b82cce5439f60071d528_1753283105.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
-                "https://dkstatics-public.digikala.com/digikala-products/ace9da60b916ad193edc1445d53e77aa2332f226_1753283110.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90"
-              ]
-            },
-            "theme": {
-              "title": "مشکی",
-              "code": "#000000"
-            },
-            "price": {
-              "selling_price": 650000000,
-              "rrp_price": 650000000,
-              "percent": 0
-            },
-
-            "attributes": [
-              { "title": "نوع پنل", "values": "IPS" },
-              { "title": "نور پس‌زمینه", "values": "LED" },
-              { "title": "نوع روکش صفحه‌نمایش", "values": "مات" },
-              { "title": "نرخ بروزرسانی تصویر", "values": "180" },
-              { "title": "رزولوشن صفحه نمایش", "values": "1440 × 2560 " },
-              { "title": "کاربری مانیتور", "values": "گیمینگ" }
-            ]
-          }
-        ]
-      },
-      {
-        "title": "کیس کامپیوتر",
-        "product": [
-          {
-            "title": "مانیتور خمیده گیمینگ 34 اینچ ایسوس مدل TUF Gaming VG34VQ3B",
-            "layet": {
-              "brand": "ایسوس",
-              "category": "نمایشگر",
-              "dimension9": 4.6
-            },
-            "images": {
-              "mainImg": "https://dkstatics-public.digikala.com/digikala-products/4442e82ed81c20870701a851482713be5af9e682_1755771632.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
-              "listImg": [
-                "https://dkstatics-public.digikala.com/digikala-products/3d50328563eb2ce9d6b6e224be7a9d94ce07449b_1730874880.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
-                "https://dkstatics-public.digikala.com/digikala-products/080b9e4eca079512258b2f316fc1d88b690165b9_1755713456.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
-                "https://dkstatics-public.digikala.com/digikala-products/474880938f376dc60740a35bd788b142a551f21f_1730874880.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
-                "https://dkstatics-public.digikala.com/digikala-products/08670e0d7a98e280756ea90c9cf7cd433a16a03c_1730874880.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90"
-              ]
-            },
-            "theme": {
-              "title": "مشکی",
-              "code": "#000000"
-            },
-            "price": {
-              "selling_price": 718560000,
-              "rrp_price": 744959000,
+              "selling_price": "2900000",
+              "rrp_price": "4397000",
               "percent": 4
             },
-            "attributes": [
-              {
-                "title": "نوع پنل",
-                "value": "VA"
-              },
-              {
-                "title": "نور پس‌زمینه",
-                "value": "LED"
-              },
-              {
-                "title": "نوع روکش صفحه‌نمایش",
-                "value": "مات"
-              },
-              {
-                "title": "نرخ بروزرسانی تصویر",
-                "value": "180"
-              },
-              {
-                "title": "رزولوشن صفحه نمایش",
-                "values": "1440 × 3440 پیکسل"
-              },
-
-              {
-                "title": "تعداد پورت USB",
-                "values": "چهار عدد"
-              }
-            ]
+            "attributes": []
           },
           {
-            "title": "مانیتور خمیده گیمینگ 34 اینچ شیائومی مدل G34WQi",
-            "layet": {
-              "brand": "شیائومی",
-              "category": "نمایشگر ",
+            "title": "ویتامین E کپسول نرم ژلاتینی 400 واحد ویوا تون بسته 30 عددی با خاصیت آنتی‌اکسیدان و کمک به سلامت پوست، مو و ناخن و پیشگیری از پیری پوست",
+            "layer": {
+              "brand": "ویوا تون",
+              "category": "مکمل غذایی",
               "dimension9": 4.6
             },
             "images": {
-              "mainImg": "https://dkstatics-public.digikala.com/digikala-products/a0b4f9d08935ee3b564968fd68c8c3239290265c_1755788923.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+              "mainImg": "https://dkstatics-public.digikala.com/digikala-products/160c143bfe9a12a2db7c8a9ad6c3387e52086e85_1644325203.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
               "listImg": [
-                "https://dkstatics-public.digikala.com/digikala-products/460fde33e5188782d034e93b96d564463152f688_1717582467.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
-                "https://dkstatics-public.digikala.com/digikala-products/826cfed2976e454072cbfb0aba86cc5fe3fa70fb_1755712917.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
-                "https://dkstatics-public.digikala.com/digikala-products/8beb409d3bd7db72a03bd66469f01e0cc0d399b5_1748011884.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
-                "https://dkstatics-public.digikala.com/digikala-products/6962447af8ef05f3422cf64a80f5b8b022c4b366_1717582468.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90"
+                "https://dkstatics-public.digikala.com/digikala-products/0ea457e23832346d9de29ffd2cab438e8d08ffdc_1644325231.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90"
               ]
             },
-            "theme": {
-              "title": "مشکی",
-              "code": "#000000"
-            },
+            "theme": {},
             "price": {
-              "selling_price": 569000000,
-              "rrp_price": 569000000,
-              "percent": 0
+              "selling_price": "1500000",
+              "rrp_price": "4785000",
+              "percent": 4
             },
-
-            "attributes": [
-              { "title": "نوع پنل", "values": "VA" },
-              { "title": "نور پس‌زمینه", "values": "LED" },
-              { "title": "نوع روکش صفحه‌نمایش", "values": "مات" },
-              { "title": "نرخ بروزرسانی تصویر", "values": "180" },
-              { "title": "رزولوشن صفحه نمایش", "values": "1440 × 3440 پیکسل" },
-              { "title": "کاربری مانیتور", "values": "گیمینگ" }
-            ]
+            "attributes": []
           },
           {
-            "title": "مانیتور گیمینگ 21.45 اینچ کولر مستر مدل CMI-GA22FC",
-            "layet": {
-              "brand": "کولر مستر",
-              "category": "نمایشگر ",
+            "title": "کپسول مولتی ویتال یوروویتال مدل For Her 50+ بسته 30 عددی با ویتامین‌های گروه B برای افزایش انرژی، کلسیم و ویتامین D جهت حفظ تراکم استخوان، تقویت سیستم ایمنی و پیشگیری از پیری پوست و ریزش مو",
+            "layer": {
+              "brand": "یوروویتال",
+              "category": "مکمل غذایی",
               "dimension9": 4.6
             },
             "images": {
-              "mainImg": "https://dkstatics-public.digikala.com/digikala-products/dc92286750e4ba8428d33bafe54149a2e3c08886_1755771635.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+              "mainImg": "https://dkstatics-public.digikala.com/digikala-products/3ffd840bc476950b934cd5d4fec18e6461a0c3eb_1723623967.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
               "listImg": [
-                "https://dkstatics-public.digikala.com/digikala-products/cf46c476397eae81c9af309434f3fd2d129744e5_1731240803.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
-                "https://dkstatics-public.digikala.com/digikala-products/bb8957e85384e7f3ae6e1807adb510721b1ee2e5_1755713459.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
-                "https://dkstatics-public.digikala.com/digikala-products/9fc9d62ca86a79da83b7e7ab2531834cb1860fab_1747831965.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
-                "https://dkstatics-public.digikala.com/digikala-products/625b126a3fb54ed3dd6d19435cc750cff976a9d3_1731240804.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90"
+                "https://dkstatics-public.digikala.com/digikala-products/3ffd840bc476950b934cd5d4fec18e6461a0c3eb_1723623972.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90"
               ]
             },
             "theme": {
-              "title": "مشکی",
-              "code": "#000000"
+              "title": "قرمز",
+              "code": "#E6123D"
             },
             "price": {
-              "selling_price": 57500000,
-              "rrp_price": 69500000,
-              "percent": 17
+              "selling_price": "1,490,000",
+              "rrp_price": "2,420,000",
+              "percent": 4
             },
-
-            "attributes": [
-              { "title": "نوع پنل", "values": "VA" },
-              { "title": "نور پس‌زمینه", "values": "LED" },
-              { "title": "نوع روکش صفحه‌نمایش", "values": "مات" },
-              { "title": "نرخ بروزرسانی تصویر", "values": "100" },
-              { "title": "رزولوشن صفحه نمایش", "values": "1080 × 1920 پیکسل" },
-              { "title": "کاربری مانیتور", "values": "گیمینگ" }
-            ]
-          },
-          {
-            "title": "مانیتور گیمینگ 27 اینچ ال جی مدل 27GS75Q-B با وضوح QHD - 2K پنل IPS و نرخ به روزرسانی 180 هرتز",
-            "layet": {
-              "brand": "ال جی",
-              "category": "نمایشگر ",
-              "dimension9": 4.3
-            },
-            "images": {
-              "mainImg": "https://dkstatics-public.digikala.com/digikala-products/0c6b3b18a5f65e5b07aec726d9d683a58a7aa7a7_1753283101.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
-              "listImg": [
-                "https://dkstatics-public.digikala.com/digikala-products/bb7260a620039f3fe523167b401bce223092ae58_1777959287.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
-                "https://dkstatics-public.digikala.com/digikala-products/bb7260a620039f3fe523167b401bce223092ae58_1777959287.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
-                "https://dkstatics-public.digikala.com/digikala-products/22544beb9ef9a59f6f36b82cce5439f60071d528_1753283105.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
-                "https://dkstatics-public.digikala.com/digikala-products/ace9da60b916ad193edc1445d53e77aa2332f226_1753283110.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90"
-              ]
-            },
-            "theme": {
-              "title": "مشکی",
-              "code": "#000000"
-            },
-            "price": {
-              "selling_price": 650000000,
-              "rrp_price": 650000000,
-              "percent": 0
-            },
-
-            "attributes": [
-              { "title": "نوع پنل", "values": "IPS" },
-              { "title": "نور پس‌زمینه", "values": "LED" },
-              { "title": "نوع روکش صفحه‌نمایش", "values": "مات" },
-              { "title": "نرخ بروزرسانی تصویر", "values": "180" },
-              { "title": "رزولوشن صفحه نمایش", "values": "1440 × 2560 " },
-              { "title": "کاربری مانیتور", "values": "گیمینگ" }
-            ]
+            "attributes": []
           }
         ]
       }

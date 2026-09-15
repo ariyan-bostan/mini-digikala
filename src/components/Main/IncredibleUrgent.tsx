@@ -9,24 +9,26 @@ import type { ProductRunningOut } from "../Services/Intefaces";
 
 const IncredibleUrgent = () => {
   const property = useContext(contextWidth)!;
-  const { listCategori, errorCategori, isLoadingCategori }=useListCategories();
+  const { listCategori, errorCategori, isLoadingCategori } =
+    useListCategories();
   const { data: list, error, isLoading } = useRunningOutIncredibleProducts();
 
   const [selectCategori, setSelectCategori] = useState("");
   let mainListProduct: ProductRunningOut[] | undefined = list?.products || [];
-  list?.products
+  list?.products;
   if (selectCategori !== "همه دسته‌بندی‌ها") {
     mainListProduct = list?.products.filter((item) => {
       if (item.data_layer.category[0].includes(selectCategori)) {
         return item;
       }
     });
-    console.log(selectCategori,"a:", mainListProduct);
+    console.log(selectCategori, "a:", mainListProduct);
   }
   return (
     <div
       style={{
-        background:"linear-gradient(to left bottom, rgb(255, 249, 229), rgb(255, 249, 229))",
+        background:
+          "linear-gradient(to left bottom, rgb(255, 249, 229), rgb(255, 249, 229))",
         width: "100%",
         height: "25rem",
         borderRadius: property.innerWidth > 850 ? "20px" : "",
@@ -57,8 +59,10 @@ const IncredibleUrgent = () => {
           </button>
         ))}
       </div>
-      <div style={{overflow:"scroll",scrollbarWidth:"none"}}  className=" d-flex flex-row gap-2 py-2 px-2">
-        {mainListProduct?.map((item,index)=>(
+      <div
+        style={{ overflow: "scroll", scrollbarWidth: "none" }}
+        className=" d-flex flex-row gap-2 py-2 px-2">
+        {mainListProduct?.map((item, index) => (
           <Product item={item} index={index} />
         ))}
       </div>
