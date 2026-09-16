@@ -4,6 +4,7 @@ import style from "../Styles/Main/ProductList.module.css";
 import { contextWidth } from "../App";
 import PercentPrice from "./PercentPrice";
 import { FiArrowLeftCircle } from "react-icons/fi";
+import { Link } from "react-router";
 
 interface Props {
   title: string;
@@ -18,31 +19,29 @@ const ProductList = ({ title }: Props) => {
         style.container,
         property?.innerWidth > 850 && "border rounded-4",
         "w-100  mt-2",
-      ].join(" ")}
-    >
+      ].join(" ")}>
       <div
         className={[
           style.boxTitle,
           "d-flex flex-row justify-content-between align-items-center p-3",
-        ].join(" ")}
-      >
+        ].join(" ")}>
         <h3>{title}</h3>
-        <p>مشاهده همه</p>
+        <Link className="linkTo" to={`/products/${title}`}>
+          همه
+        </Link>
       </div>
       <div
         className={[
           style.containerProduct,
           "d-flex flex-row gap-2 align-items-center p-2",
-        ].join(" ")}
-      >
+        ].join(" ")}>
         {objectProduct?.product.map((item, index) => (
           <div
             key={index}
             className={[
               style.product,
               "d-flex flex-column gap-2 border p-1",
-            ].join(" ")}
-          >
+            ].join(" ")}>
             <img
               className={[style.imgProduct, "w-100 object-fit-cover"].join(" ")}
               src={item.images.mainImg}
@@ -61,14 +60,12 @@ const ProductList = ({ title }: Props) => {
               className={[
                 style.containerPercentPrice,
                 "d-flex flex-row justify-content-end",
-              ].join(" ")}
-            >
+              ].join(" ")}>
               {item.price.percent > 0 && <PercentPrice itemProduct={item} />}
             </div>
             <div
               style={{ height: "10%", overflow: "hidden" }}
-              className="d-flex flex-row justify-content-center"
-            >
+              className="d-flex flex-row justify-content-center">
               <p className="fw-bold">{item.price.selling_price}تومان</p>
             </div>
           </div>
@@ -77,10 +74,11 @@ const ProductList = ({ title }: Props) => {
           className={[
             style.product,
             "d-flex flex-column gap-2  align-items-center justify-content-center",
-          ].join(" ")}
-        >
+          ].join(" ")}>
           <FiArrowLeftCircle fontSize={"4rem"} />
-          <p className=" mt-1 p-0">مشاهده همه</p>
+          <Link className="linkTo" to={`/products/${title}`}>
+            مشاهده همه
+          </Link>
         </div>
       </div>
     </div>

@@ -4,12 +4,12 @@ import useRunningOutIncredibleProducts from "../Hooks/useRunningOutIncrediblePro
 import { FiArrowLeftCircle } from "react-icons/fi";
 import Poster from "./IncredibleComponent/Poster";
 import Timer from "./IncredibleComponent/Timer";
-import Product from "./IncredibleComponent/Product";
 import { contextWidth } from "../App";
-import { Link, Links } from "react-router";
+import { Link } from "react-router";
+import Product from "./IncredibleComponent/Product.tsx";
 
 interface Props{
-    numberList:number
+  numberList:number
 }
 
 const IncredibleList = ({numberList}:Props) => {

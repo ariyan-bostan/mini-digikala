@@ -1,6 +1,6 @@
 import React from "react";
 import styleAmz from "../../Styles/Main/AmazingBox.module.css";
-import type { Product, productItem, ProductRunningOut } from "../../Services/Intefaces";
+import type {  ProductRunningOut } from "../../Services/Intefaces";
 interface Props {
   index: number;
   item: ProductRunningOut  ;
