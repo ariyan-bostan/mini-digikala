@@ -699,8 +699,8 @@
               "code": "#E6123D"
             },
             "price": {
-              "selling_price": "1,490,000",
-              "rrp_price": "2,420,000",
+              "selling_price": "1490000",
+              "rrp_price": "2420000",
               "percent": 4
             },
             "attributes": []
@@ -726,8 +726,8 @@
               "code": "#E6123D"
             },
             "price": {
-              "selling_price": "5,010,000",
-              "rrp_price": "7,975,000",
+              "selling_price": "5010000",
+              "rrp_price": "7975000",
               "percent": 4
             },
             "attributes": []
@@ -747,8 +747,8 @@
             },
             "theme": {},
             "price": {
-              "selling_price": "1,890,000",
-              "rrp_price": "13,860,000",
+              "selling_price": "18900000",
+              "rrp_price": "13860000",
               "percent": 4
             },
             "attributes": []
@@ -816,8 +816,8 @@
               "code": "#E6123D"
             },
             "price": {
-              "selling_price": "1,490,000",
-              "rrp_price": "2,420,000",
+              "selling_price": "1490000",
+              "rrp_price": "2420000",
               "percent": 4
             },
             "attributes": []

@@ -1,9 +1,9 @@
 import React from "react";
 import styleAmz from "../../Styles/Main/AmazingBox.module.css";
-import type { ProductRunningOut } from "../../Services/Intefaces";
+import type { Product, productItem, ProductRunningOut } from "../../Services/Intefaces";
 interface Props {
   index: number;
-  item: ProductRunningOut;
+  item: ProductRunningOut  ;
 }
 const Product = ({ item, index }: Props) => {
   return (
@@ -56,7 +56,7 @@ const Product = ({ item, index }: Props) => {
         ].join(" ")}
       >
         <p className="finalPriceIcredibleList m-0 p-0">
-          {item.price.rrp_price - (10 / 100) * item.price.rrp_price+" "}تومان
+          {(item.price.rrp_price ) - (10 / 100) * item.price.rrp_price+" "}تومان
         </p>
       </div>
     </div>
