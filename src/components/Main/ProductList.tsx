@@ -4,6 +4,7 @@ import style from "../Styles/Main/ProductList.module.css";
 import { contextWidth } from "../App";
 import PercentPrice from "./PercentPrice";
 import { FiArrowLeftCircle } from "react-icons/fi";
+import { Link } from "react-router";
 
 interface Props {
   title: string;
@@ -27,7 +28,7 @@ const ProductList = ({ title }: Props) => {
         ].join(" ")}
       >
         <h3>{title}</h3>
-        <p>مشاهده همه</p>
+        <Link className="linkTo" to={`/products/${title}`}>مشاهده همه</Link>
       </div>
       <div
         className={[
