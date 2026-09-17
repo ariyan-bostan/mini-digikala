@@ -8,12 +8,11 @@ const InformationProduct = () => {
   const paramURL = useParams();
   const { objectProduct, error, isLoading } = useProduct(paramURL.title || "");
   let resault = objectProduct?.product.find((item) => {
-    if (item.title.includes(paramURL.titleProduct||"")) return item;
+    if (item.title.includes(paramURL.titleProduct || "")) return item;
   });
-  const [selectImg,setSelectImg]=useState((resault?.images.mainImg)||"");
-  
+  const [selectImg, setSelectImg] = useState(resault?.images.mainImg || "");
+
   console.log(resault);
-  
 
   return (
     <div
@@ -50,7 +49,7 @@ const InformationProduct = () => {
         </div>
       </div>
       <div
-        style={{borderRadius:"10px",overflow:"hidden"}}
+        style={{ borderRadius: "10px", overflow: "hidden" }}
         className={[
           "border",
           property.innerWidth < 850 ? "d-flex flex-column gap-1" : "",
@@ -63,18 +62,17 @@ const InformationProduct = () => {
             "w-100",
             property.innerWidth < 850 ? "d-flex flex-column gap-1" : "",
           ].join(" ")}>
-            
           <div className="w-100 pe-2">
             <div className="d-flex flex-row">
               <label htmlFor="">دسته بندی : </label>
               <p className="me-2">{resault?.layer.category}</p>
             </div>
-            <div  className="d-flex flex-row align-items-center">
+            <div className="d-flex flex-row align-items-center">
               <label htmlFor="">برند : </label>
               <p className="m-0 p-0 me-2">{resault?.layer.brand}</p>
             </div>
           </div>
-          
+
           <div
             className={[
               "w-100 bg-warning",
@@ -82,7 +80,33 @@ const InformationProduct = () => {
                 ? "d-flex flex-row-reverse justify-content-between px-2"
                 : "",
             ].join(" ")}>
-            <div>price</div>
+            <div
+              style={{ width: "10rem", height: "5rem" }}
+              className="bg-danger d-flex flex-column gap-1">
+              <div className="h-50 bg-primary d-flex flex-row align-items-center justify-content-between">
+                <div
+                  style={{
+                    width: "3rem",
+                    height: "2rem",
+                    borderRadius: "50px",
+                  }}
+                  className="bg-danger d-flex flex-row justify-content-center align-items-center">
+                  {resault?.price.percent}%
+                </div>
+                <div>
+                  <p
+                    style={{ textDecoration: "line-through" }}
+                    className="m-0 p-0">
+                    {resault?.price.rrp_price}
+                  </p>
+                </div>
+              </div>
+              <div className="h-50 w-100 bg-info d-flex flex-row justify-content-center align-items-center">
+                <p className={["m-0 p-0", "finalPriceIcredibleList"].join(" ")}>
+                  {resault?.price.selling_price+" "} تومان
+                </p>
+              </div>
+            </div>
             <button>فزودن به سبد خرید</button>
           </div>
         </div>
