@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { useParams } from "react-router";
+import { Link, useParams } from "react-router";
 import useProduct from "../../Hooks/useProduct";
 import styleAmz from "../../Styles/Main/AmazingBox.module.css";
 
@@ -35,7 +35,8 @@ const Products = () => {
         {objectProduct?.product?.map((item, index) => (
           <>
             {property.innerWidth < 850 ? (
-              <div
+              <Link
+                to={`/products/informationProduct/${parameters.title}/${item.title}`}
                 style={{
                   height: "10rem",
                   borderRadius: "10px",
@@ -43,6 +44,7 @@ const Products = () => {
                 }}
                 key={index}
                 className={[
+                  "linkTo",
                   property.innerWidth < 850
                     ? "d-flex border flex-row gap-1  w-100"
                     : "bg-info",
@@ -79,11 +81,12 @@ const Products = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             ) : (
-              <div
+              <Link
+                to={`/products/informationProduct/${parameters.title}/${item.title}`}
                 key={index}
-                className={[styleAmz.boxProduct, "border pb-2"].join(" ")}>
+                className={[styleAmz.boxProduct,"linkTo", "border pb-2"].join(" ")}>
                 <div className={[styleAmz.posterPro].join(" ")}>
                   <img
                     className="w-100 h-100 object-fit-cover"
@@ -137,7 +140,7 @@ const Products = () => {
                     تومان
                   </p>
                 </div>
-              </div>
+              </Link>
             )}
           </>
         ))}

@@ -26,9 +26,8 @@ const ProductList = ({ title }: Props) => {
           "d-flex flex-row justify-content-between align-items-center p-3",
         ].join(" ")}>
         <h3>{title}</h3>
-        <Link className="linkTo" to={`/products/${title}`}>
-          همه
-        </Link>
+
+        <Link className="linkTo" to={`/products/${title}`}>مشاهده همه</Link>
       </div>
       <div
         className={[

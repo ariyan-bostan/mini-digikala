@@ -14,6 +14,7 @@ import useWidthWindow from "./Hooks/useWidthWindow";
 import Footer from "./Footer/Footer";
 import type { ItemNav1 } from "./Services/Intefaces";
 import Products from "./Main/Pages/Products";
+import InformationProduct from "./Main/Pages/InformationProduct";
 
 export interface ValueHeader {
   list: ItemNav1[] | undefined;
@@ -61,6 +62,7 @@ const App = () => {
                 />
                 <Route path="/searching" element={<Searching />} />
                 <Route path="/products/:title" element={<Products />} />
+                <Route path="/products/informationProduct/:title/:titleProduct" element={<InformationProduct />} />
                 <Route path="/*" element={<NotPage />} />
               </Routes>
             </div>

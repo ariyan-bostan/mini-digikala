@@ -102,7 +102,7 @@ export interface ResponsePopularBrand {
 
 // product-list
 
-interface Layet {
+interface Layer {
   brand: string;
   category: string;
   dimension9: number;
@@ -128,7 +128,7 @@ interface Attributes {
 
 export interface Product {
   title: string;
-  layet: Layet;
+  layer: Layer;
   images: Images;
   theme: Theme;
   price: Price;

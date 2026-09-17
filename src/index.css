@@ -20,6 +20,13 @@
   font-family: digikalaThin;
   src: url("./fonts/iranyekan_thin.woff") format("woff");
 }
+@font-face {
+  font-family: digikalaLight;
+  src: url("./fonts/iranyekan_extrabold.woff") format("woff");
+  font-weight: bolder;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   font-family:
@@ -92,4 +99,7 @@ body {
 .linkTo,.linkTo:visited{
     text-decoration: none;
     color: black;
+}
+.titleInformationProduct{
+  font-family:digikalaLight ;
 }
