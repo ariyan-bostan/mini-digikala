@@ -75,15 +75,15 @@ const InformationProduct = () => {
 
           <div
             className={[
-              "w-100 bg-warning",
+              "w-100 border border-top",
               property.innerWidth < 850
-                ? "d-flex flex-row-reverse justify-content-between px-2"
+                ? "d-flex flex-row-reverse justify-content-between py-2 align-items-center px-2"
                 : "",
             ].join(" ")}>
             <div
               style={{ width: "10rem", height: "5rem" }}
-              className="bg-danger d-flex flex-column gap-1">
-              <div className="h-50 bg-primary d-flex flex-row align-items-center justify-content-between">
+              className=" d-flex flex-column gap-1">
+              <div className="h-50  d-flex flex-row align-items-center gap-2 justify-content-center">
                 <div
                   style={{
                     width: "3rem",
@@ -95,19 +95,19 @@ const InformationProduct = () => {
                 </div>
                 <div>
                   <p
-                    style={{ textDecoration: "line-through" }}
+                    style={{ textDecoration: "line-through" ,color:"#bdbdbdc7"}}
                     className="m-0 p-0">
                     {resault?.price.rrp_price}
                   </p>
                 </div>
               </div>
-              <div className="h-50 w-100 bg-info d-flex flex-row justify-content-center align-items-center">
+              <div className="h-50 w-100  d-flex flex-row justify-content-center align-items-center">
                 <p className={["m-0 p-0", "finalPriceIcredibleList"].join(" ")}>
                   {resault?.price.selling_price+" "} تومان
                 </p>
               </div>
             </div>
-            <button>فزودن به سبد خرید</button>
+            <button style={{height:"2rem",width:"11rem"}} className="btn btn-danger p-0">افزودن به سبد خرید</button>
           </div>
         </div>
       </div>
