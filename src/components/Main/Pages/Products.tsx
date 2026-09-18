@@ -32,11 +32,11 @@ const Products = () => {
             ? "d-flex flex-column gap-1"
             : "d-flex flex-row gap-2 justify-content-center mt-4",
         ].join(" ")}>
-        {objectProduct?.product?.map((item, index) => (
+        {objectProduct?.products?.map((item, index) => (
           <>
             {property.innerWidth < 850 ? (
               <Link
-                to={`/products/informationProduct/${parameters.title}/${item.title}`}
+                to={`/products/informationProduct/products/${parameters.title}/${item.title}`}
                 style={{
                   height: "10rem",
                   borderRadius: "10px",

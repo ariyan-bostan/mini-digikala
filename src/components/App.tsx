@@ -62,7 +62,14 @@ const App = () => {
                 />
                 <Route path="/searching" element={<Searching />} />
                 <Route path="/products/:title" element={<Products />} />
-                <Route path="/products/informationProduct/:title/:titleProduct" element={<InformationProduct />} />
+                <Route
+                  path="/products/informationProduct/:typeObject/:title/:titleProduct"
+                  element={<InformationProduct />}
+                />
+                <Route
+                  path="/products/incredible-Offers/:typeObject/:title/:titleProduct"
+                  element={<InformationProduct />}
+                />
                 <Route path="/*" element={<NotPage />} />
               </Routes>
             </div>

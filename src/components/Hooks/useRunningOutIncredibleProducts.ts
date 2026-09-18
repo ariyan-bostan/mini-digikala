@@ -6,11 +6,12 @@ import type { itemRunningOutIncredibleProducts } from "../Services/Intefaces";
 const apiClient=new APIClient("Main");
 
 const useRunningOutIncredibleProducts = () => {
-  return useQuery<itemRunningOutIncredibleProducts,Error>({
+  const {data:objectProduct,error,isLoading}= useQuery<itemRunningOutIncredibleProducts,Error>({
     queryKey:["runningOutIncredibleProducts"],
     queryFn:()=>{
         return apiClient.getItemRunningOutIncredibleProducts();
     }
   });  
+  return { objectProduct, error, isLoading };
 };
 export default useRunningOutIncredibleProducts;

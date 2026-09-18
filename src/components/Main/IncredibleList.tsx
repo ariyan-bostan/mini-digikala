@@ -15,8 +15,8 @@ interface Props{
 const IncredibleList = ({numberList}:Props) => {
   const property = useContext(contextWidth)!;
 
-  const { data: list, error, isLoading } = useRunningOutIncredibleProducts();
-  
+  const { objectProduct: list, error, isLoading } = useRunningOutIncredibleProducts();
+
   return (
     <div
       style={{

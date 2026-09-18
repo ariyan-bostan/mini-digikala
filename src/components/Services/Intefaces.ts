@@ -34,9 +34,10 @@ export interface ResponseTitlesHome {
 //
 export interface ProductRunningOut {
   title: string;
-  data_layer: { brand: string; category: string[] };
-  price: { selling_price: number; rrp_price: number };
+  layer: { brand: string; category: string };
+  price: { selling_price: number; rrp_price: number,percent:number };
   imgWEBP: string;
+  images: Images;
   rating: { rate: number; count: number; discount_percent: number };
 }
 export interface itemRunningOutIncredibleProducts {
@@ -137,7 +138,7 @@ export interface Product {
 
 export interface productItem {
   title: string;
-  product: Product[];
+  products: Product[];
 }
 
 export interface ResProductList {

@@ -11,7 +11,8 @@ interface Props {
 
 const CategoryIncredible = ({ selectCategory }: Props) => {
   const property = useContext(contextWidth)!;
-  const { listCategori, isLoading, error } = useListCategories();
+  const { listCategori, errorCategori, isLoadingCategori } =
+    useListCategories();
   return (
     <div
       style={{
@@ -20,8 +21,7 @@ const CategoryIncredible = ({ selectCategory }: Props) => {
         overflow: "scroll",
         scrollbarWidth: "none",
       }}
-      className={" d-flex flex-row gap-4 p-1 align-items-center"}
-    >
+      className={" d-flex flex-row gap-4 p-1 align-items-center"}>
       {listCategori &&
         listCategori.map((item, index) => (
           <div
@@ -29,9 +29,8 @@ const CategoryIncredible = ({ selectCategory }: Props) => {
             style={{ width: "7rem", height: "90%", flexShrink: 0 }}
             className=" d-flex flex-column align-items-center"
             onClick={() => {
-              selectCategory({ type:"category",value:item.title });
-            }}
-          >
+              selectCategory({ type: "category", value: item.title });
+            }}>
             <img
               style={{ width: "100%", height: "90%", objectFit: "cover" }}
               src={item.image}

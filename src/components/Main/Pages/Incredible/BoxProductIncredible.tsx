@@ -3,6 +3,7 @@ import Product from "../../IncredibleComponent/Product";
 import { contextWidth } from "../../../App";
 import useRunningOutIncredibleProducts from "../../../Hooks/useRunningOutIncredibleProducts";
 import type { ProductRunningOut } from "../../../Services/Intefaces";
+import { Link } from "react-router";
 
 interface Props {
   filter: {
@@ -13,13 +14,17 @@ interface Props {
 // "#0fabc6"
 const BoxProductIncredible = ({ filter }: Props) => {
   const property = useContext(contextWidth)!;
-  const { data: list, error, isLoading } = useRunningOutIncredibleProducts();
+  const {
+    objectProduct: list,
+    error,
+    isLoading,
+  } = useRunningOutIncredibleProducts();
   let mainListProduct: ProductRunningOut[] | undefined = list?.products || [];
   console.log("dd", list);
 
   if (filter.category === "همه دسته‌بندی‌ها" && filter.brand !== "برند") {
     mainListProduct = list?.products.filter((item) => {
-      if (item.data_layer.brand.includes(filter.brand)) {
+      if (item.layer.brand.trim().includes(filter.brand)) {
         return item;
       }
     });
@@ -28,9 +33,9 @@ const BoxProductIncredible = ({ filter }: Props) => {
     filter.brand === "برند"
   ) {
     mainListProduct = list?.products.filter((item) => {
-      console.log(item.data_layer.category[0], filter.category);
+      console.log(item.layer.category, filter.category);
 
-      if (item.data_layer.category[0].includes(filter.category)) {
+      if (item.layer.category.includes(filter.category)) {
         return item;
       }
     });
@@ -39,11 +44,11 @@ const BoxProductIncredible = ({ filter }: Props) => {
     filter.brand !== "برند"
   ) {
     mainListProduct = list?.products.filter((item) => {
-      console.log(item.data_layer.category[0], filter.category);
+      console.log(item.layer.category, filter.category);
 
       if (
-        item.data_layer.category[0].includes(filter.category) &&
-        item.data_layer.brand.includes(filter.brand)
+        item.layer.category.includes(filter.category) &&
+        item.layer.brand.includes(filter.brand)
       ) {
         return item;
       }
@@ -75,13 +80,15 @@ const BoxProductIncredible = ({ filter }: Props) => {
         {mainListProduct?.map((item, index) => (
           <>
             {property.innerWidth < 850 ? (
-              <div
+              <Link
+                to={`/products/incredible-Offers/incredible-Offers/${item.layer.category}/${item.title}`}
                 style={{
                   height: "10rem",
                   borderRadius: "10px",
                   overflow: "hidden",
                 }}
                 className={[
+                  "linkTo",
                   property.innerWidth < 850
                     ? "d-flex border flex-row gap-1  w-100"
                     : "bg-info",
@@ -114,7 +121,7 @@ const BoxProductIncredible = ({ filter }: Props) => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             ) : (
               <Product item={item} index={index} />
             )}

@@ -198,13 +198,18 @@
         "products": [
           {
             "title": "ادوپرفیوم زنانه هارلینگن مدل لانکوم میدنایت رز با رایحه گرم حجم 30 میلی‌لیتر",
-            "data_layer": {
+            "layer": {
               "brand": "هارلینگن",
-              "category": ["آرایشی و بهداشتی", "ps"]
+              "category": "آرایشی و بهداشتی"
             },
             "price": {
               "selling_price": 5775000,
-              "rrp_price": 16500000
+              "rrp_price": 16500000,
+              "percent": 4
+            },
+            "images": {
+              "mainImg": "https://dkstatics-public.digikala.com/digikala-products/a42f1ea075cd44f3ce8cdeeef5a8ff548aa0132c_1740511278.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+              "listImg": []
             },
             "imgWEBP": "https://dkstatics-public.digikala.com/digikala-products/a42f1ea075cd44f3ce8cdeeef5a8ff548aa0132c_1740511278.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
             "rating": {
@@ -215,13 +220,18 @@
           },
           {
             "title": "کرم آبرسان دست و صورت آرت وینا مدل ویتامین E مناسب انواع پوست حجم 50 میلی لیتر",
-            "data_layer": {
+            "layer": {
               "brand": "آرت وینا",
-              "category": ["آرایشی و بهداشتی", "hs"]
+              "category": "آرایشی و بهداشتی"
             },
             "price": {
               "selling_price": 4690000,
-              "rrp_price": 14990000
+              "rrp_price": 14990000,
+              "percent": 4
+            },
+            "images": {
+              "mainImg": "https://dkstatics-public.digikala.com/digikala-products/87307678eeab02e6888560470c34328403eccc1b_1754236725.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+              "listImg": []
             },
             "imgWEBP": "https://dkstatics-public.digikala.com/digikala-products/87307678eeab02e6888560470c34328403eccc1b_1754236725.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
             "rating": {
@@ -232,14 +242,20 @@
           },
           {
             "title": "تلویزیون 55 اینچ ال ای دی هوشمند توشیبا مدل 55C350RP",
-            "data_layer": {
+            "layer": {
               "brand": "توشیبا",
-              "category": ["لوازم خانگی برقی", "la"]
+              "category": "لوازم خانگی برقی"
             },
             "price": {
               "selling_price": 769000000,
-              "rrp_price": 910233000
+              "rrp_price": 910233000,
+              "percent": 4
             },
+            "images": {
+              "mainImg": "https://dkstatics-public.digikala.com/digikala-products/670d4f595d7196ff7ec9235905c41eead4a34cf1_1770644342.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+              "listImg": []
+            },
+
             "imgWEBP": "https://dkstatics-public.digikala.com/digikala-products/670d4f595d7196ff7ec9235905c41eead4a34cf1_1770644342.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
             "rating": {
               "rate": 100,
@@ -249,15 +265,21 @@
           },
           {
             "title": "گوشواره حلقه‌ای طلا 18 عیار زنانه طلا و جواهر ویانا مدل توپ تراش البرنادو",
-            "data_layer": {
+            "layer": {
               "brand": "طلا و جواهر ویانا",
-              "category": ["طلا و نقره", "ps"]
+              "category": "طلا و نقره"
             },
             "price": {
               "selling_price": 5775000,
-              "rrp_price": 16500000
+              "rrp_price": 16500000,
+              "percent": 4
+            },
+            "images": {
+              "mainImg": "https://dkstatics-public.digikala.com/digikala-products/40a1ff095c2a1ac81039c5165d0669fbd018a5c4_1762259623.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+              "listImg": []
             },
             "imgWEBP": "https://dkstatics-public.digikala.com/digikala-products/40a1ff095c2a1ac81039c5165d0669fbd018a5c4_1762259623.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+
             "rating": {
               "rate": 80,
               "count": 20,
@@ -266,13 +288,18 @@
           },
           {
             "title": "دستگاه دیسک کمر اودسا مدل c1",
-            "data_layer": {
+            "layer": {
               "brand": "اودسا",
-              "category": ["ورزش و سفر", "so"]
+              "category": "ورزش و سفر"
             },
             "price": {
               "selling_price": 29850000,
-              "rrp_price": 53500000
+              "rrp_price": 53500000,
+              "percent": 4
+            },
+            "images": {
+              "mainImg": "https://dkstatics-public.digikala.com/digikala-products/081bfc8facb3ab259abe241bb8bab3b91c661e16_1768139293.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+              "listImg": []
             },
             "imgWEBP": "https://dkstatics-public.digikala.com/digikala-products/081bfc8facb3ab259abe241bb8bab3b91c661e16_1768139293.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
             "rating": {
@@ -283,15 +310,21 @@
           },
           {
             "title": "روان نویس کورس مدل FINE LINER طرح قایق بسته 12 عددی",
-            "data_layer": {
+            "layer": {
               "brand": "کورس",
-              "category": ["کتاب، لوازم تحریر و هنر", "ma"]
+              "category": "کتاب، لوازم تحریر و هنر"
             },
             "price": {
               "selling_price": 3990000,
-              "rrp_price": 9000000
+              "rrp_price": 9000000,
+              "percent": 4
+            },
+            "images": {
+              "mainImg": "https://dkstatics-public.digikala.com/digikala-products/ef8bce6e13af34c90ca826089d784903a65b6ed3_1688547700.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+              "listImg": []
             },
             "imgWEBP": "https://dkstatics-public.digikala.com/digikala-products/ef8bce6e13af34c90ca826089d784903a65b6ed3_1688547700.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+
             "rating": {
               "rate": 91.07,
               "count": 103,
@@ -300,13 +333,18 @@
           },
           {
             "title": "ادوپرفیوم زنانه هارلینگن مدل لانکوم میدنایت رز با رایحه گرم حجم 30 میلی‌لیتر",
-            "data_layer": {
+            "layer": {
               "brand": "هارلینگن",
-              "category": ["آرایشی و بهداشتی", "ps"]
+              "category": "آرایشی و بهداشتی"
             },
             "price": {
               "selling_price": 5775000,
-              "rrp_price": 16500000
+              "rrp_price": 16500000,
+              "percent": 4
+            },
+            "images": {
+              "mainImg": "https://dkstatics-public.digikala.com/digikala-products/a42f1ea075cd44f3ce8cdeeef5a8ff548aa0132c_1740511278.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+              "listImg": []
             },
             "imgWEBP": "https://dkstatics-public.digikala.com/digikala-products/a42f1ea075cd44f3ce8cdeeef5a8ff548aa0132c_1740511278.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
             "rating": {
@@ -317,13 +355,18 @@
           },
           {
             "title": "ادوپرفیوم زنانه هارلینگن مدل لانکوم میدنایت رز با رایحه گرم حجم 30 میلی‌لیتر",
-            "data_layer": {
+            "layer": {
               "brand": "هارلینگن",
-              "category": ["آرایشی و بهداشتی", "ps"]
+              "category": "آرایشی و بهداشتی"
             },
             "price": {
               "selling_price": 5775000,
-              "rrp_price": 16500000
+              "rrp_price": 16500000,
+              "percent":4
+            },
+            "images": {
+              "mainImg": "https://dkstatics-public.digikala.com/digikala-products/a42f1ea075cd44f3ce8cdeeef5a8ff548aa0132c_1740511278.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+              "listImg": []
             },
             "imgWEBP": "https://dkstatics-public.digikala.com/digikala-products/a42f1ea075cd44f3ce8cdeeef5a8ff548aa0132c_1740511278.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
             "rating": {
@@ -677,7 +720,7 @@
     "products": [
       {
         "title": "ویتامین‌ها و مواد معدنی",
-        "product": [
+        "products": [
           {
             "title": "قرص ویتامین D3-1000 واحدی  بسته 60 عددی",
             "layer": {

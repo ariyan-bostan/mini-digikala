@@ -11,14 +11,14 @@ const IncredibleUrgent = () => {
   const property = useContext(contextWidth)!;
   const { listCategori, errorCategori, isLoadingCategori } =
     useListCategories();
-  const { data: list, error, isLoading } = useRunningOutIncredibleProducts();
+  const { objectProduct: list, error, isLoading } = useRunningOutIncredibleProducts();
 
   const [selectCategori, setSelectCategori] = useState("");
   let mainListProduct: ProductRunningOut[] | undefined = list?.products || [];
   list?.products;
   if (selectCategori !== "همه دسته‌بندی‌ها") {
     mainListProduct = list?.products.filter((item) => {
-      if (item.data_layer.category[0].includes(selectCategori)) {
+      if (item.layer.category.includes(selectCategori)) {
         return item;
       }
     });

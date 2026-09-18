@@ -27,17 +27,21 @@ const ProductList = ({ title }: Props) => {
         ].join(" ")}>
         <h3>{title}</h3>
 
-        <Link className="linkTo" to={`/products/${title}`}>مشاهده همه</Link>
+        <Link className="linkTo" to={`/products/${title}`}>
+          مشاهده همه
+        </Link>
       </div>
       <div
         className={[
           style.containerProduct,
           "d-flex flex-row gap-2 align-items-center p-2",
         ].join(" ")}>
-        {objectProduct?.product.map((item, index) => (
-          <div
+        {objectProduct?.products.map((item, index) => (
+          <Link
+            to={`/products/informationProduct/products/${title}/${item.title}`}
             key={index}
             className={[
+              "linkTo",
               style.product,
               "d-flex flex-column gap-2 border p-1",
             ].join(" ")}>
@@ -67,7 +71,7 @@ const ProductList = ({ title }: Props) => {
               className="d-flex flex-row justify-content-center">
               <p className="fw-bold">{item.price.selling_price}تومان</p>
             </div>
-          </div>
+          </Link>
         ))}
         <div
           className={[
