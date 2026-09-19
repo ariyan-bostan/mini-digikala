@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import style from "./Styles/Layout.module.css";
 import Header from "./Header/Header";
 import useNavList1 from "./Hooks/useNavList1";
-import { BrowserRouter, Route, Routes } from "react-router";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router";
 import Home from "./Main/Home";
 import IncredibleOffers from "./Main/Pages/IncredibleOffers";
 import Supermarket from "./Main/Pages/Supermarket";
@@ -15,6 +15,9 @@ import Footer from "./Footer/Footer";
 import type { ItemNav1 } from "./Services/Intefaces";
 import Products from "./Main/Pages/Products";
 import InformationProduct from "./Main/Pages/InformationProduct";
+import Login from "./Main/Pages/Inputs/Login";
+import Signup from "./Main/Pages/Inputs/Signup";
+import { boolean } from "zod";
 
 export interface ValueHeader {
   list: ItemNav1[] | undefined;
@@ -24,6 +27,10 @@ export interface ValueHeader {
 interface TypeContextWidth {
   innerWidth: number;
 }
+interface TypeCheckInputUser {
+  checkInputUser: boolean;
+  setCheckInputUser: (item: boolean) => void;
+}
 export const contextWidth = React.createContext<TypeContextWidth | undefined>(
   undefined,
 );
@@ -31,7 +38,14 @@ export const contextWidth = React.createContext<TypeContextWidth | undefined>(
 export const ContextHeader = React.createContext<ValueHeader | undefined>(
   undefined,
 );
+export const contextCheckInputUser = React.createContext<
+  TypeCheckInputUser | undefined
+>(undefined);
+
+
 const App = () => {
+  const [checkInputUser, setCheckInputUser] = useState(false);
+
   const [innerWidth, setInnerWidth] = useState(window.innerWidth);
 
   useWidthWindow(setInnerWidth);
@@ -41,42 +55,60 @@ const App = () => {
   return (
     <BrowserRouter>
       <contextWidth.Provider value={{ innerWidth }}>
-        <div dir="rtl" className={[style.container].join(" ")}>
-          <ContextHeader value={{ list, error, isLoading }}>
-            <Header />
-          </ContextHeader>
+        <contextCheckInputUser.Provider
+          value={{ checkInputUser, setCheckInputUser }}>
+          <div dir="rtl" className={[style.container].join(" ")}>
+            <ContextHeader value={{ list, error, isLoading }}>
+              <Header />
+            </ContextHeader>
 
-          <div className={[style.containerMainFooter].join(" ")}>
-            <div className={[style.main].join(" ")}>
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route
-                  path="/incredible-Offers"
-                  element={<IncredibleOffers />}
-                />
-                <Route path="/supermarket" element={<Supermarket />} />
-                <Route path="/profile" element={<Profile />} />
-                <Route
-                  path="/profile/notification"
-                  element={<Notification />}
-                />
-                <Route path="/searching" element={<Searching />} />
-                <Route path="/products/:title" element={<Products />} />
-                <Route
-                  path="/products/informationProduct/:typeObject/:title/:titleProduct"
-                  element={<InformationProduct />}
-                />
-                <Route
-                  path="/products/incredible-Offers/:typeObject/:title/:titleProduct"
-                  element={<InformationProduct />}
-                />
-                <Route path="/*" element={<NotPage />} />
-              </Routes>
+            <div className={[style.containerMainFooter].join(" ")}>
+              <div className={[style.main].join(" ")}>
+                <Routes>
+                  <Route path="/" element={<Home />} />
+                  <Route
+                    path="/incredible-Offers"
+                    element={<IncredibleOffers />}
+                  />
+                  <Route path="/supermarket" element={<Supermarket />} />
+                  <Route
+                    path="/profile"
+                    element={checkInputUser ? <Profile /> : <Login />}
+                  />
+                  <Route path="/profile/profileInput" element={<Signup />} />
+                  <Route
+                    path="/profile/profileInput/login"
+                    element={<Login />}
+                  />
+                  <Route
+                    path="/profile/profileInput/signup"
+                    element={<Signup />}
+                  />
+                  <Route
+                    path="/profile/notification"
+                    element={checkInputUser ? <Notification /> : <Login />}
+                  />
+                  <Route
+                    path="/searching"
+                    element={checkInputUser ? <Searching /> : <Login />}
+                  />
+                  <Route path="/products/:title" element={<Products />} />
+                  <Route
+                    path="/products/informationProduct/:typeObject/:title/:titleProduct"
+                    element={<InformationProduct />}
+                  />
+                  <Route
+                    path="/products/incredible-Offers/:typeObject/:title/:titleProduct"
+                    element={<InformationProduct />}
+                  />
+                  <Route path="/*" element={<NotPage />} />
+                </Routes>
+              </div>
+
+              <Footer />
             </div>
-
-            <Footer />
           </div>
-        </div>
+        </contextCheckInputUser.Provider>
       </contextWidth.Provider>
     </BrowserRouter>
   );

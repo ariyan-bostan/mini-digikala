@@ -362,7 +362,7 @@
             "price": {
               "selling_price": 5775000,
               "rrp_price": 16500000,
-              "percent":4
+              "percent": 4
             },
             "images": {
               "mainImg": "https://dkstatics-public.digikala.com/digikala-products/a42f1ea075cd44f3ce8cdeeef5a8ff548aa0132c_1740511278.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
@@ -1039,5 +1039,39 @@
       "number2": "۰۲۱-۹۱۰۰۰۱۰۰",
       "text": "۷ روز هفته، ۲۴ ساعت پاسخگوی شما هستیم"
     }
+  },
+  "users": {
+    "admin": {
+      "id-admin": 1,
+      "type-user": "ادمین",
+      "number-phone": 9164977996,
+      "name": "ariyan",
+      "last-name": "bostan",
+      "user-name": "ariyanBostan",
+      "password": "bostanReact@js"
+    },
+    "user-admin": [
+      {
+        "id-userAmin": "0",
+        "type-user": "ادمین-کاربر",
+        "number-phone": "9164977996",
+        "name": "ariyano",
+        "last-name": "bostan",
+        "user-name": "ariyanam",
+        "password": "1234"
+      }
+    ],
+    "user": [
+      {
+        "id-user": "0",
+        "type-user": "عادی",
+        "number-phone": "9164977996",
+        "name": "ariyano",
+        "last-name": "bostan",
+        "user-name": "ariyanam",
+        "password": "1234",
+        "box-product": []
+      }
+    ]
   }
 }

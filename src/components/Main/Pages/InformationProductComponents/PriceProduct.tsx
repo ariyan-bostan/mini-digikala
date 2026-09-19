@@ -10,16 +10,14 @@ const PriceProduct = ({resault}:Props) => {
   return (
     <div
       className={[
-        "w-100 ",
+        " ",
         property.innerWidth < 850
-          ? "d-flex flex-row-reverse justify-content-between align-items-center px-2 border border-top"
-          : "d-flex flex-column justify-content-between align-items-center border rounded-4 px-2 py-4 ms-2",
-      ].join(" ")}
-    >
+          ? " w-100 d-flex flex-row-reverse justify-content-between align-items-center px-2 border border-top"
+          : "w-50 d-flex flex-column justify-content-between align-items-center border rounded-4 px-2 py-4 ms-2",
+      ].join(" ")}>
       <div
         style={{ width: "10rem", height: "5rem" }}
-        className=" d-flex flex-column gap-1"
-      >
+        className=" d-flex flex-column gap-1">
         <div className="h-50  d-flex flex-row align-items-center gap-2 justify-content-center">
           <div
             style={{
@@ -27,8 +25,7 @@ const PriceProduct = ({resault}:Props) => {
               height: "2rem",
               borderRadius: "50px",
             }}
-            className="bg-danger d-flex flex-row justify-content-center align-items-center"
-          >
+            className="bg-danger d-flex flex-row justify-content-center align-items-center">
             {resault?.price.percent}%
           </div>
           <div>
@@ -37,8 +34,7 @@ const PriceProduct = ({resault}:Props) => {
                 textDecoration: "line-through",
                 color: "#bdbdbdc7",
               }}
-              className="m-0 p-0"
-            >
+              className="m-0 p-0">
               {resault?.price.rrp_price}
             </p>
           </div>
@@ -51,8 +47,7 @@ const PriceProduct = ({resault}:Props) => {
       </div>
       <button
         style={{ height: "2rem", width: "11rem" }}
-        className="btn btn-danger p-0"
-      >
+        className="btn btn-danger p-0">
         افزودن به سبد خرید
       </button>
     </div>
