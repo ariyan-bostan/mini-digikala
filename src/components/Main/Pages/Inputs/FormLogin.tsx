@@ -1,9 +1,13 @@
-import { zodResolver } from '@hookform/resolvers/zod';
-import React, { useContext, useEffect, useState } from 'react'
-import { useForm } from 'react-hook-form';
-import useGetListNormalUser, { type User } from '../../../Hooks/useGetListNormalUser';
-import { contextCheckInputUser } from '../../../App';
-import  z from 'zod';
+import { zodResolver } from "@hookform/resolvers/zod";
+import React, { useContext, useEffect, useState } from "react";
+import { useForm } from "react-hook-form";
+import useGetListNormalUser, {
+  type User,
+} from "../../../Hooks/useGetListNormalUser";
+import { contextCheckInputUser } from "../../../App";
+import z from "zod";
+import Swal from "sweetalert2";
+import { da } from "zod/v4/locales";
 
 const schema = z.object({
   userId: z
@@ -17,26 +21,38 @@ const schema = z.object({
 type formData = z.infer<typeof schema>;
 
 const FormLogin = () => {
-    const checkInput = useContext(contextCheckInputUser)!;
-    const {
-      register,
-      handleSubmit,
-      reset,
-      formState: { errors },
-    } = useForm<formData>({ resolver: zodResolver(schema) });
+  const checkInput = useContext(contextCheckInputUser)!;
+  const [message, setMessage] = useState("");
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm<formData>({ resolver: zodResolver(schema) });
 
-    const { listNormalUser, error, isLoading } = useGetListNormalUser();
-    let [person,setPerson]=useState<User|undefined>(undefined);
-    useEffect(()=>{
-        if(!person)
-        localStorage.setItem("user",JSON.stringify(person))
-    },[person])
+  const { listNormalUser, error, isLoading } = useGetListNormalUser();
+  let [person, setPerson] = useState<User | undefined>(undefined);
+  useEffect(() => {
+    const data = JSON.parse(localStorage.getItem("getUser") || "null");
+
+    if (data) {
+      checkInput.setCheckInputUser(true);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (person) {
+        Swal.fire({
+        title: `خوش امدید ${person?.name }`,
+        icon: "success",
+      });
+      localStorage.setItem("getUser", JSON.stringify(person));
+    }
+  }, [person]);
 
   return (
     <form
       onSubmit={handleSubmit((data) => {
-        console.log(data);
-        console.log(listNormalUser);
         let resault = listNormalUser?.find((item) => {
           return (
             (item["user-name"] === data.userId ||
@@ -44,18 +60,23 @@ const FormLogin = () => {
             item.password === data.password
           );
         });
-        
-        setPerson(resault)
-        console.log("find",person);
-        
+
+        setPerson(resault);
+        console.log(resault);
+
+        if (!resault) setMessage("نام کاربری یا شماره تلفن یافت نشد !!");
+
         reset();
       })}
-      className="w-100 form">
+      className="w-100 form"
+    >
+      {message && <p>{message}</p>}
       <div>
         <label
           style={{ color: "whitesmoke", fontSize: ".8rem" }}
           className=""
-          htmlFor="">
+          htmlFor=""
+        >
           نام کاربری یا شماره تلفن :{" "}
         </label>
         <input
@@ -81,7 +102,8 @@ const FormLogin = () => {
         <label
           style={{ color: "whitesmoke", fontSize: ".8rem" }}
           className=""
-          htmlFor="">
+          htmlFor=""
+        >
           رمز عبور :{" "}
         </label>
         <input
@@ -105,11 +127,12 @@ const FormLogin = () => {
 
       <button
         style={{ color: "white" }}
-        className="btn border p-0 px-3 py-1 mt-3">
+        className="btn border p-0 px-3 py-1 mt-3"
+      >
         ورود
       </button>
     </form>
   );
-}
+};
 
-export default FormLogin
+export default FormLogin;
