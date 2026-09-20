@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
-export interface User {
+export interface UserNormal {
   "id-user": string;
   "type-user": string;
   "number-phone": string;
@@ -12,7 +12,7 @@ export interface User {
 }
 
 interface ResponseNormalUser {
-  user: User[];
+  user: UserNormal[];
 }
 
 const useGetListNormalUser = () => {
@@ -20,7 +20,7 @@ const useGetListNormalUser = () => {
     data: listNormalUser,
     error,
     isLoading,
-  } = useQuery<User[], Error>({
+  } = useQuery<UserNormal[], Error>({
     queryKey: ["list-normal user"],
     queryFn: () => {
       return axios

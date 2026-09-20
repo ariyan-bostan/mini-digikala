@@ -9,24 +9,22 @@ import useGetListNormalUser from "../../../Hooks/useGetListNormalUser";
 import LogoInputs from "./LogoInputs";
 import FormLogin from "./FormLogin";
 
-
-
 const Login = () => {
-  
   const navigate = useNavigate();
   const property = useContext(contextWidth)!;
-  
+
   return (
     <div
-      className={[
-        "w-100",
-        property.innerWidth < 850
-          ? "d-flex flex-column align-items-center gap-3"
-          : "",
-      ].join(" ")}>
-
+      className={["w-100", "d-flex flex-column align-items-center gap-3"].join(
+        " ",
+      )}>
       <LogoInputs />
-      <div className="w-75 bg-info border p-4 rounded-4">
+      <div
+        className={[
+          property.innerWidth < 850
+            ? "w-75  border p-4 rounded-4"
+            : "w-50 mt-2  border p-4 rounded-4",
+        ].join(" ")}>
         <FormLogin />
         <p
           onClick={() => {

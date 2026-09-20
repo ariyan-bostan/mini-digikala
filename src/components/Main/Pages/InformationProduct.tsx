@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { contextWidth } from "../../App";
 import useProduct from "../../Hooks/useProduct";
 import { useParams } from "react-router";
@@ -7,6 +7,8 @@ import ImagesProduct from "./InformationProductComponents/ImagesProduct";
 import TitleProduct from "./InformationProductComponents/TitleProduct";
 import CategoryProduct from "./InformationProductComponents/CategoryProduct";
 import PriceProduct from "./InformationProductComponents/PriceProduct";
+import style from "../../Styles/Layout.module.css";
+
 
 const InformationProduct = () => {
   const property = useContext(contextWidth)!;
@@ -16,8 +18,13 @@ const InformationProduct = () => {
     if (item.title.includes(paramURL.titleProduct || "")) return item;
   });
   const [selectImg, setSelectImg] = useState(resault?.images.mainImg || "");
-
-  console.log(resault);
+  useEffect(() => {
+    document.querySelector(`.${style.containerMainFooter}`)?.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
+   
 
   return (
     <div

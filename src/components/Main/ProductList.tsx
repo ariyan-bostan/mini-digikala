@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import useProduct from "../Hooks/useProduct";
 import style from "../Styles/Main/ProductList.module.css";
 import { contextWidth } from "../App";
@@ -13,6 +13,7 @@ interface Props {
 const ProductList = ({ title }: Props) => {
   const property = useContext(contextWidth)!;
   const { objectProduct, error, isLoading } = useProduct(title);
+  
   return (
     <div
       className={[

@@ -1,4 +1,4 @@
-import { useContext, useReducer } from "react";
+import { useContext, useEffect, useReducer } from "react";
 // import style from "../../Styles/Main/IncredibleOffer.module.css"
 import { contextWidth } from "../../App";
 import useRunningOutIncredibleProducts from "../../Hooks/useRunningOutIncredibleProducts";
@@ -8,6 +8,8 @@ import BannerIncredible2 from "./Incredible/BannerIncredible2";
 import BoxProductIncredible from "./Incredible/BoxProductIncredible";
 import CategoryIncredible from "./Incredible/CategoryIncredible";
 import FormFilterIncredible from "./Incredible/FormFilterIncredible";
+import style from "../../Styles/Layout.module.css";
+
 
 const initialFilter = {
   category: "همه دسته‌بندی‌ها",
@@ -25,8 +27,14 @@ const IncredibleOffers = () => {
   const property = useContext(contextWidth)!;
 
   const [filter, dispatch] = useReducer(reducerSelectFilter, initialFilter);
-    console.log(filter);
-    
+
+    useEffect(() => {
+      document.querySelector(`.${style.containerMainFooter}`)?.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }, []);
+   
   return (
     <div className="w-100">
       <BackgroundIncredible />

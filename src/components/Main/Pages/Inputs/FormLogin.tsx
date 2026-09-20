@@ -2,12 +2,13 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import React, { useContext, useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import useGetListNormalUser, {
-  type User,
+  type UserNormal,
 } from "../../../Hooks/useGetListNormalUser";
 import { contextCheckInputUser } from "../../../App";
 import z from "zod";
 import Swal from "sweetalert2";
 import { da } from "zod/v4/locales";
+import { useNavigate, useParams } from "react-router";
 
 const schema = z.object({
   userId: z
@@ -22,6 +23,8 @@ type formData = z.infer<typeof schema>;
 
 const FormLogin = () => {
   const checkInput = useContext(contextCheckInputUser)!;
+
+  const navigate = useNavigate();
   const [message, setMessage] = useState("");
   const {
     register,
@@ -31,7 +34,7 @@ const FormLogin = () => {
   } = useForm<formData>({ resolver: zodResolver(schema) });
 
   const { listNormalUser, error, isLoading } = useGetListNormalUser();
-  let [person, setPerson] = useState<User | undefined>(undefined);
+  let [person, setPerson] = useState<UserNormal | undefined>(undefined);
   useEffect(() => {
     const data = JSON.parse(localStorage.getItem("getUser") || "null");
 
@@ -42,11 +45,12 @@ const FormLogin = () => {
 
   useEffect(() => {
     if (person) {
-        Swal.fire({
-        title: `خوش امدید ${person?.name }`,
+      Swal.fire({
+        title: `خوش امدید ${person?.name}`,
         icon: "success",
       });
       localStorage.setItem("getUser", JSON.stringify(person));
+      navigate("/");
     }
   }, [person]);
 
@@ -61,22 +65,17 @@ const FormLogin = () => {
           );
         });
 
-        setPerson(resault);
-        console.log(resault);
-
         if (!resault) setMessage("نام کاربری یا شماره تلفن یافت نشد !!");
 
         reset();
       })}
-      className="w-100 form"
-    >
-      {message && <p>{message}</p>}
+      className="w-100 form">
+      {message && <p style={{ color: "red" }}>{message}</p>}
       <div>
         <label
-          style={{ color: "whitesmoke", fontSize: ".8rem" }}
+          style={{ color: "#8f8d8d", fontSize: ".8rem" }}
           className=""
-          htmlFor=""
-        >
+          htmlFor="">
           نام کاربری یا شماره تلفن :{" "}
         </label>
         <input
@@ -100,10 +99,9 @@ const FormLogin = () => {
 
       <div className="mt-2">
         <label
-          style={{ color: "whitesmoke", fontSize: ".8rem" }}
+          style={{ color: "#8f8d8d", fontSize: ".8rem" }}
           className=""
-          htmlFor=""
-        >
+          htmlFor="">
           رمز عبور :{" "}
         </label>
         <input
@@ -126,9 +124,8 @@ const FormLogin = () => {
       )}
 
       <button
-        style={{ color: "white" }}
-        className="btn border p-0 px-3 py-1 mt-3"
-      >
+        style={{ color: "#474747" }}
+        className="btn border p-0 px-3 py-1 mt-3">
         ورود
       </button>
     </form>
