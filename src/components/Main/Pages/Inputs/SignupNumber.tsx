@@ -33,7 +33,8 @@ const SignupNumber = () => {
     <form
       onSubmit={handleSubmit((data) => {
         person.setNewPerson({ ...person.newPerson, "number-phone": "2222" });
-        console.log(data.numberSignup);
+        stateSignup.setStateSignupForm({...stateSignup.stateSignupForm,numberPhone:true});
+        reset();
       })}
       className="w-100 form">
       <div>
