@@ -32,7 +32,7 @@ const SignupNumber = () => {
   return (
     <form
       onSubmit={handleSubmit((data) => {
-        person.setNewPerson({ ...person.newPerson, "number-phone": "2222" });
+        person.setNewPerson({ ...person.newPerson, "number-phone":data.numberSignup});
         stateSignup.setStateSignupForm({...stateSignup.stateSignupForm,numberPhone:true});
         reset();
       })}

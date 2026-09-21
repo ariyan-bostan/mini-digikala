@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import useBannerSwiper from "../Hooks/useBannerSwiper";
 import BrandSwiper from "./BrandSwiper";
 import Titles from "./Titles";
@@ -26,6 +26,10 @@ export const ContextBannerSwiper = React.createContext<
 >(undefined);
 
 const Home = () => {
+  
+    
+  
+
   const { data: list, error, isLoading } = useBannerSwiper();
   const property = useContext(contextWidth)!;
   return (

@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import z from "zod";
 import { contextUserNormal } from "./Signup";
 import { contextStateSignupForm } from "./SignupInputs";
+import useAddNormalUser from "../../../Hooks/useAddNormalUser";
 
 const schema = z.object({
   nameSignup: z
@@ -38,7 +39,7 @@ const SignupFullName = () => {
           name: data.nameSignup,
           "last-name": data.lastnameSignup,
         });
-        stateSignup.setStateSignupForm({...stateSignup.stateSignupForm,fullName:true})
+        stateSignup.setStateSignupForm({...stateSignup.stateSignupForm,fullName:true});
         reset();
       })}
       className="w-100 form"

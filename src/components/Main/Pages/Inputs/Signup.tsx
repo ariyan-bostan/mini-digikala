@@ -16,7 +16,7 @@ const Signup = () => {
   const property = useContext(contextWidth)!;
   const [newPerson, setNewPerson] = useState<UserNormal>({
     "id-user": "",
-    "type-user": "",
+    "type-user": "عادی",
     "number-phone": "",
     name: "",
     "last-name": "",
