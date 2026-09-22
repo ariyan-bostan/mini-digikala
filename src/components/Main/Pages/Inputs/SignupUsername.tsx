@@ -7,6 +7,7 @@ import { contextStateSignupForm } from "./SignupInputs";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router";
 import useGetListNormalUser from "../../../Hooks/useGetListNormalUser";
+import useAddNormalUser from "../../../Hooks/useAddNormalUser";
 const schema = z.object({
   usernameSignup: z
     .string({ message: "نام کاربری خودت را وارد کن" })
@@ -29,6 +30,7 @@ type formData = z.infer<typeof schema>;
 
 const SignupUsername = () => {
   const { listNormalUser, error, isLoading } = useGetListNormalUser();
+  const addUserNormal = useAddNormalUser();
 
   const {
     register,
@@ -47,6 +49,13 @@ const SignupUsername = () => {
         if (data.passwordSignup !== data.duplicatePasswordSignup)
           setErrorPassword("پسورد یکسان نیست");
         else {
+          addUserNormal.mutate({
+            ...person.newPerson,
+            "user-name": data.usernameSignup,
+            password: data.passwordSignup,
+            "id-user":
+              (listNormalUser && String(listNormalUser.length + 2)) || "1",
+          });
           person.setNewPerson({
             ...person.newPerson,
             "user-name": data.usernameSignup,

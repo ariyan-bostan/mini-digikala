@@ -6,6 +6,7 @@ import { contextUserNormal } from "./Signup";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router";
 import type { UserNormal } from "../../../Hooks/useGetListNormalUser";
+import useAddNormalUser from "../../../Hooks/useAddNormalUser";
 interface TypeStateSignupForm {
   numberPhone: boolean;
   fullName: boolean;
@@ -32,7 +33,7 @@ const SignupInput = () => {
     stateSignupForm.fullName &&
     stateSignupForm.username
   ) {
-    console.log(person.newPerson);
+  
 
     localStorage.setItem("getUser", JSON.stringify({id:person.newPerson["id-user"],type:person.newPerson["type-user"]}));
   
@@ -40,6 +41,7 @@ const SignupInput = () => {
       title: `خوش امدید ${person.newPerson.name}`,
       icon: "success",
     });
+    
     navigate("/");
   }
   return (

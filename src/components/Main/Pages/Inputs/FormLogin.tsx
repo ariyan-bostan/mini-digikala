@@ -65,7 +65,9 @@ const FormLogin = () => {
           );
         });
 
-        if (!resault) setMessage("نام کاربری یا شماره تلفن یافت نشد !!");
+        if (!resault) setMessage("نام کاربری یا شماره تلفن یافت نشد !!")
+          else
+            setPerson(resault);
 
         reset();
       })}

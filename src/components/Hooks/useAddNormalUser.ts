@@ -1,23 +1,55 @@
-import { useMutation } from "@tanstack/react-query";
+import {
+  QueryClient,
+  useMutation,
+  useQueryClient,
+} from "@tanstack/react-query";
 import type { UserNormal } from "./useGetListNormalUser";
 import axios from "axios";
 
+interface TypeContextPreviousData {
+  previousDataQuery: UserNormal[] | undefined;
+}
+
 const useAddNormalUser = () => {
-    
-  return useMutation<UserNormal, Error, UserNormal>({
-    mutationFn: (item: UserNormal) => {
-      console.log("success");
+  const queryClient = useQueryClient();
+  const addNormalUser = useMutation<
+    UserNormal,
+    Error,
+    UserNormal,
+    TypeContextPreviousData
+  >({
+    mutationFn: (newUserNormal: UserNormal) => {
       return axios
-        .post("http://localhost:3000/normalUsers", item)
+        .post<UserNormal>("http://localhost:3000/normalUsers", newUserNormal)
         .then((res) => res.data);
     },
-    onSuccess: (savedItem: UserNormal, newItem) => {},
-    onError:(error,newItem,context)=>{
+    onMutate: (newNormalUser: UserNormal) => {
+      let previousDataQuery = queryClient.getQueryData<UserNormal[]>([
+        "list-normal user",
+      ]);
 
+      queryClient.setQueryData<UserNormal[]>(["list-normal user"], (list) => {
+        return [...(list || []), newNormalUser];
+      });
+      return { previousDataQuery };
     },
-    onSettled:(saveditem,newItem)=>{
-
-    }
+    onSuccess: (newItem) => {
+      console.log("success for ");
+      
+      queryClient.setQueryData<UserNormal[]>(["list-normal user"], (list) => {
+        return list && list.map((item) => (item !== newItem ? newItem : item));
+      });
+    },
+    onError: (error, newItem, context) => {
+      if (!error) return;
+      console.log("error add normal user");
+      
+      queryClient.setQueryData<UserNormal[]>(
+        ["list-normal user"],
+        context?.previousDataQuery,
+      );
+    },
   });
+  return addNormalUser;
 };
 export default useAddNormalUser;

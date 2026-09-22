@@ -86,7 +86,11 @@ const App = () => {
                   />
                   <Route
                     path="/profile/notification"
-                    element={checkInputUser ? <Notification /> : <Login />}
+                    element={checkInputUser ? <Profile /> : <Login />}
+                  />
+                  <Route
+                    path="/profile/user-admin"
+                    element={checkInputUser ? <Profile /> : <Login  typeUser="user-admin"/>}
                   />
                   <Route
                     path="/searching"

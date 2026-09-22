@@ -8,8 +8,10 @@ import { data, Navigate, useNavigate, useNavigation } from "react-router";
 import useGetListNormalUser from "../../../Hooks/useGetListNormalUser";
 import LogoInputs from "./LogoInputs";
 import FormLogin from "./FormLogin";
-
-const Login = () => {
+interface Props {
+  typeUser?: string;
+}
+const Login = ({ typeUser }: Props) => {
   const navigate = useNavigate();
   const property = useContext(contextWidth)!;
 
@@ -26,14 +28,16 @@ const Login = () => {
             : "w-50 mt-2  border p-4 rounded-4",
         ].join(" ")}>
         <FormLogin />
-        <p
-          onClick={() => {
-            navigate("/profile/profileInput/signup");
-          }}
-          style={{ fontSize: ".8rem" }}
-          className="mt-4">
-          ثبت نام نکردید؟
-        </p>
+        {!typeUser && (
+          <p
+            onClick={() => {
+              navigate("/profile/profileInput/signup");
+            }}
+            style={{ fontSize: ".8rem" }}
+            className="mt-4">
+            ثبت نام نکردید؟
+          </p>
+        )}
       </div>
     </div>
   );

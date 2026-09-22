@@ -11,21 +11,19 @@ export interface UserNormal {
   "box-product": string[];
 }
 
-
-
 const useGetListNormalUser = () => {
   const {
-    data: listNormalUser,
+    data: listAdminUser,
     error,
     isLoading,
   } = useQuery<UserNormal[], Error>({
-    queryKey: ["list-normal user"],
+    queryKey: ["list-admin user"],
     queryFn: () => {
       return axios
-        .get<UserNormal[]>("http://localhost:3000/normalUsers")
+        .get<UserNormal[]>("http://localhost:3000/User-Admin")
         .then((res) => res.data);
     },
   });
-  return { listNormalUser, error, isLoading };
+  return { listAdminUser, error, isLoading };
 };
 export default useGetListNormalUser;
