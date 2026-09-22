@@ -1048,13 +1048,14 @@
   },
   "User-Admin": [
     {
-      "id-userAmin": "0",
+      "id-user": "0",
       "type-user": "ادمین-کاربر",
       "number-phone": "9164977996",
       "name": "ariyano",
       "last-name": "bostan",
       "user-name": "ariyanam",
-      "password": "1234",
+      "password": "1334",
+      "box-product": [],
       "id": "pIhJzyIw4RI"
     }
   ],
@@ -1080,6 +1081,28 @@
       "password": "12344321",
       "box-product": [],
       "id": "tOLgdTOF6u0"
+    },
+    {
+      "id-user": "4",
+      "type-user": "عادی",
+      "number-phone": "9818181811",
+      "name": "کصی",
+      "last-name": "کصیانو",
+      "user-name": "kosianooo",
+      "password": "10101010",
+      "box-product": [],
+      "id": "v7_sxH78fvc"
+    },
+    {
+      "id-user": "5",
+      "type-user": "عادی",
+      "number-phone": "9999999999",
+      "name": "کیر",
+      "last-name": "کیری",
+      "user-name": "kirianooo",
+      "password": "12233445",
+      "box-product": [],
+      "id": "Sm_pqQqysRw"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

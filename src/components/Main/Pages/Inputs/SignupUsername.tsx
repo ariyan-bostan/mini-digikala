@@ -29,7 +29,7 @@ const schema = z.object({
 type formData = z.infer<typeof schema>;
 
 const SignupUsername = () => {
-  const { listNormalUser, error, isLoading } = useGetListNormalUser();
+  const { listUser, error, isLoading } = useGetListNormalUser();
   const addUserNormal = useAddNormalUser();
 
   const {
@@ -54,14 +54,14 @@ const SignupUsername = () => {
             "user-name": data.usernameSignup,
             password: data.passwordSignup,
             "id-user":
-              (listNormalUser && String(listNormalUser.length + 2)) || "1",
+              (listUser && String(listUser.length + 2)) || "1",
           });
           person.setNewPerson({
             ...person.newPerson,
             "user-name": data.usernameSignup,
             password: data.passwordSignup,
             "id-user":
-              (listNormalUser && String(listNormalUser.length + 2)) || "1",
+              (listUser && String(listUser.length + 2)) || "1",
           });
           stateSignup.setStateSignupForm({
             ...stateSignup.stateSignupForm,

@@ -11,9 +11,9 @@ export interface UserNormal {
   "box-product": string[];
 }
 
-const useGetListNormalUser = () => {
+const useGetListAdminUser = () => {
   const {
-    data: listAdminUser,
+    data: listUser,
     error,
     isLoading,
   } = useQuery<UserNormal[], Error>({
@@ -24,6 +24,6 @@ const useGetListNormalUser = () => {
         .then((res) => res.data);
     },
   });
-  return { listAdminUser, error, isLoading };
+  return { listUser, error, isLoading };
 };
-export default useGetListNormalUser;
+export default useGetListAdminUser;

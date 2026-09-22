@@ -11,11 +11,9 @@ export interface UserNormal {
   "box-product": string[];
 }
 
-
-
 const useGetListNormalUser = () => {
   const {
-    data: listNormalUser,
+    data: listUser,
     error,
     isLoading,
   } = useQuery<UserNormal[], Error>({
@@ -26,6 +24,6 @@ const useGetListNormalUser = () => {
         .then((res) => res.data);
     },
   });
-  return { listNormalUser, error, isLoading };
+  return { listUser, error, isLoading };
 };
 export default useGetListNormalUser;

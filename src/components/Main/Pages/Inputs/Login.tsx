@@ -8,6 +8,11 @@ import { data, Navigate, useNavigate, useNavigation } from "react-router";
 import useGetListNormalUser from "../../../Hooks/useGetListNormalUser";
 import LogoInputs from "./LogoInputs";
 import FormLogin from "./FormLogin";
+
+export const contextTypeUser = React.createContext<string | undefined>(
+  undefined,
+);
+
 interface Props {
   typeUser?: string;
 }
@@ -19,22 +24,27 @@ const Login = ({ typeUser }: Props) => {
     <div
       className={["w-100", "d-flex flex-column align-items-center gap-3"].join(
         " ",
-      )}>
+      )}
+    >
       <LogoInputs />
       <div
         className={[
           property.innerWidth < 850
             ? "w-75  border p-4 rounded-4"
             : "w-50 mt-2  border p-4 rounded-4",
-        ].join(" ")}>
-        <FormLogin />
+        ].join(" ")}
+      >
+        <contextTypeUser.Provider value={typeUser}>
+          <FormLogin />
+        </contextTypeUser.Provider>
         {!typeUser && (
           <p
             onClick={() => {
               navigate("/profile/profileInput/signup");
             }}
             style={{ fontSize: ".8rem" }}
-            className="mt-4">
+            className="mt-4"
+          >
             ثبت نام نکردید؟
           </p>
         )}
