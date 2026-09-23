@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { contextCheckInputUser, contextWidth } from "../../../App";
+import { contextCheckInputUser, contextTypeUser, contextWidth } from "../../../App";
 import { z } from "zod";
 
 import { data, Navigate, useNavigate, useNavigation } from "react-router";
@@ -9,15 +9,14 @@ import useGetListNormalUser from "../../../Hooks/useGetListNormalUser";
 import LogoInputs from "./LogoInputs";
 import FormLogin from "./FormLogin";
 
-export const contextTypeUser = React.createContext<string | undefined>(
-  undefined,
-);
 
 interface Props {
   typeUser?: string;
 }
 const Login = ({ typeUser }: Props) => {
   const navigate = useNavigate();
+  const typeUsers=useContext(contextTypeUser)!;
+  typeUsers.setTypeUsers(typeUser||"");
   const property = useContext(contextWidth)!;
 
   return (
@@ -34,9 +33,7 @@ const Login = ({ typeUser }: Props) => {
             : "w-50 mt-2  border p-4 rounded-4",
         ].join(" ")}
       >
-        <contextTypeUser.Provider value={typeUser}>
           <FormLogin />
-        </contextTypeUser.Provider>
         {!typeUser && (
           <p
             onClick={() => {

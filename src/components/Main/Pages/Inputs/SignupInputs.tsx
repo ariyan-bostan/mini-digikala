@@ -36,7 +36,7 @@ const SignupInput = () => {
   
 
     localStorage.setItem("getUser", JSON.stringify(person.newPerson));
-  
+    
     Swal.fire({
       title: `خوش امدید ${person.newPerson.name}`,
       icon: "success",

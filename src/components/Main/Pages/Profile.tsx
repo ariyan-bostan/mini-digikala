@@ -5,7 +5,7 @@ import { FaUser } from "react-icons/fa";
 import UserNormal from "./Users/UserNormal";
 import { contextWidth } from "../../App";
 import BoxProduct from "./Profile/BoxProduct";
-interface TypeGetItem {
+export interface TypeGetItem {
   "type-user": string;
 }
 const Profile = () => {

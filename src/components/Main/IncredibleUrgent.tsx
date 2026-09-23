@@ -22,7 +22,6 @@ const IncredibleUrgent = () => {
         return item;
       }
     });
-    console.log(selectCategori, "a:", mainListProduct);
   }
   return (
     <div

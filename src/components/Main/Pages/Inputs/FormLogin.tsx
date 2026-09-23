@@ -4,12 +4,11 @@ import { useForm } from "react-hook-form";
 import useGetListNormalUser, {
   type UserNormal,
 } from "../../../Hooks/useGetListNormalUser";
-import { contextCheckInputUser } from "../../../App";
+import { contextCheckInputUser, contextTypeUser } from "../../../App";
 import z from "zod";
 import Swal from "sweetalert2";
 import { da } from "zod/v4/locales";
 import { useNavigate, useParams } from "react-router";
-import { contextTypeUser } from "./Login";
 import useGetListAdminUser from "../../../Hooks/useGetListAdminUser";
 
 const schema = z.object({
@@ -25,7 +24,7 @@ type formData = z.infer<typeof schema>;
 
 const FormLogin = () => {
   const checkInput = useContext(contextCheckInputUser)!;
-  const typeUser = useContext(contextTypeUser)!;
+  const typeUsers=useContext(contextTypeUser)!;
 
   const navigate = useNavigate();
   const [message, setMessage] = useState("");
@@ -37,7 +36,7 @@ const FormLogin = () => {
   } = useForm<formData>({ resolver: zodResolver(schema) });
 
   const { listUser, error, isLoading } =
-    typeUser !== "user-admin" ? useGetListNormalUser() : useGetListAdminUser();
+    typeUsers.typeUsers !== "user-admin" ? useGetListNormalUser() : useGetListAdminUser();
   let [person, setPerson] = useState<UserNormal | undefined>(undefined);
   person?.["type-user"];
   useEffect(() => {
@@ -50,6 +49,7 @@ const FormLogin = () => {
 
   useEffect(() => {
     if (person) {
+
       Swal.fire({
         title: `خوش امدید ${person?.name}`,
         icon: "success",

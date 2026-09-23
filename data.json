@@ -192,7 +192,14 @@
     "incredible": {
       "running_out_incredible_products": {
         "title": "شگفت‌انگیز رو به اتمام",
-        "brands": ["هارلینگن", "آرت وینا", "توشیبا", "ویانا", "اودسا", "کورس"],
+        "brands": [
+          "هارلینگن",
+          "آرت وینا",
+          "توشیبا",
+          "ویانا",
+          "اودسا",
+          "کورس"
+        ],
         "products": [
           {
             "title": "ادوپرفیوم زنانه هارلینگن مدل لانکوم میدنایت رز با رایحه گرم حجم 30 میلی‌لیتر",
@@ -965,7 +972,11 @@
       },
       {
         "title": "راهنمای خرید از دیجی‌کالا",
-        "list": ["نحوه ثبت سفارش", "رویه ارسال سفارش", "شیوه پرداخت"]
+        "list": [
+          "نحوه ثبت سفارش",
+          "رویه ارسال سفارش",
+          "شیوه پرداخت"
+        ]
       },
       {
         "title": "شرکای تجاری",
@@ -990,7 +1001,12 @@
     ],
     "communicationRoutes": {
       "title": "همراه ما باشید!",
-      "linkIcon": ["linkedin", "instagram", "twitter", "aparat"]
+      "linkIcon": [
+        "linkedin",
+        "instagram",
+        "twitter",
+        "aparat"
+      ]
     },
     "LabelFooter": [
       {
@@ -1109,6 +1125,293 @@
       "password": "12345678",
       "box-product": [],
       "id": "TI_VIORYE1I"
+    },
+    {
+      "id-user": "8",
+      "type-user": "عادی",
+      "number-phone": "9808080808",
+      "name": "مردخسته",
+      "last-name": "مردخسته",
+      "user-name": "مرررررررردخسته",
+      "password": "۹۸۷۶۵۴۳۲۱",
+      "box-product": [],
+      "id": "gn12L9-ZwG0"
+    },
+    {
+      "id-user": "9",
+      "type-user": "عادی",
+      "number-phone": "9333333333",
+      "name": "کیرتوزندگی",
+      "last-name": "کیرکلفت",
+      "user-name": "کیررررررررررررررررررررررررر",
+      "password": "۱۲۲۳۳۴۴۵",
+      "box-product": [
+        {
+          "title": "کرم آبرسان دست و صورت آرت وینا مدل ویتامین E مناسب انواع پوست حجم 50 میلی لیتر",
+          "layer": {
+            "brand": "آرت وینا",
+            "category": "آرایشی و بهداشتی"
+          },
+          "price": {
+            "selling_price": 4690000,
+            "rrp_price": 14990000,
+            "percent": 4
+          },
+          "images": {
+            "mainImg": "https://dkstatics-public.digikala.com/digikala-products/87307678eeab02e6888560470c34328403eccc1b_1754236725.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+            "listImg": []
+          },
+          "imgWEBP": "https://dkstatics-public.digikala.com/digikala-products/87307678eeab02e6888560470c34328403eccc1b_1754236725.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+          "rating": {
+            "rate": 84.9,
+            "count": 858,
+            "discount_percent": 1
+          }
+        },
+        {
+          "title": "کرم آبرسان دست و صورت آرت وینا مدل ویتامین E مناسب انواع پوست حجم 50 میلی لیتر",
+          "layer": {
+            "brand": "آرت وینا",
+            "category": "آرایشی و بهداشتی"
+          },
+          "price": {
+            "selling_price": 4690000,
+            "rrp_price": 14990000,
+            "percent": 4
+          },
+          "images": {
+            "mainImg": "https://dkstatics-public.digikala.com/digikala-products/87307678eeab02e6888560470c34328403eccc1b_1754236725.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+            "listImg": []
+          },
+          "imgWEBP": "https://dkstatics-public.digikala.com/digikala-products/87307678eeab02e6888560470c34328403eccc1b_1754236725.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+          "rating": {
+            "rate": 84.9,
+            "count": 858,
+            "discount_percent": 1
+          }
+        },
+        {
+          "title": "کرم آبرسان دست و صورت آرت وینا مدل ویتامین E مناسب انواع پوست حجم 50 میلی لیتر",
+          "layer": {
+            "brand": "آرت وینا",
+            "category": "آرایشی و بهداشتی"
+          },
+          "price": {
+            "selling_price": 4690000,
+            "rrp_price": 14990000,
+            "percent": 4
+          },
+          "images": {
+            "mainImg": "https://dkstatics-public.digikala.com/digikala-products/87307678eeab02e6888560470c34328403eccc1b_1754236725.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+            "listImg": []
+          },
+          "imgWEBP": "https://dkstatics-public.digikala.com/digikala-products/87307678eeab02e6888560470c34328403eccc1b_1754236725.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+          "rating": {
+            "rate": 84.9,
+            "count": 858,
+            "discount_percent": 1
+          }
+        },
+        {
+          "title": "کرم آبرسان دست و صورت آرت وینا مدل ویتامین E مناسب انواع پوست حجم 50 میلی لیتر",
+          "layer": {
+            "brand": "آرت وینا",
+            "category": "آرایشی و بهداشتی"
+          },
+          "price": {
+            "selling_price": 4690000,
+            "rrp_price": 14990000,
+            "percent": 4
+          },
+          "images": {
+            "mainImg": "https://dkstatics-public.digikala.com/digikala-products/87307678eeab02e6888560470c34328403eccc1b_1754236725.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+            "listImg": []
+          },
+          "imgWEBP": "https://dkstatics-public.digikala.com/digikala-products/87307678eeab02e6888560470c34328403eccc1b_1754236725.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+          "rating": {
+            "rate": 84.9,
+            "count": 858,
+            "discount_percent": 1
+          }
+        },
+        {
+          "title": "کرم آبرسان دست و صورت آرت وینا مدل ویتامین E مناسب انواع پوست حجم 50 میلی لیتر",
+          "layer": {
+            "brand": "آرت وینا",
+            "category": "آرایشی و بهداشتی"
+          },
+          "price": {
+            "selling_price": 4690000,
+            "rrp_price": 14990000,
+            "percent": 4
+          },
+          "images": {
+            "mainImg": "https://dkstatics-public.digikala.com/digikala-products/87307678eeab02e6888560470c34328403eccc1b_1754236725.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+            "listImg": []
+          },
+          "imgWEBP": "https://dkstatics-public.digikala.com/digikala-products/87307678eeab02e6888560470c34328403eccc1b_1754236725.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+          "rating": {
+            "rate": 84.9,
+            "count": 858,
+            "discount_percent": 1
+          }
+        },
+        {
+          "title": "کرم آبرسان دست و صورت آرت وینا مدل ویتامین E مناسب انواع پوست حجم 50 میلی لیتر",
+          "layer": {
+            "brand": "آرت وینا",
+            "category": "آرایشی و بهداشتی"
+          },
+          "price": {
+            "selling_price": 4690000,
+            "rrp_price": 14990000,
+            "percent": 4
+          },
+          "images": {
+            "mainImg": "https://dkstatics-public.digikala.com/digikala-products/87307678eeab02e6888560470c34328403eccc1b_1754236725.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+            "listImg": []
+          },
+          "imgWEBP": "https://dkstatics-public.digikala.com/digikala-products/87307678eeab02e6888560470c34328403eccc1b_1754236725.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+          "rating": {
+            "rate": 84.9,
+            "count": 858,
+            "discount_percent": 1
+          }
+        },
+        {
+          "title": "کرم آبرسان دست و صورت آرت وینا مدل ویتامین E مناسب انواع پوست حجم 50 میلی لیتر",
+          "layer": {
+            "brand": "آرت وینا",
+            "category": "آرایشی و بهداشتی"
+          },
+          "price": {
+            "selling_price": 4690000,
+            "rrp_price": 14990000,
+            "percent": 4
+          },
+          "images": {
+            "mainImg": "https://dkstatics-public.digikala.com/digikala-products/87307678eeab02e6888560470c34328403eccc1b_1754236725.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+            "listImg": []
+          },
+          "imgWEBP": "https://dkstatics-public.digikala.com/digikala-products/87307678eeab02e6888560470c34328403eccc1b_1754236725.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+          "rating": {
+            "rate": 84.9,
+            "count": 858,
+            "discount_percent": 1
+          }
+        },
+        {
+          "title": "کرم آبرسان دست و صورت آرت وینا مدل ویتامین E مناسب انواع پوست حجم 50 میلی لیتر",
+          "layer": {
+            "brand": "آرت وینا",
+            "category": "آرایشی و بهداشتی"
+          },
+          "price": {
+            "selling_price": 4690000,
+            "rrp_price": 14990000,
+            "percent": 4
+          },
+          "images": {
+            "mainImg": "https://dkstatics-public.digikala.com/digikala-products/87307678eeab02e6888560470c34328403eccc1b_1754236725.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+            "listImg": []
+          },
+          "imgWEBP": "https://dkstatics-public.digikala.com/digikala-products/87307678eeab02e6888560470c34328403eccc1b_1754236725.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+          "rating": {
+            "rate": 84.9,
+            "count": 858,
+            "discount_percent": 1
+          }
+        },
+        {
+          "title": "کرم آبرسان دست و صورت آرت وینا مدل ویتامین E مناسب انواع پوست حجم 50 میلی لیتر",
+          "layer": {
+            "brand": "آرت وینا",
+            "category": "آرایشی و بهداشتی"
+          },
+          "price": {
+            "selling_price": 4690000,
+            "rrp_price": 14990000,
+            "percent": 4
+          },
+          "images": {
+            "mainImg": "https://dkstatics-public.digikala.com/digikala-products/87307678eeab02e6888560470c34328403eccc1b_1754236725.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+            "listImg": []
+          },
+          "imgWEBP": "https://dkstatics-public.digikala.com/digikala-products/87307678eeab02e6888560470c34328403eccc1b_1754236725.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+          "rating": {
+            "rate": 84.9,
+            "count": 858,
+            "discount_percent": 1
+          }
+        },
+        {
+          "title": "کرم آبرسان دست و صورت آرت وینا مدل ویتامین E مناسب انواع پوست حجم 50 میلی لیتر",
+          "layer": {
+            "brand": "آرت وینا",
+            "category": "آرایشی و بهداشتی"
+          },
+          "price": {
+            "selling_price": 4690000,
+            "rrp_price": 14990000,
+            "percent": 4
+          },
+          "images": {
+            "mainImg": "https://dkstatics-public.digikala.com/digikala-products/87307678eeab02e6888560470c34328403eccc1b_1754236725.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+            "listImg": []
+          },
+          "imgWEBP": "https://dkstatics-public.digikala.com/digikala-products/87307678eeab02e6888560470c34328403eccc1b_1754236725.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+          "rating": {
+            "rate": 84.9,
+            "count": 858,
+            "discount_percent": 1
+          }
+        },
+        {
+          "title": "کرم آبرسان دست و صورت آرت وینا مدل ویتامین E مناسب انواع پوست حجم 50 میلی لیتر",
+          "layer": {
+            "brand": "آرت وینا",
+            "category": "آرایشی و بهداشتی"
+          },
+          "price": {
+            "selling_price": 4690000,
+            "rrp_price": 14990000,
+            "percent": 4
+          },
+          "images": {
+            "mainImg": "https://dkstatics-public.digikala.com/digikala-products/87307678eeab02e6888560470c34328403eccc1b_1754236725.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+            "listImg": []
+          },
+          "imgWEBP": "https://dkstatics-public.digikala.com/digikala-products/87307678eeab02e6888560470c34328403eccc1b_1754236725.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+          "rating": {
+            "rate": 84.9,
+            "count": 858,
+            "discount_percent": 1
+          }
+        },
+        {
+          "title": "روان نویس کورس مدل FINE LINER طرح قایق بسته 12 عددی",
+          "layer": {
+            "brand": "کورس",
+            "category": "کتاب، لوازم تحریر و هنر"
+          },
+          "price": {
+            "selling_price": 3990000,
+            "rrp_price": 9000000,
+            "percent": 4
+          },
+          "images": {
+            "mainImg": "https://dkstatics-public.digikala.com/digikala-products/ef8bce6e13af34c90ca826089d784903a65b6ed3_1688547700.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+            "listImg": []
+          },
+          "imgWEBP": "https://dkstatics-public.digikala.com/digikala-products/ef8bce6e13af34c90ca826089d784903a65b6ed3_1688547700.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+          "rating": {
+            "rate": 91.07,
+            "count": 103,
+            "discount_percent": 1
+          }
+        }
+      ],
+      "id": "9vrs-1ybOBk"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

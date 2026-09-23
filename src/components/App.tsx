@@ -31,6 +31,10 @@ interface TypeCheckInputUser {
   checkInputUser: boolean;
   setCheckInputUser: (item: boolean) => void;
 }
+interface TypeUser {
+  typeUsers: string;
+  setTypeUsers: (item: string) => void;
+}
 export const contextWidth = React.createContext<TypeContextWidth | undefined>(
   undefined,
 );
@@ -38,13 +42,20 @@ export const contextWidth = React.createContext<TypeContextWidth | undefined>(
 export const ContextHeader = React.createContext<ValueHeader | undefined>(
   undefined,
 );
+
+export const contextTypeUser = React.createContext<TypeUser | undefined>(
+  undefined,
+);
+
 export const contextCheckInputUser = React.createContext<
   TypeCheckInputUser | undefined
 >(undefined);
 
-
 const App = () => {
   const [checkInputUser, setCheckInputUser] = useState(false);
+
+  const [typeUsers, setTypeUsers] = useState("");
+  
 
   const [innerWidth, setInnerWidth] = useState(window.innerWidth);
 
@@ -56,62 +67,71 @@ const App = () => {
     <BrowserRouter>
       <contextWidth.Provider value={{ innerWidth }}>
         <contextCheckInputUser.Provider
-          value={{ checkInputUser, setCheckInputUser }}>
-          <div dir="rtl" className={[style.container].join(" ")}>
-            <ContextHeader value={{ list, error, isLoading }}>
-              <Header />
-            </ContextHeader>
+          value={{ checkInputUser, setCheckInputUser }}
+        >
+          <contextTypeUser.Provider value={{ typeUsers, setTypeUsers }}>
+            <div dir="rtl" className={[style.container].join(" ")}>
+              <ContextHeader value={{ list, error, isLoading }}>
+                <Header />
+              </ContextHeader>
 
-            <div className={[style.containerMainFooter].join(" ")}>
-              <div className={[style.main].join(" ")}>
-                <Routes>
-                  <Route path="/" element={<Home />} />
-                  <Route
-                    path="/incredible-Offers"
-                    element={<IncredibleOffers />}
-                  />
-                  <Route path="/supermarket" element={<Supermarket />} />
-                  <Route
-                    path="/profile"
-                    element={checkInputUser ? <Profile /> : <Login />}
-                  />
-                  <Route path="/profile/profileInput" element={<Signup />} />
-                  <Route
-                    path="/profile/profileInput/login"
-                    element={<Login />}
-                  />
-                  <Route
-                    path="/profile/profileInput/signup"
-                    element={<Signup />}
-                  />
-                  <Route
-                    path="/profile/notification"
-                    element={checkInputUser ? <Profile /> : <Login />}
-                  />
-                  <Route
-                    path="/profile/user-admin"
-                    element={checkInputUser ? <Profile /> : <Login  typeUser="user-admin"/>}
-                  />
-                  <Route
-                    path="/searching"
-                    element={checkInputUser ? <Searching /> : <Login />}
-                  />
-                  <Route path="/products/:title" element={<Products />} />
-                  <Route
-                    path="/products/informationProduct/:typeObject/:title/:titleProduct"
-                    element={<InformationProduct />}
-                  />
-                  <Route
-                    path="/products/incredible-Offers/:typeObject/:title/:titleProduct"
-                    element={<InformationProduct />}
-                  />
-                  <Route path="/*" element={<NotPage />} />
-                </Routes>
+              <div className={[style.containerMainFooter].join(" ")}>
+                <div className={[style.main].join(" ")}>
+                  <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route
+                      path="/incredible-Offers"
+                      element={<IncredibleOffers />}
+                    />
+                    <Route path="/supermarket" element={<Supermarket />} />
+                    <Route
+                      path="/profile"
+                      element={checkInputUser ? <Profile /> : <Login />}
+                    />
+                    <Route path="/profile/profileInput" element={<Signup />} />
+                    <Route
+                      path="/profile/profileInput/login"
+                      element={<Login />}
+                    />
+                    <Route
+                      path="/profile/profileInput/signup"
+                      element={<Signup />}
+                    />
+                    <Route
+                      path="/profile/notification"
+                      element={checkInputUser ? <Profile /> : <Login />}
+                    />
+                    <Route
+                      path="/profile/user-admin"
+                      element={
+                        checkInputUser ? (
+                          <Profile />
+                        ) : (
+                          <Login typeUser="user-admin" />
+                        )
+                      }
+                    />
+                    <Route
+                      path="/searching"
+                      element={checkInputUser ? <Searching /> : <Login />}
+                    />
+                    <Route path="/products/:title" element={<Products />} />
+                    <Route
+                      path="/products/informationProduct/:typeObject/:title/:titleProduct"
+                      element={<InformationProduct />}
+                    />
+                    <Route
+                      path="/products/incredible-Offers/:typeObject/:title/:titleProduct"
+                      element={<InformationProduct />}
+                    />
+                    <Route path="/*" element={<NotPage />} />
+                  </Routes>
+                </div>
+
+                <Footer />
               </div>
-
-              <Footer />
             </div>
-          </div>
+          </contextTypeUser.Provider>
         </contextCheckInputUser.Provider>
       </contextWidth.Provider>
     </BrowserRouter>

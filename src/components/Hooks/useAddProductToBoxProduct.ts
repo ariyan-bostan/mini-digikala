@@ -10,12 +10,7 @@ interface TypeContextPreviousData {
 }
 const useAddProductToBoxProduct = () => {
   const queryClient = useQueryClient();
-  return useMutation<
-    UserNormal,
-    Error,
-    UpdateItem,
-    TypeContextPreviousData
-  >({
+  return useMutation<UserNormal, Error, UpdateItem, TypeContextPreviousData>({
     mutationFn: (item: UpdateItem) => {
       return axios
         .patch(`http://localhost:3000/normalUsers/${item.id}`, item.updateItem)
@@ -51,6 +46,5 @@ const useAddProductToBoxProduct = () => {
       );
     },
   });
-  
 };
 export default useAddProductToBoxProduct;
