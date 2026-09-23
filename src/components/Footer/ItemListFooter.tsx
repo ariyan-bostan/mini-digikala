@@ -9,6 +9,7 @@ const ItemListFooter = ({ items, index }: Props) => {
   const property = useContext(contextWidth)!;
   return (
     <div
+    key={index}
       className={[
         property.innerWidth > 850
           ? "w-100 d-flex flex-column align-items-center"

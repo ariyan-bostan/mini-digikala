@@ -10,7 +10,6 @@ const Products = () => {
   const {objectProduct,error,isLoading}=useProduct(parameters.title||"");
   const property=useContext(contextWidth)!;
 
-  console.log("kk",objectProduct?.title);
   
   return (
     <div className="w-100">

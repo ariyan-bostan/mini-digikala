@@ -1,5 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
+import type { Product, ProductRunningOut } from "../Services/Intefaces";
 export interface UserNormal {
   "id-user": string;
   "type-user": string;
@@ -8,7 +9,8 @@ export interface UserNormal {
   "last-name": string;
   "user-name": string;
   password: string;
-  "box-product": string[];
+  "box-product": Product[] | ProductRunningOut[]|[];
+  id?:string
 }
 
 const useGetListNormalUser = () => {

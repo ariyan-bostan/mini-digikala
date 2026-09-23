@@ -1,15 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
-export interface UserNormal {
-  "id-user": string;
-  "type-user": string;
-  "number-phone": string;
-  name: string;
-  "last-name": string;
-  "user-name": string;
-  password: string;
-  "box-product": string[];
-}
+import type { UserNormal } from "./useGetListNormalUser";
+
 
 const useGetListAdminUser = () => {
   const {

@@ -8,13 +8,14 @@ import TitleProduct from "./InformationProductComponents/TitleProduct";
 import CategoryProduct from "./InformationProductComponents/CategoryProduct";
 import PriceProduct from "./InformationProductComponents/PriceProduct";
 import style from "../../Styles/Layout.module.css";
+import UserNormal from "./Users/UserNormal";
 
 
 const InformationProduct = () => {
   const property = useContext(contextWidth)!;
   const paramURL = useParams();
   const { objectProduct:lists, error, isLoading } =paramURL.typeObject==="products"? useProduct(paramURL.title || ""): useRunningOutIncredibleProducts();
-  let resault = lists?.products.find((item) => {
+  let resault =lists&& lists.products.find((item) => {
     if (item.title.includes(paramURL.titleProduct || "")) return item;
   });
   const [selectImg, setSelectImg] = useState(resault?.images.mainImg || "");

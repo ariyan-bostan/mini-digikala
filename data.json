@@ -192,14 +192,7 @@
     "incredible": {
       "running_out_incredible_products": {
         "title": "شگفت‌انگیز رو به اتمام",
-        "brands": [
-          "هارلینگن",
-          "آرت وینا",
-          "توشیبا",
-          "ویانا",
-          "اودسا",
-          "کورس"
-        ],
+        "brands": ["هارلینگن", "آرت وینا", "توشیبا", "ویانا", "اودسا", "کورس"],
         "products": [
           {
             "title": "ادوپرفیوم زنانه هارلینگن مدل لانکوم میدنایت رز با رایحه گرم حجم 30 میلی‌لیتر",
@@ -972,11 +965,7 @@
       },
       {
         "title": "راهنمای خرید از دیجی‌کالا",
-        "list": [
-          "نحوه ثبت سفارش",
-          "رویه ارسال سفارش",
-          "شیوه پرداخت"
-        ]
+        "list": ["نحوه ثبت سفارش", "رویه ارسال سفارش", "شیوه پرداخت"]
       },
       {
         "title": "شرکای تجاری",
@@ -1001,12 +990,7 @@
     ],
     "communicationRoutes": {
       "title": "همراه ما باشید!",
-      "linkIcon": [
-        "linkedin",
-        "instagram",
-        "twitter",
-        "aparat"
-      ]
+      "linkIcon": ["linkedin", "instagram", "twitter", "aparat"]
     },
     "LabelFooter": [
       {
@@ -1103,6 +1087,28 @@
       "password": "12233445",
       "box-product": [],
       "id": "Sm_pqQqysRw"
+    },
+    {
+      "id-user": "6",
+      "type-user": "عادی",
+      "number-phone": "9123456789",
+      "name": "فاوا",
+      "last-name": "عمران",
+      "user-name": "npc-omran",
+      "password": "L@calpassword",
+      "box-product": [],
+      "id": "YFy2PNuUU4I"
+    },
+    {
+      "id-user": "7",
+      "type-user": "عادی",
+      "number-phone": "9087654321",
+      "name": "خستم",
+      "last-name": "کیرتوش",
+      "user-name": "kosKhar1",
+      "password": "12345678",
+      "box-product": [],
+      "id": "TI_VIORYE1I"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

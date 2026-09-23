@@ -1,0 +1,129 @@
+import React from "react";
+
+
+const BoxProduct = () => {
+    
+  return (
+    <>iodchvsoeid</>
+    // <div
+    //   style={{ flexWrap: "wrap" }}
+    //   className={[
+    //     "px-3",
+    //     property.innerWidth < 850
+    //       ? "d-flex flex-column gap-1"
+    //       : "d-flex flex-row gap-2 justify-content-center mt-4",
+    //   ].join(" ")}>
+    //   {objectProduct?.products?.map((item, index) => (
+    //     <>
+    //       {property.innerWidth < 850 ? (
+    //         <Link
+    //           to={`/products/informationProduct/products/${parameters.title}/${item.title}`}
+    //           style={{
+    //             height: "10rem",
+    //             borderRadius: "10px",
+    //             overflow: "hidden",
+    //           }}
+    //           key={index}
+    //           className={[
+    //             "linkTo",
+    //             property.innerWidth < 850
+    //               ? "d-flex border flex-row gap-1  w-100"
+    //               : "bg-info",
+    //           ].join(" ")}>
+    //           <div
+    //             style={{ width: "30%", borderRadius: "5px" }}
+    //             className="h-100">
+    //             <img className="w-100 h-100" src={item.images.mainImg} alt="" />
+    //           </div>
+    //           <div
+    //             style={{ width: "70%", borderRadius: "5px" }}
+    //             className="h-100 d-flex flex-column">
+    //             <div className="h-50  p-2">
+    //               <p style={{ fontSize: ".8rem" }} className="p-0 m-0">
+    //                 {item.title.substring(0, 50)}...
+    //               </p>
+    //             </div>
+    //             <div className="h-50 d-flex flex-row">
+    //               <div className="w-50  pe-2">
+    //                 <div
+    //                   style={{ width: "2rem", borderRadius: "10px" }}
+    //                   className="bg-danger">
+    //                   10%
+    //                 </div>
+    //               </div>
+    //               <div className="w-50 d-flex flex-row justify-content-end ps-1">
+    //                 <div className="w-75 h-100  d-flex flex-column align-items-end">
+    //                   {item.price.rrp_price + " "}تومان
+    //                 </div>
+    //               </div>
+    //             </div>
+    //           </div>
+    //         </Link>
+    //       ) : (
+    //         <Link
+    //           to={`/products/informationProduct/${parameters.title}/${item.title}`}
+    //           key={index}
+    //           className={[styleAmz.boxProduct, "linkTo", "border pb-2"].join(
+    //             " ",
+    //           )}>
+    //           <div className={[styleAmz.posterPro].join(" ")}>
+    //             <img
+    //               className="w-100 h-100 object-fit-cover"
+    //               src={item.images.mainImg}
+    //               alt=""
+    //             />
+    //           </div>
+    //           <div
+    //             className={[
+    //               styleAmz.titlePro,
+    //               "d-flex justify-content-center",
+    //             ].join(" ")}>
+    //             <p
+    //               style={{
+    //                 width: "100%",
+    //                 fontSize: ".7rem",
+    //                 lineHeight: "1.2rem",
+    //               }}
+    //               className="p-0 m-1">
+    //               {item.title.substring(0, 50)}...
+    //             </p>
+    //           </div>
+    //           <div
+    //             className={[
+    //               styleAmz.boxBP,
+    //               "d-flex flex-row pe-3 align-items-center",
+    //             ].join(" ")}>
+    //             <div
+    //               style={{ borderRadius: "5px" }}
+    //               className="w-25 h-50 bg-danger ms-3 d-flex flex-row justify-content-center">
+    //               <p
+    //                 style={{ fontSize: ".9rem", color: "white" }}
+    //                 className="m-0">
+    //                 ⁒10
+    //               </p>
+    //             </div>
+    //             <div style={{ color: "gray", textDecoration: "line-through" }}>
+    //               {item.price.rrp_price}
+    //             </div>
+    //           </div>
+    //           <div
+    //             className={[
+    //               styleAmz.boxFinalPrice,
+    //               "d-flex flex-row justify-content-center align-items-center",
+    //             ].join(" ")}>
+    //             <p className="finalPriceIcredibleList m-0 p-0">
+    //               {item.price.rrp_price -
+    //                 (10 / 100) * item.price.rrp_price +
+    //                 " "}
+    //               تومان
+    //             </p>
+    //           </div>
+    //         </Link>
+    //       )}
+    //     </>
+    //   ))}
+    // </div>
+  );
+};
+
+export default BoxProduct;

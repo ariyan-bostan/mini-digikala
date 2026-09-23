@@ -1,12 +1,22 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import type { Product, ProductRunningOut } from "../../../Services/Intefaces";
-import { contextWidth } from "../../../App";
-interface Props{
-    resault: Product | ProductRunningOut | undefined
+import { contextCheckInputUser, contextWidth } from "../../../App";
+import type { UserNormal } from "../../../Hooks/useGetListNormalUser";
+import useAddProductToBoxProduct from "../../../Hooks/useAddProductToBoxProduct";
+interface Props {
+  resault: Product | ProductRunningOut|undefined ;
 }
 
-const PriceProduct = ({resault}:Props) => {
-    const property=useContext(contextWidth)!;
+const PriceProduct = ({ resault }: Props) => {
+  const property = useContext(contextWidth)!;
+  const checkInputUser = useContext(contextCheckInputUser)!;
+  const addProductToBoxProduct=useAddProductToBoxProduct();
+  let boli = checkInputUser.checkInputUser;
+
+  const [getUser, setGetUser] = useState<UserNormal>(
+    JSON.parse(localStorage.getItem("getUser") || "null"),
+  );
+
   return (
     <div
       className={[
@@ -46,6 +56,26 @@ const PriceProduct = ({resault}:Props) => {
         </div>
       </div>
       <button
+        onClick={() => {
+          // console.log(JSON.parse(localStorage.getItem("getUser")||"null"));
+          let m:UserNormal=JSON.parse(localStorage.getItem("getUser")||"null")
+          console.log(":",m.id);
+          
+          // console.log(resault);
+          if (resault){
+            localStorage.removeItem("getUser")
+            localStorage.setItem(
+              "getUser",
+              JSON.stringify({
+                ...getUser,
+                "box-product": [...(getUser["box-product"] || []), resault],
+              }),
+            );
+            addProductToBoxProduct.mutate({updateItem:JSON.parse(localStorage.getItem("getUser")||"null"),id:m.id||""})
+            
+            
+          }
+        }}
         style={{ height: "2rem", width: "11rem" }}
         className="btn btn-danger p-0">
         افزودن به سبد خرید
