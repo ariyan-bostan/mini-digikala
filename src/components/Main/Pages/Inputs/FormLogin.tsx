@@ -66,7 +66,7 @@ const FormLogin = () => {
     <form
       onSubmit={handleSubmit((data) => {
         let resault = listUser?.find((item) => {
-          console.log(item);
+          // console.log(item);
 
           return (
             (item["user-name"] === data.userId ||
@@ -74,7 +74,7 @@ const FormLogin = () => {
             item.password === data.password
           );
         });
-        console.log(resault);
+        // console.log(resault);
 
         if (!resault) setMessage("نام کاربری یا شماره تلفن یافت نشد !!");
         else setPerson(resault);

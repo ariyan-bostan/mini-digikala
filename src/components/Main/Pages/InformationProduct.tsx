@@ -9,6 +9,7 @@ import CategoryProduct from "./InformationProductComponents/CategoryProduct";
 import PriceProduct from "./InformationProductComponents/PriceProduct";
 import style from "../../Styles/Layout.module.css";
 import UserNormal from "./Users/UserNormal";
+import { Toaster } from "react-hot-toast";
 
 
 const InformationProduct = () => {
@@ -31,23 +32,30 @@ const InformationProduct = () => {
     <div
       className={[
         "w-100",
-        property.innerWidth < 850 ? "d-flex flex-column gap-2" : "d-flex flex-row",
+        property.innerWidth < 850
+          ? "d-flex flex-column gap-2"
+          : "d-flex flex-row",
       ].join(" ")}>
-      <ImagesProduct resault={resault} selectImg={selectImg} setSelectImg={setSelectImg} />
-
+      <Toaster position="top-center" reverseOrder={false} />{" "}
+      <ImagesProduct
+        resault={resault}
+        selectImg={selectImg}
+        setSelectImg={setSelectImg}
+      />
       <div
         style={{ borderRadius: "10px", overflow: "hidden" }}
         className={[
           "border",
           property.innerWidth < 850 ? "d-flex flex-column gap-1" : "w-75",
         ].join(" ")}>
-        
         <TitleProduct>{resault?.title}</TitleProduct>
-       
+
         <div
           className={[
             "w-100",
-            property.innerWidth < 850 ? "d-flex flex-column gap-1" : "d-flex flex-row",
+            property.innerWidth < 850
+              ? "d-flex flex-column gap-1"
+              : "d-flex flex-row",
           ].join(" ")}>
           <CategoryProduct resault={resault} />
 

@@ -9,8 +9,8 @@ export interface UserNormal {
   "last-name": string;
   "user-name": string;
   password: string;
-  "box-product": Product[] | ProductRunningOut[]|[];
-  id?:string
+  "box-product": (Product | ProductRunningOut)[];
+  id?: string;
 }
 
 const useGetListNormalUser = () => {

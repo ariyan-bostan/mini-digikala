@@ -5,6 +5,8 @@ import { FaUser } from "react-icons/fa";
 import UserNormal from "./Users/UserNormal";
 import { contextWidth } from "../../App";
 import BoxProduct from "./Profile/BoxProduct";
+import toast, { Toaster } from "react-hot-toast";
+import { useNavigate } from "react-router";
 export interface TypeGetItem {
   "type-user": string;
 }
@@ -47,8 +49,7 @@ const Profile = () => {
   let findIndex = navListProfile.findIndex((item) => {
     return item.typeUser === getUser["type-user"];
   });
-  console.log(getUser["type-user"]);
-
+  const navigate=useNavigate();
   return (
     <div
       className={[
@@ -56,10 +57,16 @@ const Profile = () => {
         property.innerWidth < 850 ? "d-flex flex-column gap-1" : "",
       ].join(" ")}>
       <div
-        style={{ overflow: "scroll", scrollbarWidth: "none" }}
+        style={{
+          overflow: "scroll",
+          borderRadius: "50px",
+          scrollbarWidth: "none",
+        }}
         className={[
-          "w-100 bg-warning",
-          property.innerWidth < 850 ? "d-flex flex-row gap-3" : "",
+          "w-100 ",
+          property.innerWidth < 850
+            ? " border py-3 d-flex flex-row gap-3 pe-3"
+            : "mx-2 border py-3 d-flex flex-row justify-content-center gap-4 mb-2",
         ].join(" ")}>
         {navListProfile[findIndex].list.map((item, index) => (
           <button
@@ -78,8 +85,23 @@ const Profile = () => {
           </button>
         ))}
       </div>
-      <div className="w-100 bg-success">
+
+      <div className="w-100">
+        <Toaster position="top-center" reverseOrder={false} />{" "}
         {selectSubject === "سبد خرید" && <BoxProduct />}
+        {selectSubject === "خروج از حساب کاربری" && (
+          <div className="d-flex flex-row justify-content-center">
+            <button
+              onClick={() => {
+                localStorage.removeItem("getUser");
+                toast.success("خروج از حساب کاربری");
+                navigate("/")
+              }}
+              className="btn btn-danger">
+              خروج از حساب کاربری
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );

@@ -83,9 +83,11 @@ const Products = () => {
               </Link>
             ) : (
               <Link
-                to={`/products/informationProduct/${parameters.title}/${item.title}`}
+                to={`/products/informationProduct/products/${parameters.title}/${item.title}`}
                 key={index}
-                className={[styleAmz.boxProduct,"linkTo", "border pb-2"].join(" ")}>
+                className={[styleAmz.boxProduct, "linkTo", "border pb-2"].join(
+                  " ",
+                )}>
                 <div className={[styleAmz.posterPro].join(" ")}>
                   <img
                     className="w-100 h-100 object-fit-cover"
