@@ -1054,7 +1054,7 @@
       "name": "ariyano",
       "last-name": "bostan",
       "user-name": "ariyanam",
-      "password": "1334",
+      "password": "138285",
       "box-product": [],
       "id": "pIhJzyIw4RI"
     }
@@ -1624,6 +1624,17 @@
         }
       ],
       "id": "rfrl_V1Y5wc"
+    },
+    {
+      "id-user": "11",
+      "type-user": "عادی",
+      "number-phone": "9121314151",
+      "name": "کیرتوزندگی",
+      "last-name": "کییییییییییییییییییییییییییر",
+      "user-name": "ariyanMooooo",
+      "password": "bbbb",
+      "box-product": [],
+      "id": "IDgjq3adVbk"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

@@ -2,19 +2,26 @@ import React, { useContext, useState } from "react";
 import { FaUserTie } from "react-icons/fa";
 import { RiUser2Fill } from "react-icons/ri";
 import { FaUser } from "react-icons/fa";
-import UserNormal from "./Users/UserNormal";
 import { contextWidth } from "../../App";
 import BoxProduct from "./Profile/BoxProduct";
 import toast, { Toaster } from "react-hot-toast";
 import { useNavigate } from "react-router";
+import Logout from "./Profile/Logout";
+import type { UserNormal } from "../../Hooks/useGetListNormalUser";
+import useAddNormalUser from "../../Hooks/useAddNormalUser";
+import useAddProductToBoxProduct from "../../Hooks/useAddProductToBoxProduct";
+import InformationUser from "./Profile/InformationUser";
 export interface TypeGetItem {
   "type-user": string;
 }
 const Profile = () => {
   const [selectSubject, setSelectSubject] = useState("نمایش اطلاعات");
-  const getUser: TypeGetItem = JSON.parse(
-    localStorage.getItem("getUser") || "null",
+
+  const [getUserNow, setGetUserNow] = useState<UserNormal>(
+    JSON.parse(localStorage.getItem("getUser") || "null"),
   );
+ 
+
   const property = useContext(contextWidth)!;
   const navListProfile = [
     {
@@ -47,15 +54,17 @@ const Profile = () => {
     },
   ];
   let findIndex = navListProfile.findIndex((item) => {
-    return item.typeUser === getUser["type-user"];
+    return item.typeUser === getUserNow["type-user"];
   });
-  const navigate=useNavigate();
   return (
     <div
       className={[
         "w-100",
-        property.innerWidth < 850 ? "d-flex flex-column gap-1" : "",
-      ].join(" ")}>
+        property.innerWidth < 850
+          ? "d-flex flex-column gap-1"
+          : "d-flex flex-row",
+      ].join(" ")}
+    >
       <div
         style={{
           overflow: "scroll",
@@ -63,11 +72,11 @@ const Profile = () => {
           scrollbarWidth: "none",
         }}
         className={[
-          "w-100 ",
           property.innerWidth < 850
-            ? " border py-3 d-flex flex-row gap-3 pe-3"
-            : "mx-2 border py-3 d-flex flex-row justify-content-center gap-4 mb-2",
-        ].join(" ")}>
+            ? "w-100 border py-3 d-flex flex-row gap-3 pe-3"
+            : "w-25 mx-2 border py-3 d-flex flex-column align-items-center gap-4 mb-2",
+        ].join(" ")}
+      >
         {navListProfile[findIndex].list.map((item, index) => (
           <button
             key={index}
@@ -80,28 +89,18 @@ const Profile = () => {
               fontSize: ".7rem",
               flexShrink: 0,
             }}
-            className="btn btn-primary">
+            className="btn btn-primary"
+          >
             {item}
           </button>
         ))}
       </div>
 
-      <div className="w-100">
+      <div style={{ overflow: "hidden" }} className="w-100 border rounded-4">
         <Toaster position="top-center" reverseOrder={false} />{" "}
         {selectSubject === "سبد خرید" && <BoxProduct />}
-        {selectSubject === "خروج از حساب کاربری" && (
-          <div className="d-flex flex-row justify-content-center">
-            <button
-              onClick={() => {
-                localStorage.removeItem("getUser");
-                toast.success("خروج از حساب کاربری");
-                navigate("/")
-              }}
-              className="btn btn-danger">
-              خروج از حساب کاربری
-            </button>
-          </div>
-        )}
+        {selectSubject === "خروج از حساب کاربری" && <Logout />}
+        {selectSubject === "نمایش اطلاعات" && <InformationUser />}
       </div>
     </div>
   );
