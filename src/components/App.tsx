@@ -97,6 +97,7 @@ const App = () => {
                       path="/profile/profileInput/signup"
                       element={<Signup />}
                     />
+                    
                     <Route
                       path="/profile/notification"
                       element={checkInputUser ? <Profile /> : <Login />}

@@ -8,6 +8,8 @@ import { contextWidth } from "../../App";
 const Products = () => {
   const parameters = useParams();
   const {objectProduct,error,isLoading}=useProduct(parameters.title||"");
+  console.log("kirrrr",objectProduct);
+  
   const property=useContext(contextWidth)!;
 
   

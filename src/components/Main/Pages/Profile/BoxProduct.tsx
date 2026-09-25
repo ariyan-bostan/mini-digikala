@@ -40,6 +40,7 @@ const BoxProduct = () => {
   }
   return (
     <>
+      <Toaster position="top-center" reverseOrder={false} />{" "}
       <div className="bg-danger d-flex flex-column align-items-center justify-content-center">
         <h3>مجموع خرید:</h3>
         <p>{finalResault.substring(0, finalResault.length - 1)}</p>
@@ -186,6 +187,8 @@ const BoxProduct = () => {
                 </div>
                 <button
                   onClick={() => {
+                    toast.success("پاک شد");
+
                     let update: UserNormal = {
                       ...getUserNow,
                       "box-product": getUserNow["box-product"].filter(
@@ -197,8 +200,10 @@ const BoxProduct = () => {
                     localStorage.removeItem("getUser");
                     localStorage.setItem("getUser", JSON.stringify(update));
                     setGetUserNow(update);
-
-                    toast.success("پاک شد");
+                    addProductToBoxProduct.mutate({
+                      updateItem: update,
+                      id: getUserNow.id || "",
+                    });
                   }}
                   className="w-100 btn btn-danger">
                   پاک کردن

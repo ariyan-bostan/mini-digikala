@@ -27,7 +27,7 @@
   font-style: normal;
 }
 
-body {
+body ,option {
   margin: 0;
   font-family:
     digikalaRegular,
@@ -43,6 +43,8 @@ body {
     "Helvetica Neue",
     sans-serif !important ;
 }
+
+
 
 .finalPriceIcredibleList {
   font-family:

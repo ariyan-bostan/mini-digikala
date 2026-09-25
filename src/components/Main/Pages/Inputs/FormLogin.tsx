@@ -69,12 +69,11 @@ const FormLogin = () => {
           // console.log(item);
 
           return (
-            (item["user-name"] === data.userId ||
-              item["number-phone"] === data.userId) &&
-            item.password === data.password
+            (item["user-name"].trim() === data.userId.trim() ||
+              item["number-phone"].trim() === data.userId.trim()) &&
+            item.password.trim() === data.password.trim()
           );
         });
-        // console.log(resault);
 
         if (!resault) setMessage("نام کاربری یا شماره تلفن یافت نشد !!");
         else setPerson(resault);

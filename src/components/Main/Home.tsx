@@ -15,6 +15,9 @@ import BoxOrderProduct from "./BoxOrderedProducts";
 import type { bannerSwiper } from "../Services/Intefaces";
 import { Link } from "react-router";
 import IncredibleUrgent from "./IncredibleUrgent";
+import { Toaster } from "react-hot-toast";
+import { useMutation, useQuery } from "@tanstack/react-query";
+import axios from "axios";
 interface TypeContextBannerSwiper {
   list: bannerSwiper[] | undefined;
   error: Error | null;
@@ -27,13 +30,27 @@ export const ContextBannerSwiper = React.createContext<
 
 const Home = () => {
   
-    
+    const newP={};
+    const addObj=useMutation({
+      mutationFn:(newItem:string)=>{
+        return axios.post("http://localhost:3000/",newItem)
+                    .then(res=>res.data);
+      },
+      onSuccess:(newItem:string)=>{
+        console.log(newItem);
+        
+      }
+    });
+    useEffect(()=>{
+      addObj.mutate("ss")
+    },[])
   
 
   const { data: list, error, isLoading } = useBannerSwiper();
   const property = useContext(contextWidth)!;
   return (
     <div className={["w-100"].join(" ")}>
+      <Toaster position="top-center" reverseOrder={false} />{" "}
       <ContextBannerSwiper.Provider value={{ list, error, isLoading }}>
         <BrandSwiper />
       </ContextBannerSwiper.Provider>

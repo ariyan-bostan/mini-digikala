@@ -192,14 +192,7 @@
     "incredible": {
       "running_out_incredible_products": {
         "title": "شگفت‌انگیز رو به اتمام",
-        "brands": [
-          "هارلینگن",
-          "آرت وینا",
-          "توشیبا",
-          "ویانا",
-          "اودسا",
-          "کورس"
-        ],
+        "brands": ["هارلینگن", "آرت وینا", "توشیبا", "ویانا", "اودسا", "کورس"],
         "products": [
           {
             "title": "ادوپرفیوم زنانه هارلینگن مدل لانکوم میدنایت رز با رایحه گرم حجم 30 میلی‌لیتر",
@@ -972,11 +965,7 @@
       },
       {
         "title": "راهنمای خرید از دیجی‌کالا",
-        "list": [
-          "نحوه ثبت سفارش",
-          "رویه ارسال سفارش",
-          "شیوه پرداخت"
-        ]
+        "list": ["نحوه ثبت سفارش", "رویه ارسال سفارش", "شیوه پرداخت"]
       },
       {
         "title": "شرکای تجاری",
@@ -1001,12 +990,7 @@
     ],
     "communicationRoutes": {
       "title": "همراه ما باشید!",
-      "linkIcon": [
-        "linkedin",
-        "instagram",
-        "twitter",
-        "aparat"
-      ]
+      "linkIcon": ["linkedin", "instagram", "twitter", "aparat"]
     },
     "LabelFooter": [
       {
@@ -1635,7 +1619,179 @@
       "password": "bbbb",
       "box-product": [],
       "id": "IDgjq3adVbk"
+    },
+    {
+      "id-user": "12",
+      "type-user": "عادی",
+      "number-phone": "9876556899",
+      "name": "ariyan",
+      "last-name": "bostan",
+      "user-name": "ariyanoBostan",
+      "password": "1234567890",
+      "box-product": [],
+      "id": "PUnK3FUxRzM"
     }
   ],
+  "listProducts": [
+    {
+      "id": "1",
+      "title": "ویتامین‌ها و مواد معدنی"
+    }
+  ],
+  "ویتامین‌ها و مواد معدنی": [
+    {
+      "id":"0",
+      "title": "قرص ویتامین D3-1000 واحدی  بسته 60 عددی",
+      "layer": {
+        "brand": "یوروویتال",
+        "category": "مکمل غذایی",
+        "dimension9": 4.6
+      },
+      "images": {
+        "mainImg": "https://dkstatics-public.digikala.com/digikala-products/c64720f4446aa94b873dab4ae35091bc3f0fcc22_1637680139.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+        "listImg": [
+          "https://dkstatics-public.digikala.com/digikala-products/3cdbed1e582fdd8bddf8f5ef599d344b40beeb47_1637680134.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+          "https://dkstatics-public.digikala.com/digikala-products/fb7d36b209790656b1a61a8dea43676351369629_1719643419.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+          "https://dkstatics-public.digikala.com/digikala-products/3fe6eb802a4ad2497339ee9897f94796b682653f_1719643420.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+          "https://dkstatics-public.digikala.com/digikala-products/36826f39f000a7820a7d4fa06c465f2bb37de955_1719643421.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90"
+        ]
+      },
+      "theme": {
+        "title": "قرمز",
+        "code": "#E6123D"
+      },
+      "price": {
+        "selling_price": "1490000",
+        "rrp_price": "2420000",
+        "percent": 4
+      },
+      "attributes": []
+    },
+    {
+      "id": "1",
+      "title": "کپسول روغن ماهی 1000 امگا 3 کارن بسته 50 عددی",
+      "layer": {
+        "brand": "کارن",
+        "category": "مکمل غذایی",
+        "dimension9": 4.6
+      },
+      "images": {
+        "mainImg": "https://dkstatics-public.digikala.com/digikala-products/77c6fef632053dfb55688d83f45c5c30fcff5ec0_1716454946.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+        "listImg": [
+          "https://dkstatics-public.digikala.com/digikala-products/12fb0e1fa8d4bbd681d1ae8dda41cfab8e1218bb_1716454945.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+          "https://dkstatics-public.digikala.com/digikala-products/eb82ca79a2fc9fd6a715c3aed2404ba926368634_1716454945.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+          "https://dkstatics-public.digikala.com/digikala-products/8a79815bcab22a0a38422cf03be6cc8afe07b1e0_1716454945.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+          "https://dkstatics-public.digikala.com/digikala-products/5916c3f1518499648544aa2f66ade28e801cfcca_1716454945.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90"
+        ]
+      },
+      "theme": {
+        "title": "قرمز",
+        "code": "#E6123D"
+      },
+      "price": {
+        "selling_price": "5010000",
+        "rrp_price": "7975000",
+        "percent": 4
+      },
+      "attributes": []
+    },
+    {
+      "id": "2",
+      "title": "قرص اکوفاین یوروویتال بسته 60 عددی",
+      "layer": {
+        "brand": "یوروویتال",
+        "category": "مکمل غذایی",
+        "dimension9": 4.6
+      },
+      "images": {
+        "mainImg": "https://dkstatics-public.digikala.com/digikala-products/5233d3f6cfeca2904e6f006bbcc18aeff43ca289_1669625068.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+        "listImg": [
+          "https://dkstatics-public.digikala.com/digikala-products/ab3e45dff0079c2e0fae9238dbc7f7173d54ecb7_1669645511.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90"
+        ]
+      },
+      "theme": {},
+      "price": {
+        "selling_price": "18900000",
+        "rrp_price": "13860000",
+        "percent": 4
+      },
+      "attributes": []
+    },
+    {
+      "id": "3",
+      "title": "کپسول فرودین هولیستیکا بسته 32 عددی ",
+      "layer": {
+        "brand": "هولیستیکا",
+        "category": "مکمل غذایی",
+        "dimension9": 4.6
+      },
+      "images": {
+        "mainImg": "https://dkstatics-public.digikala.com/digikala-products/9a50de988e334badbc09fdfdc365e4cb35aa290d_1603007772.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+        "listImg": [
+          "https://dkstatics-public.digikala.com/digikala-products/c31869caec25de55faa8fa78c260908a5ff64a85_1603007771.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+          "https://dkstatics-public.digikala.com/digikala-products/cf302ef54d03dcc00154f92be7290b252f4e1750_1603007774.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+          "https://dkstatics-public.digikala.com/digikala-products/e19e024c66798aac443a08578747981297186131_1603007775.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+          "https://dkstatics-public.digikala.com/digikala-products/089fa78541ed89032362116577a642b82b201637_1603007777.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90"
+        ]
+      },
+      "theme": {},
+      "price": {
+        "selling_price": "2900000",
+        "rrp_price": "4397000",
+        "percent": 4
+      },
+      "attributes": []
+    },
+    {
+      "title": "ویتامین E کپسول نرم ژلاتینی 400 واحد ویوا تون بسته 30 عددی با خاصیت آنتی‌اکسیدان و کمک به سلامت پوست، مو و ناخن و پیشگیری از پیری پوست",
+      "layer": {
+        "brand": "ویوا تون",
+        "category": "مکمل غذایی",
+        "dimension9": 4.6
+      },
+      "images": {
+        "mainImg": "https://dkstatics-public.digikala.com/digikala-products/160c143bfe9a12a2db7c8a9ad6c3387e52086e85_1644325203.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+        "listImg": [
+          "https://dkstatics-public.digikala.com/digikala-products/0ea457e23832346d9de29ffd2cab438e8d08ffdc_1644325231.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90"
+        ]
+      },
+      "theme": {},
+      "price": {
+        "selling_price": "1500000",
+        "rrp_price": "4785000",
+        "percent": 4
+      },
+      "attributes": []
+    },
+    {
+      "id": "4",
+      "title": "کپسول مولتی ویتال یوروویتال مدل For Her 50+ بسته 30 عددی با ویتامین‌های گروه B برای افزایش انرژی، کلسیم و ویتامین D جهت حفظ تراکم استخوان، تقویت سیستم ایمنی و پیشگیری از پیری پوست و ریزش مو",
+      "layer": {
+        "brand": "یوروویتال",
+        "category": "مکمل غذایی",
+        "dimension9": 4.6
+      },
+      "images": {
+        "mainImg": "https://dkstatics-public.digikala.com/digikala-products/3ffd840bc476950b934cd5d4fec18e6461a0c3eb_1723623967.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90",
+        "listImg": [
+          "https://dkstatics-public.digikala.com/digikala-products/3ffd840bc476950b934cd5d4fec18e6461a0c3eb_1723623972.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90"
+        ]
+      },
+      "theme": {
+        "title": "قرمز",
+        "code": "#E6123D"
+      },
+      "price": {
+        "selling_price": "1490000",
+        "rrp_price": "2420000",
+        "percent": 4
+      },
+      "attributes": []
+    }
+  ],
+  "مانیتور":[],
+  "گوشی موبایل":[],
+  "دفتر":[],
+
   "$schema": "./node_modules/json-server/schema.json"
 }

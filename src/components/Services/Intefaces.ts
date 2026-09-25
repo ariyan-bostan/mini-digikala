@@ -128,6 +128,7 @@ interface Attributes {
 }
 
 export interface Product {
+  id?:string
   title: string;
   layer: Layer;
   images: Images;
