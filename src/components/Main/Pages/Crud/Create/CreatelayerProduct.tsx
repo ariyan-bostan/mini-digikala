@@ -7,15 +7,26 @@ import { da } from "zod/v4/locales";
 import useCategoriHome from "../../../../Hooks/useCategoriHome";
 
 const schema = z.object({
-  brandProduct: z.string().nonempty({ message: "نام وارد کن!" }),
-  categoryProduct: z.string().nonempty({ message: "یکی از دسته بندی انتخاب کن" }),
-  rateProduct: z.string().nonempty({ message: "امتیاز وارد کن" }).refine((item)=>{},{message:"امتیاز درست وارد کن"}),
+  brandProduct: z.string().nonempty({ message: "برند وارد کن!" }),
+  categoryProduct: z
+    .string()
+    .nonempty({ message: "یکی از دسته بندی انتخاب کن" }),
+  rateProduct: z
+    .string()
+    .nonempty({ message: "امتیاز وارد کن" })
+    .refine(
+      (item) => {
+        return Number(item);
+      },
+      { message: "امتیاز درست وارد کن" },
+    ),
 });
 type formData = z.infer<typeof schema>;
 
 const Createlayer = () => {
   const resault = useContext(contextCreateProduct)!;
-  const {data:list,error,isLoading}=useCategoriHome();
+  const { data: list, error, isLoading } = useCategoriHome();
+
   const {
     register,
     handleSubmit,
@@ -27,19 +38,29 @@ const Createlayer = () => {
       onSubmit={handleSubmit((data) => {
         console.log(data);
         console.log(resault.newProduct);
-        if (resault.newProduct)
+
+        if (resault.newProduct) {
+          console.log("kos1");
+
           resault.setNewProduct({
             ...resault.newProduct,
+            layer: {
+              brand: data.brandProduct,
+              dimension9: Number(data.rateProduct),
+              category: data.categoryProduct,
+            },
           });
-        reset();
-        resault.setCheckState({ ...resault.checkState, nameProduct: true });
+          resault.setCheckState({ ...resault.checkState, layer: true });
+        }
       })}
-      className="form pe-4">
+      className="form pe-4"
+    >
       <div className="my-3 me-2">
         <label
           style={{ color: "#8f8d8d", fontSize: ".8rem" }}
           className=""
-          htmlFor="">
+          htmlFor=""
+        >
           برند:{" "}
         </label>
         <input
@@ -62,28 +83,32 @@ const Createlayer = () => {
         <label
           style={{ color: "#8f8d8d", fontSize: ".8rem" }}
           className=""
-          htmlFor="">
-          برند:{" "}
+          htmlFor=""
+        >
+          دسته بندی :{" "}
         </label>
         <select {...register("categoryProduct")} className="form-select w-50">
           <option value="">موضوع را انتخاب کن</option>
-         {list?.map((item,index)=>(
-          <option key={index} value={item}>{item}</option>
-         ))}
+          {list?.map((item, index) => (
+            <option key={index} value={item.title}>
+              {item.title}
+            </option>
+          ))}
         </select>
-        {errors.brandProduct && (
-          <p className="text-danger">{errors.brandProduct.message}</p>
+        {errors.categoryProduct && (
+          <p className="text-danger">{errors.categoryProduct.message}</p>
         )}
       </div>
       <div className="my-3 me-2">
         <label
           style={{ color: "#8f8d8d", fontSize: ".8rem" }}
           className=""
-          htmlFor="">
-          برند:{" "}
+          htmlFor=""
+        >
+          امتیاز:{" "}
         </label>
         <input
-          {...register("brandProduct")}
+          {...register("rateProduct")}
           style={{
             border: 0,
             background: "rgba(230, 0, 0, 0.76)",
@@ -94,8 +119,8 @@ const Createlayer = () => {
           className="form-control mt-2"
           type="text"
         />
-        {errors.brandProduct && (
-          <p className="text-danger">{errors.brandProduct.message}</p>
+        {errors.rateProduct && (
+          <p className="text-danger">{errors.rateProduct.message}</p>
         )}
       </div>
 

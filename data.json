@@ -192,7 +192,14 @@
     "incredible": {
       "running_out_incredible_products": {
         "title": "شگفت‌انگیز رو به اتمام",
-        "brands": ["هارلینگن", "آرت وینا", "توشیبا", "ویانا", "اودسا", "کورس"],
+        "brands": [
+          "هارلینگن",
+          "آرت وینا",
+          "توشیبا",
+          "ویانا",
+          "اودسا",
+          "کورس"
+        ],
         "products": [
           {
             "title": "ادوپرفیوم زنانه هارلینگن مدل لانکوم میدنایت رز با رایحه گرم حجم 30 میلی‌لیتر",
@@ -965,7 +972,11 @@
       },
       {
         "title": "راهنمای خرید از دیجی‌کالا",
-        "list": ["نحوه ثبت سفارش", "رویه ارسال سفارش", "شیوه پرداخت"]
+        "list": [
+          "نحوه ثبت سفارش",
+          "رویه ارسال سفارش",
+          "شیوه پرداخت"
+        ]
       },
       {
         "title": "شرکای تجاری",
@@ -990,7 +1001,12 @@
     ],
     "communicationRoutes": {
       "title": "همراه ما باشید!",
-      "linkIcon": ["linkedin", "instagram", "twitter", "aparat"]
+      "linkIcon": [
+        "linkedin",
+        "instagram",
+        "twitter",
+        "aparat"
+      ]
     },
     "LabelFooter": [
       {
@@ -1640,7 +1656,7 @@
   ],
   "ویتامین‌ها و مواد معدنی": [
     {
-      "id":"0",
+      "id": "0",
       "title": "قرص ویتامین D3-1000 واحدی  بسته 60 عددی",
       "layer": {
         "brand": "یوروویتال",
@@ -1761,7 +1777,8 @@
         "rrp_price": "4785000",
         "percent": 4
       },
-      "attributes": []
+      "attributes": [],
+      "id": "arfJwtBAWqM"
     },
     {
       "id": "4",
@@ -1789,9 +1806,36 @@
       "attributes": []
     }
   ],
-  "مانیتور":[],
-  "گوشی موبایل":[],
-  "دفتر":[],
-
+  "مانیتور": [],
+  "گوشی موبایل": [],
+  "دفتر": [
+    {
+      "title": "11",
+      "layer": {
+        "brand": "dd",
+        "dimension9": 321,
+        "category": "موبایل"
+      },
+      "images": {
+        "mainImg": "https://a.webp",
+        "listImg": [
+          "https://a.webp",
+          "https://a.webp",
+          "https://a.webp"
+        ]
+      },
+      "theme": {
+        "title": "s;aoaj",
+        "code": "#a"
+      },
+      "price": {
+        "rrp_price": 6,
+        "selling_price": 4,
+        "percent": 1
+      },
+      "attributes": [],
+      "id": "F72xwecGg0s"
+    }
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }

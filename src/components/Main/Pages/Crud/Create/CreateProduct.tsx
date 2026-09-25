@@ -27,7 +27,18 @@ export const contextCreateProduct = React.createContext<
 >(undefined);
 const CreateProduct = () => {
   const [title, setTitle] = useState("");
-  const [newProduct, setNewProduct] = useState<Product|undefined>();
+  const [newProduct, setNewProduct] = useState<Product>({
+    title: "",
+    layer: {
+      brand: "",
+      category: "",
+      dimension9: 0,
+    },
+    images: { mainImg: "", listImg: [] },
+    theme: { title: "", code: "" },
+    price: { selling_price: 0, rrp_price: 0, percent: 0 },
+    attributes: [],
+  });
   const [checkState, setCheckState] = useState<TypeCheckState>({
     selectTitle: false,
     nameProduct: false,
@@ -46,7 +57,8 @@ const CreateProduct = () => {
           setNewProduct,
           checkState,
           setCheckState,
-        }}>
+        }}
+      >
         {!checkState.selectTitle && <SelectSubject />}
         {checkState.selectTitle && !checkState.nameProduct && (
           <CreateNameProduct />

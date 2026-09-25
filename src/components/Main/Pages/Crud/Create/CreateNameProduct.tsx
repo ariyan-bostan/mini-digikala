@@ -21,22 +21,26 @@ const CreateNameProduct = () => {
   return (
     <form
       onSubmit={handleSubmit((data) => {
-        console.log(data);
-        console.log(resault.newProduct);
-        if (resault.newProduct)
+       
+        if (resault.newProduct) {
+
           resault.setNewProduct({
             ...resault.newProduct,
             title: data.nameProduct,
           });
+          resault.setCheckState({ ...resault.checkState, nameProduct: true });
+        }
+
         reset();
-        resault.setCheckState({...resault.checkState,nameProduct:true})
       })}
-      className="form pe-4">
+      className="form pe-4"
+    >
       <div className="my-3 me-2">
         <label
           style={{ color: "#8f8d8d", fontSize: ".8rem" }}
           className=""
-          htmlFor="">
+          htmlFor=""
+        >
           نام محصول وارد کن :{" "}
         </label>
         <input
