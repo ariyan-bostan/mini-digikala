@@ -6,6 +6,7 @@ import { da } from "zod/v4/locales";
 import useCategoriHome from "../../../../Hooks/useCategoriHome";
 import { zodResolver } from "@hookform/resolvers/zod";
 import useAddProdut from "../../../../Hooks/useAddProduct";
+import toast, { Toaster } from "react-hot-toast";
 
 const schema = z.object({
   sellingPrice: z
@@ -25,6 +26,7 @@ const schema = z.object({
 type formData = z.infer<typeof schema>;
 
 const CreatePriceProduct = () => {
+  
   const resault = useContext(contextCreateProduct)!;
   const addProduct = useAddProdut();
 
@@ -37,13 +39,12 @@ const CreatePriceProduct = () => {
   return (
     <form
       onSubmit={handleSubmit((data) => {
-        console.log(data);
-        console.log(resault.newProduct);
-        console.log(Number(data.sellingPrice) <= Number(data.rrpPrice));
         if (
           resault.newProduct &&
           Number(data.sellingPrice) <= Number(data.rrpPrice)
         ) {
+          toast.success("خروج از حساب کاربری");
+
           resault.setNewProduct({
             ...resault.newProduct,
             price: {
@@ -52,8 +53,6 @@ const CreatePriceProduct = () => {
               percent: Number(data.percent),
             },
           });
-          console.log("kosi");
-          console.log("endpoint", resault.title);
 
           addProduct.mutate({
             endPoint: resault.title,
@@ -69,14 +68,12 @@ const CreatePriceProduct = () => {
           resault.setCheckState({ ...resault.checkState, price: true });
         }
       })}
-      className="form pe-4"
-    >
+      className="form pe-4">
       <div className="my-3 me-2">
         <label
           style={{ color: "#8f8d8d", fontSize: ".8rem" }}
           className=""
-          htmlFor=""
-        >
+          htmlFor="">
           قیمت اصلی/مرجع محصول قبل از تخفیف :{" "}
         </label>
         <input
@@ -99,8 +96,7 @@ const CreatePriceProduct = () => {
         <label
           style={{ color: "#8f8d8d", fontSize: ".8rem" }}
           className=""
-          htmlFor=""
-        >
+          htmlFor="">
           قیمت فروش فعلی محصول :{" "}
         </label>
         <input
@@ -123,8 +119,7 @@ const CreatePriceProduct = () => {
         <label
           style={{ color: "#8f8d8d", fontSize: ".8rem" }}
           className=""
-          htmlFor=""
-        >
+          htmlFor="">
           تخفیف :{" "}
         </label>
         <input
@@ -143,7 +138,6 @@ const CreatePriceProduct = () => {
           <p className="text-danger">{errors.percent.message}</p>
         )}
       </div>
-
       <button type="submit" className="btn btn-danger me-4 mb-3">
         ادامه
       </button>

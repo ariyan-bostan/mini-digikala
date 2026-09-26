@@ -12,6 +12,8 @@ import useAddNormalUser from "../../Hooks/useAddNormalUser";
 import useAddProductToBoxProduct from "../../Hooks/useAddProductToBoxProduct";
 import InformationUser from "./Profile/InformationUser";
 import CreateProduct from "./Crud/Create/CreateProduct";
+import UpdateProduct from "./Crud/Update/UpdateProduct";
+import  DeleteProduct  from "./Crud/Delete/DeleteProduct";
 export interface TypeGetItem {
   "type-user": string;
 }
@@ -98,6 +100,8 @@ const Profile = () => {
         {selectSubject === "خروج از حساب کاربری" && <Logout />}
         {selectSubject === "نمایش اطلاعات" && <InformationUser />}
         {selectSubject === "اضافه کردن محصول" && <CreateProduct />}
+        {selectSubject === "بروزرسانی محصول" && <UpdateProduct />}
+        {selectSubject === "حذف محصول" && <DeleteProduct />}
       </div>
     </div>
   );

@@ -10,13 +10,21 @@ import PriceProduct from "./InformationProductComponents/PriceProduct";
 import style from "../../Styles/Layout.module.css";
 import UserNormal from "./Users/UserNormal";
 import { Toaster } from "react-hot-toast";
+import useGetProduct from "../../Hooks/useGetProduct";
+import useRunningOutIncredibleProducts1 from "../../Hooks/useRunningOutIncredibleProducts1";
 
 
 const InformationProduct = () => {
   const property = useContext(contextWidth)!;
   const paramURL = useParams();
-  const { objectProduct:lists, error, isLoading } =paramURL.typeObject==="products"? useProduct(paramURL.title || ""): useRunningOutIncredibleProducts();
-  let resault =lists&& lists.products.find((item) => {
+  const {
+    data: lists,
+    error,
+    isLoading,
+  } = paramURL.typeObject === "products"
+    ? useGetProduct(paramURL.title || "")
+    : useRunningOutIncredibleProducts1();
+  let resault =lists&& lists.find((item) => {
     if (item.title.includes(paramURL.titleProduct || "")) return item;
   });
   const [selectImg, setSelectImg] = useState(resault?.images.mainImg || "");

@@ -8,13 +8,12 @@ interface UpdateItem {
 interface TypeContextPreviousData {
   previousDataQuery: UserNormal[] | undefined;
 }
-const useAddProductToBoxProduct = () => {
+const useApdateUserAdmin = () => {
   const queryClient = useQueryClient();
-  
   return useMutation<UserNormal, Error, UpdateItem, TypeContextPreviousData>({
     mutationFn: (item: UpdateItem) => {
       return axios
-        .patch(`http://localhost:3000/normalUsers/${item.id}`, item.updateItem)
+        .patch(`http://localhost:3000/User-Admin/${item.id}`, item.updateItem)
         .then((res) => res.data);
     },
     onMutate: (updateItem: UpdateItem) => {
@@ -30,22 +29,25 @@ const useAddProductToBoxProduct = () => {
     onSuccess: (updateItem: UserNormal, newItem: UpdateItem) => {
       console.log("success for ");
 
-      queryClient.setQueryData<UserNormal[]>(["list-normal user"], (list) => {
-        return (
-          list &&
-          list.map((item) =>
-            item.id !== newItem.id ? newItem.updateItem : item,
-          )
-        );
-      });
+      queryClient.setQueryData<UserNormal[]>(
+        ["list-admin user"],
+        (list) => {
+          return (
+            list &&
+            list.map((item) =>
+              item.id !== newItem.id ? newItem.updateItem : item,
+            )
+          );
+        },
+      );
     },
     onError: (error, item, context) => {
       if (!error) return;
       queryClient.setQueryData(
-        ["list-normal user"],
+        ["list-admin user"],
         context?.previousDataQuery,
       );
     },
   });
 };
-export default useAddProductToBoxProduct;
+export default useApdateUserAdmin;

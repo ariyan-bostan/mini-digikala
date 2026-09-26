@@ -11,7 +11,11 @@ const IncredibleUrgent = () => {
   const property = useContext(contextWidth)!;
   const { listCategori, errorCategori, isLoadingCategori } =
     useListCategories();
-  const { objectProduct: list, error, isLoading } = useRunningOutIncredibleProducts();
+  const {
+    objectProduct: list,
+    error,
+    isLoading,
+  } = useRunningOutIncredibleProducts();
 
   const [selectCategori, setSelectCategori] = useState("");
   let mainListProduct: ProductRunningOut[] | undefined = list?.products || [];

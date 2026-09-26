@@ -6,6 +6,7 @@ import Createlayer from "./CreatelayerProduct";
 import CreateImageProduct from "./CreateImageProduct";
 import CreateColorProduct from "./CreateColorProduct";
 import CreatePriceProduct from "./CreatePriceProduct";
+import { Toaster } from "react-hot-toast";
 interface TypeCheckState {
   selectTitle: boolean;
   nameProduct: boolean;
@@ -49,6 +50,7 @@ const CreateProduct = () => {
   });
   return (
     <div className="w-100">
+      <Toaster position="top-center" reverseOrder={false} />{" "}
       <contextCreateProduct.Provider
         value={{
           title,
@@ -57,8 +59,7 @@ const CreateProduct = () => {
           setNewProduct,
           checkState,
           setCheckState,
-        }}
-      >
+        }}>
         {!checkState.selectTitle && <SelectSubject />}
         {checkState.selectTitle && !checkState.nameProduct && (
           <CreateNameProduct />

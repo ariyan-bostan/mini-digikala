@@ -1,29 +1,43 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router";
+import React, { useContext, useState } from "react";
+import { data, useNavigate } from "react-router";
 import useAddProductToBoxProduct from "../../../Hooks/useAddProductToBoxProduct";
 import type { UserNormal } from "../../../Hooks/useGetListNormalUser";
-
+import { useForm } from "react-hook-form";
+import toast, { Toaster } from "react-hot-toast";
+import { contextTypeUser } from "../../../App";
+import useApdateUserAdmin from "../../../Hooks/useUpdateUserAdmin";
 const InformationUser = () => {
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm();
+
   const navigate = useNavigate();
   const [changeInformation, setChangeInformation] = useState<UserNormal>(
     JSON.parse(localStorage.getItem("getUser") || "null"),
+    
   );
+  const getTypeUser=useContext(contextTypeUser)!;
+  console.log(changeInformation["type-user"],changeInformation.id);
+  
   const addNormalUser = useAddProductToBoxProduct();
+  const updateUserAdmin= useApdateUserAdmin();
 
   return (
-    <div className="bg-info">
+    <div className="">
+      <Toaster position="top-center" reverseOrder={false} />{" "}
       <form
-        onSubmit={(e) => {
-          e.preventDefault();
-        }}
-        className="form w-100 p-3"
-      >
+        onSubmit={handleSubmit((data) => {
+          console.log(data);
+        })}
+        className="form w-100 p-3">
         <div>
           <label
             style={{ color: "#8f8d8d", fontSize: ".8rem" }}
             className=""
-            htmlFor=""
-          >
+            htmlFor="">
             نام :{" "}
           </label>
           <input
@@ -49,8 +63,7 @@ const InformationUser = () => {
           <label
             style={{ color: "#8f8d8d", fontSize: ".8rem" }}
             className=""
-            htmlFor=""
-          >
+            htmlFor="">
             نام خانوادگی :{" "}
           </label>
           <input
@@ -76,8 +89,7 @@ const InformationUser = () => {
           <label
             style={{ color: "#8f8d8d", fontSize: ".8rem" }}
             className=""
-            htmlFor=""
-          >
+            htmlFor="">
             نام کاربری :{" "}
           </label>
           <input
@@ -103,8 +115,7 @@ const InformationUser = () => {
           <label
             style={{ color: "#8f8d8d", fontSize: ".8rem" }}
             className=""
-            htmlFor=""
-          >
+            htmlFor="">
             رمز عبور :{" "}
           </label>
           <input
@@ -128,14 +139,28 @@ const InformationUser = () => {
         </div>
         <button
           onClick={() => {
-            addNormalUser.mutate({
-              updateItem: changeInformation,
-              id: changeInformation.id || "",
-            });
-            localStorage.removeItem("getUser");
+            if(changeInformation["type-user"]==="ادمین-کاربر"){
+              console.log("kos");
+              
+              updateUserAdmin.mutate({
+                updateItem: changeInformation,
+                id: changeInformation.id || "",
+              });
+              localStorage.removeItem("getUser");
+              localStorage.setItem("getUser", JSON.stringify(changeInformation));
+              toast.success("تغییرات ذخیره شد");
+            }else{
+
+              addNormalUser.mutate({
+                updateItem: changeInformation,
+                id: changeInformation.id || "",
+              });
+              localStorage.removeItem("getUser");
+              localStorage.setItem("getUser", JSON.stringify(changeInformation));
+              toast.success("تغییرات ذخیره شد");
+            }
           }}
-          className="btn mt-3 bg-success"
-        >
+          className="btn mt-3 bg-success">
           ذخیره تغییرات
         </button>
       </form>

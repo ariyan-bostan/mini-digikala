@@ -5,6 +5,7 @@ import { contextWidth } from "../App";
 import PercentPrice from "./PercentPrice";
 import { FiArrowLeftCircle } from "react-icons/fi";
 import { Link } from "react-router";
+import useGetProduct from "../Hooks/useGetProduct";
 
 interface Props {
   title: string;
@@ -12,9 +13,11 @@ interface Props {
 
 const ProductList = ({ title }: Props) => {
   const property = useContext(contextWidth)!;
-  const { objectProduct, error, isLoading } = useProduct(title);
+  const { data, error, isLoading } = useGetProduct(title);
   
   return (
+  <>
+    {data&&data?.length>0 &&
     <div
       className={[
         style.container,
@@ -37,7 +40,7 @@ const ProductList = ({ title }: Props) => {
           style.containerProduct,
           "d-flex flex-row gap-2 align-items-center p-2",
         ].join(" ")}>
-        {objectProduct?.products.map((item, index) => (
+        {data?.map((item, index) => (
           <Link
             to={`/products/informationProduct/products/${title}/${item.title}`}
             key={index}
@@ -86,6 +89,8 @@ const ProductList = ({ title }: Props) => {
         </div>
       </div>
     </div>
+}
+  </>
   );
 };
 

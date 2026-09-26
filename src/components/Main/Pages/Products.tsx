@@ -4,11 +4,11 @@ import useProduct from "../../Hooks/useProduct";
 import styleAmz from "../../Styles/Main/AmazingBox.module.css";
 
 import { contextWidth } from "../../App";
+import useGetProduct from "../../Hooks/useGetProduct";
 
 const Products = () => {
   const parameters = useParams();
-  const {objectProduct,error,isLoading}=useProduct(parameters.title||"");
-  console.log("kirrrr",objectProduct);
+  const {data,error,isLoading}=useGetProduct(parameters.title||"");
   
   const property=useContext(contextWidth)!;
 
@@ -33,7 +33,7 @@ const Products = () => {
             ? "d-flex flex-column gap-1"
             : "d-flex flex-row gap-2 justify-content-center mt-4",
         ].join(" ")}>
-        {objectProduct?.products?.map((item, index) => (
+        {data?.map((item, index) => (
           <>
             {property.innerWidth < 850 ? (
               <Link

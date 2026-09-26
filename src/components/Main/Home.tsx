@@ -18,6 +18,7 @@ import IncredibleUrgent from "./IncredibleUrgent";
 import { Toaster } from "react-hot-toast";
 import { useMutation, useQuery } from "@tanstack/react-query";
 import axios from "axios";
+import useGetNameListProduct from "../Hooks/useGetNameListProduct";
 interface TypeContextBannerSwiper {
   list: bannerSwiper[] | undefined;
   error: Error | null;
@@ -29,24 +30,12 @@ export const ContextBannerSwiper = React.createContext<
 >(undefined);
 
 const Home = () => {
-  
-    const newP={};
-    const addObj=useMutation({
-      mutationFn:(newItem:string)=>{
-        return axios.post("http://localhost:3000/",newItem)
-                    .then(res=>res.data);
-      },
-      onSuccess:(newItem:string)=>{
-        console.log(newItem);
-        
-      }
-    });
-    useEffect(()=>{
-      addObj.mutate("ss")
-    },[])
-  
-
   const { data: list, error, isLoading } = useBannerSwiper();
+  const {
+    data: listName,
+    error: errorList,
+    isLoading: loadList,
+  } = useGetNameListProduct();
   const property = useContext(contextWidth)!;
   return (
     <div className={["w-100"].join(" ")}>
@@ -73,7 +62,9 @@ const Home = () => {
           <Banner2 number={4} />
 
           <ContainerProductList>
-            <ProductList title="ویتامین‌ها و مواد معدنی" />
+            {listName?.map((item, index) => (
+              <ProductList key={index} title={item.title} />
+            ))}
             {/* <ProductList title="گوشی موبایل" /> */}
             {/* <ProductList title="کیس" /> */}
             {/* <ProductList title="کیبرد" /> */}
