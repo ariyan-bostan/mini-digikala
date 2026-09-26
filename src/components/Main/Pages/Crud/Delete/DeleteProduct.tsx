@@ -1,17 +1,19 @@
 import { zodResolver } from "@hookform/resolvers/zod";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
 import z from "zod";
 import { da, id } from "zod/v4/locales";
 import useGetProduct from "../../../../Hooks/useGetProduct";
 import useDeleteProduct from "../../../../Hooks/useDeleteProduct";
 import toast, { Toaster } from "react-hot-toast";
+import { contextWidth } from "../../../../App";
 const schema = z.object({
   subject: z.string().nonempty({ message: "موضوع را انتخاب کن" }),
   nameProduct: z.string().nonempty({ message: "نام محصول را وارد کن" }),
 });
 type formData = z.infer<typeof schema>;
 const DeleteProduct = () => {
+    const property=useContext(contextWidth)!;
   const {
     register,
     handleSubmit,
@@ -69,7 +71,7 @@ const DeleteProduct = () => {
             onChange={(e) => {
               setSelectSubject(e.target.value);
             }}
-            className="form-select w-50">
+            className={[property.innerWidth<850?"form-select w-50":"form-select w-25"].join(" ")}>
             <option value="">موضوع را انتخاب کن</option>
             <option
               style={{ background: "red" }}

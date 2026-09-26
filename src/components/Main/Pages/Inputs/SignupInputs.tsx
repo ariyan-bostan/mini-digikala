@@ -7,6 +7,7 @@ import Swal from "sweetalert2";
 import { useNavigate } from "react-router";
 import type { UserNormal } from "../../../Hooks/useGetListNormalUser";
 import useAddNormalUser from "../../../Hooks/useAddNormalUser";
+import useGetListNormalUser from "../../../Hooks/useGetListNormalUser";
 interface TypeStateSignupForm {
   numberPhone: boolean;
   fullName: boolean;
@@ -17,9 +18,12 @@ interface TypeContextStateSignupForm {
   setStateSignupForm: (item: TypeStateSignupForm) => void;
 }
 export const contextStateSignupForm = React.createContext<
-  TypeContextStateSignupForm | undefined>(undefined);
+  TypeContextStateSignupForm | undefined
+>(undefined);
 
 const SignupInput = () => {
+  const addUserNormal = useAddNormalUser();
+
   const person = useContext(contextUserNormal)!;
   const navigate = useNavigate();
 
@@ -33,21 +37,21 @@ const SignupInput = () => {
     stateSignupForm.fullName &&
     stateSignupForm.username
   ) {
-  
-
     localStorage.setItem("getUser", JSON.stringify(person.newPerson));
-    
+   
+
     Swal.fire({
       title: `خوش امدید ${person.newPerson.name}`,
       icon: "success",
     });
-    
+
     navigate("/");
   }
   return (
     <>
       <contextStateSignupForm.Provider
-        value={{ stateSignupForm, setStateSignupForm }}>
+        value={{ stateSignupForm, setStateSignupForm }}
+      >
         {!stateSignupForm.numberPhone && <SignupNumber />}
         {stateSignupForm.numberPhone && !stateSignupForm.fullName && (
           <SignupFullName />

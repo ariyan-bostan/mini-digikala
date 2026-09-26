@@ -1,7 +1,7 @@
-import React, { useContext } from "react";
-import style from "../Styles/Main/CategoriHome.module.css"
-import useCategoriHome from "../Hooks/useCategoriHome";
+import { useContext } from "react";
 import { contextWidth } from "../App";
+import useCategoriHome from "../Hooks/useCategoriHome";
+import style from "../Styles/Main/CategoriHome.module.css";
 
 const CategoryHome = () => {
   const{data:list,error,isLoading}=useCategoriHome();

@@ -1,6 +1,5 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { Link, useParams } from "react-router";
-import useProduct from "../../Hooks/useProduct";
 import styleAmz from "../../Styles/Main/AmazingBox.module.css";
 
 import { contextWidth } from "../../App";
@@ -77,7 +76,7 @@ const Products = () => {
                     </div>
                     <div className="w-50 d-flex flex-row justify-content-end ps-1">
                       <div className="w-75 h-100  d-flex flex-column align-items-end">
-                        {item.price.rrp_price + " "}تومان
+                        {item.price.selling_price + " "}تومان
                       </div>
                     </div>
                   </div>

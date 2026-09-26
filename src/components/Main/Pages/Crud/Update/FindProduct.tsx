@@ -7,12 +7,14 @@ import useGetProduct from "../../../../Hooks/useGetProduct";
 import useDeleteProduct from "../../../../Hooks/useDeleteProduct";
 import toast, { Toaster } from "react-hot-toast";
 import { contextUpdateProduct } from "./UpdateProduct";
+import { contextWidth } from "../../../../App";
 const schema = z.object({
   subject: z.string().nonempty({ message: "موضوع را انتخاب کن" }),
   nameProduct: z.string().nonempty({ message: "نام محصول را وارد کن" }),
 });
 type formData = z.infer<typeof schema>;
 const FindProduct = () => {
+    const property=useContext(contextWidth)!;
   const res =useContext(contextUpdateProduct)!;
   const {
     register,
@@ -20,10 +22,8 @@ const FindProduct = () => {
     reset,
     formState: { errors },
   } = useForm<formData>({ resolver: zodResolver(schema) });
-  const [selectSubject, setSelectSubject] = useState(
-    " ویتامین‌ها و مواد معدنی",
-  );
-  const { data: list, error, isLoading } = useGetProduct(selectSubject);
+ 
+  const { data: list, error, isLoading } = useGetProduct(res.selectSubject);
   const [message, setMessage] = useState("");
 
   return (
@@ -56,9 +56,9 @@ const FindProduct = () => {
           <select
             {...register("subject")}
             onChange={(e) => {
-              setSelectSubject(e.target.value);
+              res.setSelectSubject(e.target.value);
             }}
-            className="form-select w-50">
+            className={[property.innerWidth<850?"form-select w-50":"form-select w-25"].join(" ")}>
             <option value="">موضوع را انتخاب کن</option>
             <option
               style={{ background: "red" }}

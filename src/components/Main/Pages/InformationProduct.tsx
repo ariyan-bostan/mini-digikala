@@ -1,17 +1,14 @@
-import React, { useContext, useEffect, useState } from "react";
-import { contextWidth } from "../../App";
-import useProduct from "../../Hooks/useProduct";
-import { useParams } from "react-router";
-import useRunningOutIncredibleProducts from "../../Hooks/useRunningOutIncredibleProducts";
-import ImagesProduct from "./InformationProductComponents/ImagesProduct";
-import TitleProduct from "./InformationProductComponents/TitleProduct";
-import CategoryProduct from "./InformationProductComponents/CategoryProduct";
-import PriceProduct from "./InformationProductComponents/PriceProduct";
-import style from "../../Styles/Layout.module.css";
-import UserNormal from "./Users/UserNormal";
+import { useContext, useEffect, useState } from "react";
 import { Toaster } from "react-hot-toast";
+import { useParams } from "react-router";
+import { contextWidth } from "../../App";
 import useGetProduct from "../../Hooks/useGetProduct";
 import useRunningOutIncredibleProducts1 from "../../Hooks/useRunningOutIncredibleProducts1";
+import style from "../../Styles/Layout.module.css";
+import CategoryProduct from "./InformationProductComponents/CategoryProduct";
+import ImagesProduct from "./InformationProductComponents/ImagesProduct";
+import PriceProduct from "./InformationProductComponents/PriceProduct";
+import TitleProduct from "./InformationProductComponents/TitleProduct";
 
 
 const InformationProduct = () => {

@@ -1,7 +1,7 @@
-import React, { useContext } from 'react'
-import styleTitle from "../Styles/Main/Titles.module.css"
-import useTitlesHome from '../Hooks/useTitlesHome'
+import { useContext } from 'react';
 import { contextWidth } from '../App';
+import useTitlesHome from '../Hooks/useTitlesHome';
+import styleTitle from "../Styles/Main/Titles.module.css";
 
 const Titles = () => {
 

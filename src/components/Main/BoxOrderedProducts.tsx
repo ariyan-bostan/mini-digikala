@@ -1,8 +1,8 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
+import { contextWidth } from "../App";
+import useBestSeller from "../Hooks/useBestSeller";
 import Bestseller from "./OrderProduct";
 import TitleBestSeller from "./TitleOrderProduct";
-import useBestSeller from "../Hooks/useBestSeller";
-import { contextWidth } from "../App";
 interface Props {
   title: string;
 }

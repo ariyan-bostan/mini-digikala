@@ -66,7 +66,6 @@ const FormLogin = () => {
     <form
       onSubmit={handleSubmit((data) => {
         let resault = listUser?.find((item) => {
-          // console.log(item);
 
           return (
             (item["user-name"].trim() === data.userId.trim() ||

@@ -1,18 +1,16 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
 import { contextWidth } from "../../../App";
+import useAddProductToBoxProduct from "../../../Hooks/useAddProductToBoxProduct";
 import useGetListNormalUser, {
   type UserNormal,
 } from "../../../Hooks/useGetListNormalUser";
 import styleAmz from "../../../Styles/Main/AmazingBox.module.css";
-import { ar } from "zod/v4/locales";
-import useAddProductToBoxProduct from "../../../Hooks/useAddProductToBoxProduct";
-import type { Product, ProductRunningOut } from "../../../Services/Intefaces";
-import toast, { Toaster } from "react-hot-toast";
 
 const BoxProduct = () => {
   const property = useContext(contextWidth)!;
   const addProductToBoxProduct = useAddProductToBoxProduct();
-
+  const { listUser } = useGetListNormalUser();
   const [getUserNow, setGetUserNow] = useState<UserNormal>(
     JSON.parse(localStorage.getItem("getUser") || "null"),
   );
@@ -29,7 +27,6 @@ const BoxProduct = () => {
     while (i > 0) {
       finalResault = String(sumOfProductPrice).substring(i - 3, i) + ",";
       array[index++] = finalResault;
-      // console.log(array);
       i -= 3;
     }
     finalResault = "";
@@ -52,7 +49,8 @@ const BoxProduct = () => {
           property.innerWidth < 850
             ? "d-flex flex-column gap-1 py-2"
             : "d-flex flex-row gap-2 justify-content-center mt-4 py-4",
-        ].join(" ")}>
+        ].join(" ")}
+      >
         {getUserNow?.["box-product"].map((item, index) => (
           <>
             <Toaster position="top-center" reverseOrder={false} />{" "}
@@ -69,10 +67,12 @@ const BoxProduct = () => {
                   property.innerWidth < 850
                     ? "d-flex border flex-row gap-1  w-100"
                     : "bg-info",
-                ].join(" ")}>
+                ].join(" ")}
+              >
                 <div
                   style={{ width: "30%", borderRadius: "5px" }}
-                  className="h-100">
+                  className="h-100"
+                >
                   <img
                     className="w-100 h-100"
                     src={item.images.mainImg}
@@ -81,7 +81,8 @@ const BoxProduct = () => {
                 </div>
                 <div
                   style={{ width: "70%", borderRadius: "5px" }}
-                  className="h-100 d-flex flex-column">
+                  className="h-100 d-flex flex-column"
+                >
                   <div className="h-50  p-2">
                     <p style={{ fontSize: ".8rem" }} className="p-0 m-0">
                       {item.title.substring(0, 50)}...
@@ -91,7 +92,8 @@ const BoxProduct = () => {
                     <div className="w-50  pe-2">
                       <div
                         style={{ width: "2rem", borderRadius: "10px" }}
-                        className="bg-danger">
+                        className="bg-danger"
+                      >
                         10%
                       </div>
                     </div>
@@ -118,10 +120,11 @@ const BoxProduct = () => {
                       setGetUserNow(update);
                       addProductToBoxProduct.mutate({
                         updateItem: update,
-                        id: getUserNow.id || "",
+                        id:(listUser && listUser[listUser?.length - 1].id) || "",
                       });
                     }}
-                    className="btn btn-danger ms-1 mb-1">
+                    className="btn btn-danger ms-1 mb-1"
+                  >
                     پاک کردن از سبد خرید
                   </button>
                 </div>
@@ -131,7 +134,8 @@ const BoxProduct = () => {
                 key={index}
                 className={[styleAmz.boxProduct, "linkTo", "border pb-2"].join(
                   " ",
-                )}>
+                )}
+              >
                 <div className={[styleAmz.posterPro].join(" ")}>
                   <img
                     className="w-100 h-100 object-fit-cover"
@@ -143,14 +147,16 @@ const BoxProduct = () => {
                   className={[
                     styleAmz.titlePro,
                     "d-flex justify-content-center",
-                  ].join(" ")}>
+                  ].join(" ")}
+                >
                   <p
                     style={{
                       width: "100%",
                       fontSize: ".7rem",
                       lineHeight: "1.2rem",
                     }}
-                    className="p-0 m-1">
+                    className="p-0 m-1"
+                  >
                     {item.title.substring(0, 50)}...
                   </p>
                 </div>
@@ -158,18 +164,22 @@ const BoxProduct = () => {
                   className={[
                     styleAmz.boxBP,
                     "d-flex flex-row pe-3 align-items-center",
-                  ].join(" ")}>
+                  ].join(" ")}
+                >
                   <div
                     style={{ borderRadius: "5px" }}
-                    className="w-25 h-50 bg-danger ms-3 d-flex flex-row justify-content-center">
+                    className="w-25 h-50 bg-danger ms-3 d-flex flex-row justify-content-center"
+                  >
                     <p
                       style={{ fontSize: ".9rem", color: "white" }}
-                      className="m-0">
+                      className="m-0"
+                    >
                       ⁒10
                     </p>
                   </div>
                   <div
-                    style={{ color: "gray", textDecoration: "line-through" }}>
+                    style={{ color: "gray", textDecoration: "line-through" }}
+                  >
                     {item.price.rrp_price}
                   </div>
                 </div>
@@ -177,7 +187,8 @@ const BoxProduct = () => {
                   className={[
                     styleAmz.boxFinalPrice,
                     "d-flex flex-row justify-content-center align-items-center",
-                  ].join(" ")}>
+                  ].join(" ")}
+                >
                   <p className="finalPriceIcredibleList m-0 p-0">
                     {item.price.rrp_price -
                       (10 / 100) * item.price.rrp_price +
@@ -187,6 +198,11 @@ const BoxProduct = () => {
                 </div>
                 <button
                   onClick={() => {
+                    console.log("ssdsdsdsd",listUser);
+                    
+                    if (listUser)
+                      console.log("sdcsdoicds",listUser[listUser?.length - 1].id);
+
                     toast.success("پاک شد");
 
                     let update: UserNormal = {
@@ -202,10 +218,11 @@ const BoxProduct = () => {
                     setGetUserNow(update);
                     addProductToBoxProduct.mutate({
                       updateItem: update,
-                      id: getUserNow.id || "",
+                      id: (listUser && listUser[listUser?.length - 1].id) || "",
                     });
                   }}
-                  className="w-100 btn btn-danger">
+                  className="w-100 btn btn-danger"
+                >
                   پاک کردن
                 </button>
               </div>

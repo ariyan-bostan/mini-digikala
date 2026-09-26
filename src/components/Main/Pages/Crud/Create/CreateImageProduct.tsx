@@ -10,30 +10,26 @@ const schema = z.object({
   mainImage: z
     .string()
     .nonempty({ message: "لینک تصویر اصلی وارد کن" })
-    .endsWith(".webp", { message: "ادرس تصویر باید از نوع webp باشد" })
     .refine(
-      (item) => item.startsWith("https://") || item.startsWith("http://"),
+      (item) => (item.startsWith("https://") || item.startsWith("http://"))&&(item.endsWith(".webp")||item.endsWith(",webp")),{message:"ادرس درست وارد کن"}
     ),
   img1: z
     .string()
     .nonempty({ message: "لینک تصویر اول وارد کن" })
-    .endsWith(".webp", { message: "ادرس تصویر باید از نوع webp باشد" })
     .refine(
-      (item) => item.startsWith("https://") || item.startsWith("http://"),
+      (item) => (item.startsWith("https://") || item.startsWith("http://"))&&(item.endsWith(".webp")||item.endsWith(",webp")),{message:"ادرس درست وارد کن"}
     ),
   img2: z
     .string()
     .nonempty({ message: "لینک تصویر دوم وارد کن" })
-    .endsWith(".webp", { message: "ادرس تصویر باید از نوع webp باشد" })
     .refine(
-      (item) => item.startsWith("https://") || item.startsWith("http://"),
+      (item) => (item.startsWith("https://") || item.startsWith("http://"))&&(item.endsWith(".webp")||item.endsWith(",webp")),{message:"ادرس درست وارد کن"}
     ),
   img3: z
     .string()
     .nonempty({ message: "لینک تصویر سوم وارد کن" })
-    .endsWith(".webp", { message: "ادرس تصویر باید از نوع webp باشد" })
     .refine(
-      (item) => item.startsWith("https://") || item.startsWith("http://"),
+      (item) => (item.startsWith("https://") || item.startsWith("http://"))&&(item.endsWith(".webp")||item.endsWith(",webp")),{message:"ادرس درست وارد کن"}
     ),
 });
 type formData = z.infer<typeof schema>;

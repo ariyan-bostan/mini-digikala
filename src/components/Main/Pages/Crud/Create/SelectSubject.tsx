@@ -1,7 +1,9 @@
 import React, { useContext, useState } from 'react'
 import { contextCreateProduct } from './CreateProduct';
+import { contextWidth } from '../../../../App';
 
 const SelectSubject = () => {
+    const property=useContext(contextWidth)!;
     const resault=useContext(contextCreateProduct)!;
     const [messageError,setMessage]=useState("")
 
@@ -16,7 +18,7 @@ const SelectSubject = () => {
           موضوع را انتخاب کن:{" "}
         </label>
         <select
-          className="form-select w-50"
+          className={[property.innerWidth<850?"form-select w-50":"form-select w-25"].join(" ")}
           onChange={(e) => {
             if (e.target) resault.setTitle(e.target.value);
           }}>

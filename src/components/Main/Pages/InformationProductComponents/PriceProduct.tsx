@@ -16,9 +16,7 @@ const PriceProduct = ({ resault }: Props) => {
   const getTypeUser: TypeGetItem = JSON.parse(
     localStorage.getItem("getUser") || "null",
   );
-  console.log(getTypeUser && getTypeUser["type-user"]);
 
-  const checkInputUser = useContext(contextCheckInputUser)!;
 
 
   const addProductToBoxProduct = useAddProductToBoxProduct();
@@ -71,7 +69,6 @@ const PriceProduct = ({ resault }: Props) => {
       </div>
       <button
         onClick={() => {
-          console.log("ss:", getTypeUser["type-user"]);
           if (resault) {
             localStorage.removeItem("getUser");
             localStorage.setItem(
@@ -90,9 +87,7 @@ const PriceProduct = ({ resault }: Props) => {
             });
              toast.success("اضافه شد");
             setGetUser(JSON.parse(localStorage.getItem("getUser") || "null"));
-            console.log(listUser);
-            console.log(getUser);
-            console.log("L:",findUser?.id);
+            
             addProductToBoxProduct.mutate({updateItem:JSON.parse(localStorage.getItem("getUser")||"null"),id:findUser?.id||""})
           }
         }}

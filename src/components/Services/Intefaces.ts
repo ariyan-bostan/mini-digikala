@@ -117,9 +117,12 @@ interface Theme {
   code: string;
 }
 interface Price {
-  selling_price: number;
-  rrp_price: number;
-  percent: number;
+  selling_price: number
+  ;
+  rrp_price: number
+  ;
+  percent: number
+  ;
 }
 
 interface Attributes {

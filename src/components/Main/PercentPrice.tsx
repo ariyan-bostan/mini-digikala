@@ -1,5 +1,4 @@
-import React from "react";
-import type { Product, productItem } from "../Services/APIClient";
+import type { Product } from "../Services/Intefaces";
 
 interface Props {
   itemProduct: Product;

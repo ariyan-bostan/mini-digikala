@@ -1,5 +1,5 @@
-import React, { useContext } from 'react'
-import { contextWidth } from '../App'
+import { useContext } from 'react';
+import { contextWidth } from '../App';
 import useSimpleBanner from '../Hooks/useSimpleBanner';
 interface Props{
   number:Number;

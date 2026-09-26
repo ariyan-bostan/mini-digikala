@@ -1,14 +1,13 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
 
 import {
-  Autoplay,
-  EffectCoverflow,
-  FreeMode,
+    Autoplay,
+    EffectCoverflow
 } from "swiper/modules";
-import style1 from  "../Styles/Main/SwiperBrand.module.css"
+import style1 from "../Styles/Main/SwiperBrand.module.css";
 import { ContextBannerSwiper } from "./Home";
 
 const BrandSwiper = () => {

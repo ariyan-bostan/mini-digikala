@@ -1,8 +1,8 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 
-import sss from "../Styles/Main/MostCeller.module.css";
 import { contextWidth } from "../App";
-import type { ProductSeller } from "../Services/APIClient";
+import type { ProductSeller } from "../Services/Intefaces";
+import sss from "../Styles/Main/MostCeller.module.css";
 
 interface Props {
   product: ProductSeller[] | undefined;

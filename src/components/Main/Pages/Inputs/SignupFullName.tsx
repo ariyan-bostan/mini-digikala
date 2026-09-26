@@ -9,12 +9,12 @@ import useAddNormalUser from "../../../Hooks/useAddNormalUser";
 const schema = z.object({
   nameSignup: z
     .string({ message: "نام خودت را وارد کن" })
-    .refine((item) => /^[a-zA-Z\u0600-\u06FF]+$/.test(item),{
+    .refine((item) => /^[a-zA-Z\u0600-\u06FF]+(?: [a-zA-Z\u0600-\u06FF]+)*$/.test(item),{
       message: "نام خودت درست وارد کن",
     }),
   lastnameSignup: z
     .string({ message: "نام خانوادگی خودت را وارد کن" })
-    .refine((item) => /^[a-zA-Z\u0600-\u06FF]+$/.test(item), {
+    .refine((item) => /^[a-zA-Z\u0600-\u06FF]+(?: [a-zA-Z\u0600-\u06FF]+)*$/.test(item), {
       message: "نام خانوادگی خودت درست وارد کن",
     }),
 });

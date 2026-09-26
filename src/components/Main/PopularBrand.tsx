@@ -1,7 +1,7 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { GiPolarStar } from "react-icons/gi";
-import usePopularBrand from "../Hooks/usePopularBrand";
 import { contextWidth } from "../App";
+import usePopularBrand from "../Hooks/usePopularBrand";
 
 const PopularBrand = () => {
   const property=useContext(contextWidth)!;

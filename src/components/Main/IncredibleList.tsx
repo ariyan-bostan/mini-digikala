@@ -1,12 +1,12 @@
-import React, { useContext } from "react";
-import styleAmz from "../Styles/Main/AmazingBox.module.css";
-import useRunningOutIncredibleProducts from "../Hooks/useRunningOutIncredibleProducts";
+import { useContext } from "react";
 import { FiArrowLeftCircle } from "react-icons/fi";
-import Poster from "./IncredibleComponent/Poster";
-import Timer from "./IncredibleComponent/Timer";
-import { contextWidth } from "../App";
 import { Link } from "react-router";
+import { contextWidth } from "../App";
+import useRunningOutIncredibleProducts from "../Hooks/useRunningOutIncredibleProducts";
+import styleAmz from "../Styles/Main/AmazingBox.module.css";
+import Poster from "./IncredibleComponent/Poster";
 import Product from "./IncredibleComponent/Product.tsx";
+import Timer from "./IncredibleComponent/Timer";
 
 interface Props{
   numberList:number

@@ -1,4 +1,4 @@
-import React, { useContext, type ReactNode } from "react";
+import { useContext, type ReactNode } from "react";
 import { contextWidth } from "../App";
 
 interface Props{

@@ -1060,7 +1060,120 @@
     }
   ],
   "normalUsers": [
-
+    {
+      "id-user": "2",
+      "type-user": "عادی",
+      "number-phone": "9164977996",
+      "name": "ارین خسته",
+      "last-name": "ارین خسته ۲",
+      "user-name": "ariyanam",
+      "password": "12121212",
+      "box-product": [],
+      "id": "CR5e57XWens"
+    },
+    {
+      "id-user": "2",
+      "type-user": "عادی",
+      "number-phone": "9164977996",
+      "name": "ارین خست",
+      "last-name": "ارین خسته ۲",
+      "user-name": "ariyanam",
+      "password": "12121212",
+      "box-product": [],
+      "id": "deJicwr5vAQ"
+    },
+    {
+      "id-user": "4",
+      "type-user": "عادی",
+      "number-phone": "9789987812",
+      "name": "تلاش ار",
+      "last-name": "تلاش اخر اخر",
+      "user-name": "react.js",
+      "password": "12344321",
+      "box-product": [
+        {
+          "title": "کرم آبرسان دست و صورت آرت وینا مدل ویتامین E مناسب انواع پوست حجم 50 میلی لیتر",
+          "layer": {
+            "brand": "آرت وینا",
+            "category": "آرایشی و بهداشتی"
+          },
+          "price": {
+            "selling_price": 4690000,
+            "rrp_price": 14990000,
+            "percent": 4
+          },
+          "images": {
+            "mainImg": "https://dkstatics-public.digikala.com/digikala-products/87307678eeab02e6888560470c34328403eccc1b_1754236725.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+            "listImg": []
+          },
+          "imgWEBP": "https://dkstatics-public.digikala.com/digikala-products/87307678eeab02e6888560470c34328403eccc1b_1754236725.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+          "rating": {
+            "rate": 84.9,
+            "count": 858,
+            "discount_percent": 1
+          },
+          "id": "Bdcns1E_uh4"
+        }
+      ],
+      "id": "bL5dn59lV2Y"
+    },
+    {
+      "id-user": "5",
+      "type-user": "عادی",
+      "number-phone": "9878121211",
+      "name": "قق",
+      "last-name": "سجحیزنحج",
+      "user-name": "حتیزحختحخت",
+      "password": "۱۲۱۲۱۲۱۲",
+      "box-product": [
+        {
+          "title": "کرم آبرسان دست و صورت آرت وینا مدل ویتامین E مناسب انواع پوست حجم 50 میلی لیتر",
+          "layer": {
+            "brand": "آرت وینا",
+            "category": "آرایشی و بهداشتی"
+          },
+          "price": {
+            "selling_price": 4690000,
+            "rrp_price": 14990000,
+            "percent": 4
+          },
+          "images": {
+            "mainImg": "https://dkstatics-public.digikala.com/digikala-products/87307678eeab02e6888560470c34328403eccc1b_1754236725.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+            "listImg": []
+          },
+          "imgWEBP": "https://dkstatics-public.digikala.com/digikala-products/87307678eeab02e6888560470c34328403eccc1b_1754236725.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+          "rating": {
+            "rate": 84.9,
+            "count": 858,
+            "discount_percent": 1
+          },
+          "id": "Bdcns1E_uh4"
+        }
+      ],
+      "id": "1kjhyFFzWco"
+    },
+    {
+      "id-user": "6",
+      "type-user": "عادی",
+      "number-phone": "9999999999",
+      "name": "jscosidjcosi",
+      "last-name": "jsjsdicoij",
+      "user-name": "oijdcoisjc",
+      "password": "11111111",
+      "box-product": [],
+      "id": "Pum0fQXGbes"
+    },
+    {
+      "id-user": "7",
+      "type-user": "عادی",
+      "number-phone": "9876543234",
+      "name": "djojcsjcjjjds",
+      "last-name": "sdjcjscpo",
+      "user-name": "pojsdcjdd",
+      "password": "12121212",
+      "box-product": [],
+      "id": "XqlmkWxbITk"
+    }
   ],
   "listProducts": [
     {
@@ -1232,146 +1345,9 @@
       "attributes": []
     }
   ],
-  "مانیتور": [
-    {
-      "title": "kl;gvbesrsbt",
-      "layer": {
-        "brand": "asxdsca",
-        "dimension9": 10,
-        "category": "لپ تاپ"
-      },
-      "images": {
-        "mainImg": "https://a.webp",
-        "listImg": [
-          "https://a.webp",
-          "https://a.webp",
-          "https://a.webp"
-        ]
-      },
-      "theme": {
-        "title": "red",
-        "code": "#12345678"
-      },
-      "price": {
-        "rrp_price": 21,
-        "selling_price": 21,
-        "percent": 1
-      },
-      "attributes": [],
-      "id": "WDcnAXh17pM"
-    },
-    {
-      "title": "dcac",
-      "layer": {
-        "brand": "aa",
-        "dimension9": 12,
-        "category": "ابزارآلات و تجهیزات"
-      },
-      "images": {
-        "mainImg": "https://a.webp",
-        "listImg": [
-          "https://a.webp",
-          "https://a.webp",
-          "https://a.webp"
-        ]
-      },
-      "theme": {
-        "title": "https://a.webp",
-        "code": "#https://a.webp"
-      },
-      "price": {
-        "rrp_price": 211,
-        "selling_price": 21,
-        "percent": 1
-      },
-      "attributes": [],
-      "id": "jgPHJkptbpA"
-    },
-    {
-      "title": " مانیتور 27 اینچ مستر تک مدل PA274iFH ",
-      "layer": {
-        "brand": "مستر تک ",
-        "dimension9": 1,
-        "category": "کالای دیجیتال"
-      },
-      "images": {
-        "mainImg": "https://mestercomputer.com/wp-content/uploads/2026/08/Master-Tech-PA274iFH-27-Inch-FHD-IPS-100Hz-Monitor-01.webp",
-        "listImg": [
-          "https://mestercomputer.com/wp-content/uploads/2026/08/Master-Tech-PA274iFH-27-Inch-FHD-IPS-100Hz-Monitor-01.webp",
-          "https://mestercomputer.com/wp-content/uploads/2026/08/Master-Tech-PA274iFH-27-Inch-FHD-IPS-100Hz-Monitor-01.webp",
-          "https://mestercomputer.com/wp-content/uploads/2026/08/Master-Tech-PA274iFH-27-Inch-FHD-IPS-100Hz-Monitor-01.webp"
-        ]
-      },
-      "theme": {
-        "title": "wwsd",
-        "code": "#fghfjck"
-      },
-      "price": {
-        "rrp_price": 20000000,
-        "selling_price": 20000000,
-        "percent": 1
-      },
-      "attributes": [],
-      "id": "idKgGZ10Olg"
-    }
-  ],
+  "مانیتور": [],
   "گوشی موبایل": [],
-  "دفتر": [
-    {
-      "title": "11",
-      "layer": {
-        "brand": "dd",
-        "dimension9": 321,
-        "category": "موبایل"
-      },
-      "images": {
-        "mainImg": "https://a.webp",
-        "listImg": [
-          "https://a.webp",
-          "https://a.webp",
-          "https://a.webp"
-        ]
-      },
-      "theme": {
-        "title": "s;aoaj",
-        "code": "#a"
-      },
-      "price": {
-        "rrp_price": 6,
-        "selling_price": 4,
-        "percent": 1
-      },
-      "attributes": [],
-      "id": "F72xwecGg0s"
-    },
-    {
-      "title": "dsvvsds",
-      "layer": {
-        "brand": "dsds",
-        "dimension9": 11,
-        "category": "سلامت و پزشکی"
-      },
-      "images": {
-        "mainImg": "http://a.webp",
-        "listImg": [
-          "http://a.webp",
-          "http://a.webp",
-          "http://a.webp"
-        ]
-      },
-      "theme": {
-        "title": "grv",
-        "code": "#1234"
-      },
-      "price": {
-        "rrp_price": 11,
-        "selling_price": 11,
-        "percent": 1
-      },
-      "attributes": [],
-      "id": "4vFdEXnVUeE"
-    }
-  ],
+  "دفتر": [],
   "running_out_incredible_products": [
     {
       "title": "ادوپرفیوم زنانه هارلینگن مدل لانکوم میدنایت رز با رایحه گرم حجم 30 میلی‌لیتر",

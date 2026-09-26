@@ -1,11 +1,12 @@
-import React, { useContext, useState } from "react";
-import { data, useNavigate } from "react-router";
-import useAddProductToBoxProduct from "../../../Hooks/useAddProductToBoxProduct";
-import type { UserNormal } from "../../../Hooks/useGetListNormalUser";
+import { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
 import toast, { Toaster } from "react-hot-toast";
+import { useNavigate } from "react-router";
 import { contextTypeUser } from "../../../App";
+import useAddProductToBoxProduct from "../../../Hooks/useAddProductToBoxProduct";
+import type { UserNormal } from "../../../Hooks/useGetListNormalUser";
 import useApdateUserAdmin from "../../../Hooks/useUpdateUserAdmin";
+import useGetListNormalUser from "../../../Hooks/useGetListNormalUser";
 const InformationUser = () => {
   const {
     register,
@@ -15,29 +16,27 @@ const InformationUser = () => {
   } = useForm();
 
   const navigate = useNavigate();
+  const { listUser } = useGetListNormalUser();
+  
+
   const [changeInformation, setChangeInformation] = useState<UserNormal>(
     JSON.parse(localStorage.getItem("getUser") || "null"),
-    
   );
-  const getTypeUser=useContext(contextTypeUser)!;
-  console.log(changeInformation["type-user"],changeInformation.id);
-  
+  const getTypeUser = useContext(contextTypeUser)!;
+
   const addNormalUser = useAddProductToBoxProduct();
-  const updateUserAdmin= useApdateUserAdmin();
+  const updateUserAdmin = useApdateUserAdmin();
 
   return (
     <div className="">
       <Toaster position="top-center" reverseOrder={false} />{" "}
-      <form
-        onSubmit={handleSubmit((data) => {
-          console.log(data);
-        })}
-        className="form w-100 p-3">
+      <form onSubmit={handleSubmit((data) => {})} className="form w-100 p-3">
         <div>
           <label
             style={{ color: "#8f8d8d", fontSize: ".8rem" }}
             className=""
-            htmlFor="">
+            htmlFor=""
+          >
             نام :{" "}
           </label>
           <input
@@ -63,7 +62,8 @@ const InformationUser = () => {
           <label
             style={{ color: "#8f8d8d", fontSize: ".8rem" }}
             className=""
-            htmlFor="">
+            htmlFor=""
+          >
             نام خانوادگی :{" "}
           </label>
           <input
@@ -89,7 +89,8 @@ const InformationUser = () => {
           <label
             style={{ color: "#8f8d8d", fontSize: ".8rem" }}
             className=""
-            htmlFor="">
+            htmlFor=""
+          >
             نام کاربری :{" "}
           </label>
           <input
@@ -115,7 +116,8 @@ const InformationUser = () => {
           <label
             style={{ color: "#8f8d8d", fontSize: ".8rem" }}
             className=""
-            htmlFor="">
+            htmlFor=""
+          >
             رمز عبور :{" "}
           </label>
           <input
@@ -139,28 +141,33 @@ const InformationUser = () => {
         </div>
         <button
           onClick={() => {
-            if(changeInformation["type-user"]==="ادمین-کاربر"){
-              console.log("kos");
-              
+            if (changeInformation["type-user"] === "ادمین-کاربر") {
               updateUserAdmin.mutate({
                 updateItem: changeInformation,
                 id: changeInformation.id || "",
               });
               localStorage.removeItem("getUser");
-              localStorage.setItem("getUser", JSON.stringify(changeInformation));
+              localStorage.setItem(
+                "getUser",
+                JSON.stringify(changeInformation),
+              );
               toast.success("تغییرات ذخیره شد");
-            }else{
-
-              addNormalUser.mutate({
-                updateItem: changeInformation,
-                id: changeInformation.id || "",
-              });
+            } else {
+              if (listUser)
+                addNormalUser.mutate({
+                  updateItem: changeInformation,
+                  id:listUser[listUser.length-1].id || "",
+                });
               localStorage.removeItem("getUser");
-              localStorage.setItem("getUser", JSON.stringify(changeInformation));
+              localStorage.setItem(
+                "getUser",
+                JSON.stringify(changeInformation),
+              );
               toast.success("تغییرات ذخیره شد");
             }
           }}
-          className="btn mt-3 bg-success">
+          className="btn mt-3 bg-success"
+        >
           ذخیره تغییرات
         </button>
       </form>

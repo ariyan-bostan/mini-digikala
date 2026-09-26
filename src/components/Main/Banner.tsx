@@ -1,7 +1,5 @@
-import React from "react";
-import styleBanner from "../Styles/Main/Banner.module.css";
 import useSimpleBanner from "../Hooks/useSimpleBanner";
-import { data } from "react-router";
+import styleBanner from "../Styles/Main/Banner.module.css";
 interface Props {
   number: number;
 }

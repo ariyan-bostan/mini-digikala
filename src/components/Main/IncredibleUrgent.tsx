@@ -1,11 +1,10 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router";
 import { contextWidth } from "../App";
-import useCategoriHome from "../Hooks/useCategoriHome";
 import useListCategories from "../Hooks/useListCategories";
 import useRunningOutIncredibleProducts from "../Hooks/useRunningOutIncredibleProducts";
-import Product from "./IncredibleComponent/Product";
 import type { ProductRunningOut } from "../Services/Intefaces";
+import Product from "./IncredibleComponent/Product";
 
 const IncredibleUrgent = () => {
   const property = useContext(contextWidth)!;

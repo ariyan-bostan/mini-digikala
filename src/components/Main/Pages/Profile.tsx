@@ -1,19 +1,14 @@
-import React, { useContext, useState } from "react";
-import { FaUserTie } from "react-icons/fa";
+import { useContext, useState } from "react";
+import { FaUser, FaUserTie } from "react-icons/fa";
 import { RiUser2Fill } from "react-icons/ri";
-import { FaUser } from "react-icons/fa";
 import { contextWidth } from "../../App";
-import BoxProduct from "./Profile/BoxProduct";
-import toast, { Toaster } from "react-hot-toast";
-import { useNavigate } from "react-router";
-import Logout from "./Profile/Logout";
 import type { UserNormal } from "../../Hooks/useGetListNormalUser";
-import useAddNormalUser from "../../Hooks/useAddNormalUser";
-import useAddProductToBoxProduct from "../../Hooks/useAddProductToBoxProduct";
-import InformationUser from "./Profile/InformationUser";
 import CreateProduct from "./Crud/Create/CreateProduct";
+import DeleteProduct from "./Crud/Delete/DeleteProduct";
 import UpdateProduct from "./Crud/Update/UpdateProduct";
-import  DeleteProduct  from "./Crud/Delete/DeleteProduct";
+import BoxProduct from "./Profile/BoxProduct";
+import InformationUser from "./Profile/InformationUser";
+import Logout from "./Profile/Logout";
 export interface TypeGetItem {
   "type-user": string;
 }
@@ -23,7 +18,7 @@ const Profile = () => {
   const [getUserNow, setGetUserNow] = useState<UserNormal>(
     JSON.parse(localStorage.getItem("getUser") || "null"),
   );
-
+  
   const property = useContext(contextWidth)!;
   const navListProfile = [
     {

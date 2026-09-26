@@ -43,7 +43,7 @@ const CreatePriceProduct = () => {
           resault.newProduct &&
           Number(data.sellingPrice) <= Number(data.rrpPrice)
         ) {
-          toast.success("خروج از حساب کاربری");
+          toast.success("محصول اضافه شد");
 
           resault.setNewProduct({
             ...resault.newProduct,

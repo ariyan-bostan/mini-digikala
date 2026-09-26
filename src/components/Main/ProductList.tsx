@@ -1,11 +1,10 @@
-import React, { useContext, useEffect } from "react";
-import useProduct from "../Hooks/useProduct";
-import style from "../Styles/Main/ProductList.module.css";
-import { contextWidth } from "../App";
-import PercentPrice from "./PercentPrice";
+import { useContext } from "react";
 import { FiArrowLeftCircle } from "react-icons/fi";
 import { Link } from "react-router";
+import { contextWidth } from "../App";
 import useGetProduct from "../Hooks/useGetProduct";
+import style from "../Styles/Main/ProductList.module.css";
+import PercentPrice from "./PercentPrice";
 
 interface Props {
   title: string;

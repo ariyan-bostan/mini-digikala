@@ -1,14 +1,12 @@
 import { useContext, useEffect, useReducer } from "react";
-// import style from "../../Styles/Main/IncredibleOffer.module.css"
 import { contextWidth } from "../../App";
-import useRunningOutIncredibleProducts from "../../Hooks/useRunningOutIncredibleProducts";
+import style from "../../Styles/Layout.module.css";
 import BackgroundIncredible from "./Incredible/BackgroundIncredible";
 import BannerIncredible1 from "./Incredible/BannerIncredible";
 import BannerIncredible2 from "./Incredible/BannerIncredible2";
 import BoxProductIncredible from "./Incredible/BoxProductIncredible";
 import CategoryIncredible from "./Incredible/CategoryIncredible";
 import FormFilterIncredible from "./Incredible/FormFilterIncredible";
-import style from "../../Styles/Layout.module.css";
 
 
 const initialFilter = {
