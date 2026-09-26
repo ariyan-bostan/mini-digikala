@@ -1,5 +1,6 @@
 import { useInfiniteQuery, useQuery } from "@tanstack/react-query"
-import APIClient, { type TitleHome } from "../Services/APIClient"
+import type { TitleHome } from "../Services/Intefaces";
+import APIClient from "../Services/APIClient";
 
 const apiClient=new APIClient("Main");
 

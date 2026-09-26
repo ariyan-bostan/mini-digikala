@@ -7,7 +7,7 @@ const useRunningOutIncredibleProducts1=()=>{
       queryKey: ["useRunningOutIncredibleProducts1"],
       queryFn:()=>{
         return axios.get<Product[]>(
-          "http://localhost:3000/running_out_incredible_products",
+          "https://mini-digikala.onrender.com/running_out_incredible_products",
         ).then(res=>res.data);
       }
     });

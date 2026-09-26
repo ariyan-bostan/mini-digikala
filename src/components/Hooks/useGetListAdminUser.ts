@@ -12,7 +12,7 @@ const useGetListAdminUser = () => {
     queryKey: ["list-admin user"],
     queryFn: () => {
       return axios
-        .get<UserNormal[]>("http://localhost:3000/User-Admin")
+        .get<UserNormal[]>("https://mini-digikala.onrender.com/User-Admin")
         .then((res) => res.data);
     },
   });

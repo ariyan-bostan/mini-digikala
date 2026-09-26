@@ -12,7 +12,7 @@ const useApdateProduct=()=>{
         mutationFn:(item:TypeInput)=>{
             console.log(item);
             
-            return axios.patch(`http://localhost:3000/${item.endpoint}/${item.idProduct}`,item.itemUpdate)
+            return axios.patch(`https://mini-digikala.onrender.com/${item.endpoint}/${item.idProduct}`,item.itemUpdate)
                         .then(res=>res.data)
         },
         onSuccess:(savedItem:Product[],newItem:TypeInput)=>{

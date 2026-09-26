@@ -24,7 +24,7 @@ import type {
 } from "./Intefaces";
 
 const api = axios.create({
-  baseURL: "http://localhost:3000",
+  baseURL: "https://mini-digikala.onrender.com/",
 });
 
 class APIClient {

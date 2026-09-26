@@ -14,7 +14,7 @@ const useDeleteProduct = () => {
         console.log("ss");
         
       return axios
-        .delete(`http://localhost:3000/${item.endPoint}/${item.idUser}`)
+        .delete(`https://mini-digikala.onrender.com/${item.endPoint}/${item.idUser}`)
         .then((res) => res.data);
     }
   });

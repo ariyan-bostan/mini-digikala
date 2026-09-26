@@ -8,7 +8,7 @@ const useGetProduct = (endPoint: string) => {
     queryFn: () => {
         
       return axios
-        .get<Product[]>(`http://localhost:3000/${endPoint}`)
+        .get<Product[]>(`https://mini-digikala.onrender.com/${endPoint}`)
         .then((res) => res.data);
     },
   });

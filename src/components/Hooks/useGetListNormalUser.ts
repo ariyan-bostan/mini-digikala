@@ -22,7 +22,7 @@ const useGetListNormalUser = () => {
     queryKey: ["list-normal user"],
     queryFn: () => {
       return axios
-        .get<UserNormal[]>("http://localhost:3000/normalUsers")
+        .get<UserNormal[]>("https://mini-digikala.onrender.com/normalUsers")
         .then((res) => res.data);
     },
   });

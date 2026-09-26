@@ -20,7 +20,7 @@ const useAddNormalUser = () => {
   >({
     mutationFn: (newUserNormal: UserNormal) => {
       return axios
-        .post<UserNormal>("http://localhost:3000/normalUsers", newUserNormal)
+        .post<UserNormal>("https://mini-digikala.onrender.com/normalUsers", newUserNormal)
         .then((res) => res.data);
     },
     onMutate: (newNormalUser: UserNormal) => {

@@ -14,7 +14,7 @@ const useAddProductToBoxProduct = () => {
   return useMutation<UserNormal, Error, UpdateItem, TypeContextPreviousData>({
     mutationFn: (item: UpdateItem) => {
       return axios
-        .patch(`http://localhost:3000/normalUsers/${item.id}`, item.updateItem)
+        .patch(`https://mini-digikala.onrender.com/normalUsers/${item.id}`, item.updateItem)
         .then((res) => res.data);
     },
     onMutate: (updateItem: UpdateItem) => {

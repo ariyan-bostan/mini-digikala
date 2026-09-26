@@ -9,7 +9,7 @@ const useGetNameListProduct = () => {
     queryKey: ["NameListProduct"],
     queryFn: () => {
       return axios
-        .get<TypeNameListProduct[]>("http://localhost:3000/listProducts")
+        .get<TypeNameListProduct[]>("https://mini-digikala.onrender.com/listProducts")
         .then((res) => res.data);
     },
   });
